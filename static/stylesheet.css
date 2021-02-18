@@ -14,3 +14,26 @@
     color: white;
     text-align: center;
 }
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    background-color: #fdfdfd;
+}
+
+.shadow {
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #813f09;
+    border-color: #813f09;
+}
+
+.masthead {
+    background: #0f7918;
+    height: auto;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}

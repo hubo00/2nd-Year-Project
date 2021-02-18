@@ -6,6 +6,15 @@
         <li class="nav-item">
             <a class="nav-link nav-button" href = "{% url 'shop:allProdCat' %}">Home</a>
         </li>
+        {% if user.is_authenticated %}
+        <li>
+            <a class="nav-link nav-button" href = "blog/">Blogs</a>
+        </li>
+        {% else %}
+        <li>
+            <a class="nav-link nav-button disabled" href = "blog/">Blogs</a>
+        </li>
+        {% endif %}
         <li>
             <a class="nav-link nav-button" href = "#">Your Cart</a>
         </li>

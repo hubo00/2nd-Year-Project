@@ -1,0 +1,16 @@
+.bg-plants{
+    background-color: #009933;
+}
+
+.nav-button{
+    color: white;
+}
+
+.nav-button:hover{
+    color: #cccc00;
+}
+
+.base-footer{
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+{% block metadescription %}
+	{% if category %}
+		{{ category.description|truncatewords:155 }}
+	{% else %}
+		Welcome to the plant Oasis, your one stop shop for all things plants!
+	{% endif %}
+{% endblock %}
+{% block title %}
+	{% if category %}
+		{{ category.name }} | PlantOasis
+	{% else %}
+		Check out our plants and tools! | P
+	{% endif %}
+{% endblock %}
+{% block content %}
+	<!--Breadcrumb navigation-->
+	{% if category %}
+		<div>
+			<div>
+				<p><a href="{% url 'shop:allProdCat' %}">Our Product Collection</a> | {{category.name}}</p>
+			</div>
+        </div>
+    {% endif %}
+	{% if category %}
+	<br>
+	<div>
+		<h1 >{{category.name}}</h1>
+		<p>{{category.description}}</p>
+    </div>
+    {% else %}
+	<br>
+	<div>
+		<h1 >Our Plant Collection</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget egestas purus viverra accumsan in nisl. Netus et malesuada fames ac turpis. Blandit turpis cursus in hac habitasse platea. Eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Venenatis a condimentum vitae sapien pellentesque habitant morbi. Porttitor massa id neque aliquam vestibulum. Volutpat diam ut venenatis tellus in metus vulputate eu scelerisque. Arcu risus quis varius quam quisque id. Lobortis scelerisque fermentum dui faucibus. Sit amet luctus venenatis lectus magna fringilla urna.
+
+            Gravida rutrum quisque non tellus orci ac auctor augue mauris. Viverra nibh cras pulvinar mattis. Mattis vulputate enim nulla aliquet porttitor lacus. Sem integer vitae justo eget magna. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus. Molestie at elementum eu facilisis sed odio. Ut tellus elementum sagittis vitae. Pellentesque elit eget gravida cum sociis natoque penatibus et magnis. Maecenas volutpat blandit aliquam etiam erat. Nibh tortor id aliquet lectus. Magna etiam tempor orci eu lobortis elementum. Pretium quam vulputate dignissim suspendisse in est. Quis vel eros donec ac.
+            
+            Egestas congue quisque egestas diam in arcu cursus euismod. Nisi scelerisque eu ultrices vitae auctor eu. Rhoncus mattis rhoncus urna neque viverra justo. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. Bibendum ut tristique et egestas. Auctor augue mauris augue neque gravida in fermentum et sollicitudin. Aliquam faucibus purus in massa tempor. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc. Et pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Sodales ut etiam sit amet nisl purus in mollis.</p>
+	</div>
+    {% endif %}
+    <div>
+		<div>
+			{% for product in products %}
+				<div>
+					<div>
+						<a href=""><img src="{{product.image.url}}" alt="{{product.name}}"></a>
+						<div>
+							<h4>{{product.name}}</h4>
+							<p>€{{product.price}}</p>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+		<br>
+	</div>
+{% endblock %}

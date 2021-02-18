@@ -18,6 +18,22 @@
         <li>
             <a class="nav-link nav-button" href = "#">Your Cart</a>
         </li>
+        {% if user.is_authenticated %}
+			<li>
+                <a class="nav-button nav-link" href="#" >{{ user.username }} &#128100</a>
+			</li>
+			<li>
+				<a class="nav-link nav-button" href="{% url 'signout' %}">Sign Out</a>
+			</li>
+			{% else %}
+			<li>
+				<a class="nav-link nav-button" href="{% url 'signup' %}">Sign Up</a>
+			</li>
+			<li>
+				<a class="nav-link nav-button" href="{% url 'signin' %}">Sign In</a>
+			</li>
+			{% endif %}
+
     </ul>
     <form class="form-inline my-2 my-lg-0" action="{% url 'search_app:searchResult'%}" method="get">
         {% csrf_token %}

@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'blog',
     'search_app',
     'crispy_forms',
+    'imagekit',
 ]
 
 MIDDLEWARE = [

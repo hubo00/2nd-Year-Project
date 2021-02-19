@@ -13,6 +13,7 @@
 .base-footer{
     color: white;
     text-align: center;
+    width: 100%;
 }
 
 body {
@@ -41,9 +42,4 @@ body {
 .errorlist li {
 	color: red;
 	font-weight: bold;
-}
-
-.home-images{
-    width: 15em;
-    height: 15em;
 }

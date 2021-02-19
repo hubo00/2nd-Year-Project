@@ -11,7 +11,7 @@ Welcome to the plant Oasis, your one stop shop for all things plants!
 {% if category %}
 {{ category.name }} | PlantOasis
 {% else %}
-Check out our plants and tools! | P
+Check out our plants and tools! | PlantOasis
 {% endif %}
 {% endblock %}
 {% block content %}
@@ -61,7 +61,7 @@ Check out our plants and tools! | P
 		{% for product in products.object_list %}
 		<div class="col-lg-6 col-sm-12 col-md-4 mt-2">
 			<div class="card text-center">
-				<a href="{{product.get_absolute_url}}"><img class="home-images" src="{{product.image.url}}" alt="{{product.name}}"></a>
+				<a href="{{product.get_absolute_url}}"><img class="home-images" src="{{product.image_thumbnail.url}}" alt="{{product.name}}"></a>
 				<div>
 					<h4>{{product.name}}</h4>
 					<p>€{{product.price}}</p>

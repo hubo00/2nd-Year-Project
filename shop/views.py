@@ -13,7 +13,7 @@ def allProdCat(request, category_id=None):
         products_list = Product.objects.all().filter(available=True)
 
     '''Pagination code'''
-    paginator = Paginator(products_list, 2)
+    paginator = Paginator(products_list, 4)
     try:
         page = int(request.GET.get('page', '1'))
     except:

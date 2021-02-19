@@ -57,11 +57,11 @@ Check out our plants and tools! | P
 </div>
 {% endif %}
 <div>
-	<div>
+	<div class="row mx-auto">
 		{% for product in products.object_list %}
-		<div>
-			<div>
-				<a href="{{product.get_absolute_url}}"><img src="{{product.image.url}}" alt="{{product.name}}"></a>
+		<div class="col-lg-6 col-sm-12 col-md-4 mt-2">
+			<div class="card text-center">
+				<a href="{{product.get_absolute_url}}"><img class="home-images" src="{{product.image.url}}" alt="{{product.name}}"></a>
 				<div>
 					<h4>{{product.name}}</h4>
 					<p>€{{product.price}}</p>
@@ -70,7 +70,7 @@ Check out our plants and tools! | P
 		</div>
 		{% endfor %}
 	</div>
-	<div class="mx-auto">
+	<div class="">
 		{% if products.paginator.num_pages > 1%}
 		<hr>
 		<div class="text-center">

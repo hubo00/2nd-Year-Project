@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'search_app',
     'crispy_forms',
     'imagekit',
+    'cart',
 ]
 
 MIDDLEWARE = [
@@ -63,6 +64,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [str(BASE_DIR.joinpath('shop', 'templates')),
                 str(BASE_DIR.joinpath('search_app', 'templates')),
+                str(BASE_DIR.joinpath('cart', 'templates')),
                 TEMPLATES_DIRS],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -72,6 +74,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'shop.context_processors.menu_links',
+                'cart.context_processors.counter',
             ],
         },
     },

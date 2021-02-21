@@ -39,3 +39,4 @@ def signinView(request):
 def signoutView(request):
     logout(request)
     return redirect('signin')
+

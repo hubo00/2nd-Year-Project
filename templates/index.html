@@ -26,9 +26,11 @@
                     <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
                     <p class="card-text">{{post.content|slice:":15" }}...</p>
                     <a href="{% url 'post_detail' post.slug  %}" class="btn btn-success">Read More &rarr;</a>
+                    {% if user.username == post.author.username or request.user.is_superuser %}
+                    <a href="{% url 'post_delete' post.slug  %}" class="btn btn-danger">Delete</a>
+                    {% endif %}
                     {% if user.username == post.author.username %}
                     <a href="{% url 'post_edit' post.pk  %}" class="btn btn-warning">Edit</a>
-                    <a href="{% url 'post_delete' post.slug  %}" class="btn btn-danger">Delete</a>
                     {% endif %}
                 </div>
             </div>

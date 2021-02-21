@@ -1,6 +1,6 @@
 # Importing utilities from django shortcuts. Importing category, product models
 from django.shortcuts import render, get_object_or_404
-from .models import Category, Product
+from .models import Category, Product, CatProd
 from django.core.paginator import Paginator, EmptyPage, InvalidPage
 
 def allProdCat(request, category_id=None):
@@ -22,11 +22,11 @@ def allProdCat(request, category_id=None):
         products = paginator.page(page)
     except (EmptyPage, InvalidPage):
         products = paginator.page(paginator.num_pages)
-    return render(request, 'shop\category.html', {'category':c_page, 'products':products})
+    return render(request, 'shop/category.html', {'category':c_page, 'products':products})
 
-def prod_detail(request,category_id,product_id):
+def prod_detail(request,product_id):
     try:
-        product = Product.objects.get(category_id=category_id,id=product_id)
+        product = Product.objects.get(id=product_id)
     except Exception as e:
         raise e
     return render(request, 'shop/product.html', {'product':product})

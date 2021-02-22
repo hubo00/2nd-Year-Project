@@ -2,6 +2,7 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Category, Product, CatProd
 from django.core.paginator import Paginator, EmptyPage, InvalidPage
+from .forms import ProductForm
 
 def allProdCat(request, category_id=None):
     c_page = None
@@ -30,3 +31,12 @@ def prod_detail(request,product_id):
     except Exception as e:
         raise e
     return render(request, 'shop/product.html', {'product':product})
+
+def prod_create(request):
+    form = ProductForm()
+    if request.method=='POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+
+    return render(request, 'shop/create_view.html',{'form':form,'prod':Product.objects.all()})

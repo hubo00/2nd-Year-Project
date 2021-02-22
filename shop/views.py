@@ -1,5 +1,5 @@
 # Importing utilities from django shortcuts. Importing category, product models
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, HttpResponseRedirect
 from .models import Category, Product, CatProd
 from django.core.paginator import Paginator, EmptyPage, InvalidPage
 from .forms import ProductForm
@@ -40,3 +40,11 @@ def prod_create(request):
             form.save()
 
     return render(request, 'shop/create_view.html',{'form':form,'prod':Product.objects.all()})
+
+def prod_update(request, product_id):
+    product = Product.objects.get(id=product_id)
+    form = ProductForm(request.POST, instance=product)
+    if form.is_valid():
+        form.save()
+
+    return render(request, 'shop/update_view.html',{'form':form, 'product':product})

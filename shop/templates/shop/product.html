@@ -21,6 +21,10 @@
 				</div>
 				<div>
 					<div>
+						{% if user.is_superuser %}
+							<a class="btn btn-warning" href="{% url 'shop:edit_product' product.id %}">Edit Product</a>
+							<a class="btn btn-danger" href="{% url 'shop:delete_product' product.id %}">Delete Product</a>
+						{% endif %}
 						<h1>{{product.name}}</h1>
 						<p>€{{product.price}}</p>
 						<p>Product Description:</p>

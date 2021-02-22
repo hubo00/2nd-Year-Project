@@ -48,3 +48,10 @@ def prod_update(request, product_id):
         form.save()
 
     return render(request, 'shop/update_view.html',{'form':form, 'product':product})
+
+def prod_delete(request, product_id):
+    product = Product.objects.get(id=product_id)
+    if request.method == "POST":
+        product.delete()
+    
+    return render(request, 'shop/delete_view.html',{'product':product})

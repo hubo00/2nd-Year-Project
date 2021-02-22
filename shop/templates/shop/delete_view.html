@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+{% if not form.is_valid %}
+    <form method="POST"> 
+        {% csrf_token %} 
+        Are you sure want to delete this item ? 
+        <input type="submit" value="Yes" /> 
+        <a href="">Cancel </a> 
+    </form> 
+</div> 
+{% else %}
+    <p>Product deleted successfully</p>
+{% endif %}
+{% endblock %}

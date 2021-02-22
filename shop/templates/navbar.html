@@ -22,6 +22,11 @@
 			<li>
                 <a class="nav-button nav-link" href="#" >{{ user.username }} &#128100</a>
 			</li>
+            {% if user.is_superuser %}
+            <li>
+                <a class="nav-button nav-link" href="{% url 'shop:create_product' %}" >Add Product</a>
+			</li>
+            {% endif %}
 			<li>
 				<a class="nav-link nav-button" href="{% url 'signout' %}">Sign Out</a>
 			</li>

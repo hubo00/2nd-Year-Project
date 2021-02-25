@@ -14,7 +14,7 @@ def allProdCat(request, category_id=None):
         products_list = Product.objects.all().filter(available=True)
 
     '''Pagination code'''
-    paginator = Paginator(products_list, 4)
+    paginator = Paginator(products_list, 8)
     try:
         page = int(request.GET.get('page', '1'))
     except:
@@ -47,6 +47,7 @@ def prod_update(request, product_id):
     product = get_object_or_404(Product, id=product_id)
     init_dict = {
         'name':product.name,
+        'name_alt':product.name_alt,
         'description':product.description,
         'price':product.price,
         'image':product.image,

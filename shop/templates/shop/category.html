@@ -59,11 +59,16 @@ Check out our plants and tools! | PlantOasis
 <div>
 	<div class="row mx-auto">
 		{% for product in products.object_list %}
-		<div class="col-lg-6 col-sm-12 col-md-4 mt-2">
+		<div class="col-lg-3 col-sm-12 col-md-6 mt-2">
 			<div class="card text-center">
 				<a href="{{product.get_absolute_url}}"><img class="home-images" src="{{product.image_thumbnail.url}}" alt="{{product.name}}"></a>
 				<div>
 					<h4>{{product.name}}</h4>
+					{% if product.name_alt %}
+						<h6>{{product.name_alt}}</h6>
+					{% else %}
+						<h6>‎</h6>
+					{% endif %}
 					<p>€{{product.price}}</p>
 				</div>
 			</div>

@@ -32,6 +32,7 @@ class Product(models.Model):
         editable=False)
 
     name = models.CharField(max_length=250, unique=True)
+    name_alt = models.CharField(max_length=250, blank=True, null=True)
     description = models.TextField(blank=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     image = models.ImageField(upload_to='product', blank=True)

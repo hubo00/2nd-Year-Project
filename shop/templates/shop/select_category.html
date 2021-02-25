@@ -10,6 +10,8 @@
         <input type="submit" value="Update"> 
     </form>
 {% else %}
-    <p>Product updated successfully</p>
+    <p>Would you like to add another category to the product?</p>
+    <a href="{% url 'shop:cat_select' %}">Yes</a>
+    <a href="{% url 'shop:allProdCat' %}">No</a>
 {% endif %}
 {% endblock %}

@@ -35,7 +35,7 @@ def prod_detail(request,product_id):
 def prod_create(request):
     form = ProductForm()
     if request.method=='POST':
-        form = ProductForm(request.POST, request.FILES)
+        form = ProductForm(request.POST or None, request.FILES)
         if form.is_valid():
             form.save()
 
@@ -44,8 +44,16 @@ def prod_create(request):
     return render(request, 'shop/create_view.html',{'form':form,'prod':Product.objects.all()})
 
 def prod_update(request, product_id):
-    product = Product.objects.get(id=product_id)
-    form = ProductForm(request.POST, instance=product)
+    product = get_object_or_404(Product, id=product_id)
+    init_dict = {
+        'name':product.name,
+        'description':product.description,
+        'price':product.price,
+        'image':product.image,
+        'stock':product.stock,
+        'available':product.available
+    }
+    form = ProductForm(request.POST or None, instance=product, initial=init_dict)
     if form.is_valid():
         form.save()
 

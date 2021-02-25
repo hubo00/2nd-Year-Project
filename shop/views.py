@@ -1,8 +1,8 @@
 # Importing utilities from django shortcuts. Importing category, product models
-from django.shortcuts import render, get_object_or_404, HttpResponseRedirect
+from django.shortcuts import render, get_object_or_404, HttpResponseRedirect, redirect
 from .models import Category, Product, CatProd
 from django.core.paginator import Paginator, EmptyPage, InvalidPage
-from .forms import ProductForm
+from .forms import ProductForm, CatProdForm
 
 def allProdCat(request, category_id=None):
     c_page = None
@@ -39,6 +39,8 @@ def prod_create(request):
         if form.is_valid():
             form.save()
 
+            return redirect("shop:cat_select")
+
     return render(request, 'shop/create_view.html',{'form':form,'prod':Product.objects.all()})
 
 def prod_update(request, product_id):
@@ -53,5 +55,14 @@ def prod_delete(request, product_id):
     product = Product.objects.get(id=product_id)
     if request.method == "POST":
         product.delete()
-    
+
+        return redirect("shop:allProdCat")
+
     return render(request, 'shop/delete_view.html',{'product':product})
+
+def prod_cat_select(request):
+    form = CatProdForm(request.POST)
+    if form.is_valid():
+        form.save()
+
+    return render(request, 'shop/select_category.html',{'form':form})

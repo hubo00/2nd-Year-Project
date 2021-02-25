@@ -51,9 +51,7 @@ def prod_update(request, product_id):
         'description':product.description,
         'price':product.price,
         'image':product.image,
-        'stock':product.stock,
-        'available':product.available
-    }
+        'stock':product.stock}
     form = ProductForm(request.POST or None, instance=product, initial=init_dict)
     if form.is_valid():
         form.save()

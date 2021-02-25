@@ -43,3 +43,52 @@ body {
 	color: red;
 	font-weight: bold;
 }
+
+.prod-image{
+    float: right;
+    height: auto;
+    width: 450px;
+}
+
+.prod-price{
+    float: right;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #009933;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.prod-title{
+    text-align: left;
+}
+
+.home-images{
+    width: 300px;
+}
+
+.cart-image{
+    width: 250px;
+    float: left;
+}
+
+.stock-notif{
+    float: right;
+}
+
+.stock-icon-good{
+    color: rgb(0, 202, 0);
+}
+
+.stock-icon-bad{
+    color: red;
+}
+
+.btn-plants{
+    background-color: #009933;
+    color: white;
+}
+
+.btn-plants:hover{
+    background-color: #cccc00;
+    color: black;
+}

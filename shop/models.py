@@ -36,8 +36,8 @@ class Product(models.Model):
     description = models.TextField(blank=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     image = models.ImageField(upload_to='product', blank=True)
-    image_thumbnail = ImageSpecField(source='image', processors=[ResizeToFill(250,250)],
-    format='JPEG', options={'quality': 200})
+    image_thumbnail = ImageSpecField(source='image', processors=[ResizeToFill(500,500)],
+    format='JPEG', options={'quality': 100})
     stock = models.IntegerField()
     available = models.BooleanField(default=True)
     created = models.DateTimeField(auto_now_add=True,blank=True,null=True)

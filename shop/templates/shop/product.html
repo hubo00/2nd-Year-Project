@@ -12,37 +12,88 @@
 			<p><a href="{% url 'shop:allProdCat' %}">Home</a> | <a href="{{ product.category.get_url }}">{{product.category}}</a> | {{product.name}}</p>
 		</div>
 		<div>
-			<br>
-			<div>
-				<div>
-					<div>
-						<img src="{{product.image.url}}" alt="{{product.name}}">
-					</div>
+		<br>
+		{% if user.is_superuser %}
+			<div class="row mb-5">
+				<div class="col-8">
 				</div>
-				<div>
-					<div>
-						{% if user.is_superuser %}
-							<a class="btn btn-warning" href="{% url 'shop:edit_product' product.id %}">Edit Product</a>
-							<a class="btn btn-danger" href="{% url 'shop:delete_product' product.id %}">Delete Product</a>
-						{% endif %}
-						<h1>{{product.name}}</h1>
-						{% if product.name_alt %}
-						<h3>{{product.name_alt}}</h3>
-						<hr>
-						{% else %}
-						<hr>
-						{% endif %}
-						<p>€{{product.price}}</p>
-						<p>Product Description:</p>
-						<p>{{product.description}}</p>
-						{% if product.stock == 0%}
-							<p><b>Out of Stock</b></p>
-						{% else %}
-							<a class ="btn btn-secondary" href="{% url 'cart:add_cart' product.id %}">Add to Cart</a>
-						{% endif %}
+				<div class="col-4">
+					<div class="row">
+						<h4>Admin Options:</h4>
+						<a class="btn btn-warning" href="{% url 'shop:edit_product' product.id %}">Edit Product</a>
+						<a class="btn btn-danger" href="{% url 'shop:delete_product' product.id %}">Delete Product</a>
 					</div>
 				</div>
 			</div>
-		</div>
+		{% endif %}
+			<div class="row">
+				<div class="col-6">
+					<img class="prod-image" src="{{product.image_thumbnail.url}}" alt="{{product.name}}">
+				</div>
+				<div class="col-6">
+					<div class="row">
+						<div class="col-8">
+							<h1 class="prod-title">{{product.name}}</h1>
+						</div>
+						<div class="col-4">
+							<h2 class="prod-price px-2">€{{product.price}}</h2>
+						</div>
+					{% if product.name_alt %}
+					</div>
+					<div class="row top-row">
+						<div class="col-8">
+							<h3>{{product.name_alt}}</h3>
+						</div>
+					</div>
+					<hr>
+					{% else %}
+						</div>
+						<hr>
+					{% endif %}
+					<div class="row">
+						{% if product.stock == 0 %}
+						<div class="col-6">
+							<a class ="btn disabled btn-plants" href="{% url 'cart:add_cart' product.id %}">Add to Cart</a>
+						</div>
+						<div class="col-6">
+							<p class="stock-notif"><b><i class="far fa-times-circle stock-icon-bad"></i> Out of Stock</b></p>
+						</div>
+						{% else %}
+						<div class="col-6">
+							<a class ="btn btn-plants" href="{% url 'cart:add_cart' product.id %}">Add to Cart</a>
+						</div>
+						<div class="col-6">
+							<p class="stock-notif"><b><i class="far fa-check-circle stock-icon-good"></i> In Stock</b></p>
+						</div>
+						{% endif %}
+					</div>
+					<div>
+						<div class="row mt-5">
+							<div class="col">
+								<h5><b>Product Description</b></h5>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-10">
+								<p>{{product.description}}</p>
+							</div>
+							<div class="col-2">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row mt-5">
+						<div class="col">
+							<h4><b>Reviews</b></h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+
+						</div>
+					</div>
+				</div>
+			</div>
 	</div>
 {% endblock %}

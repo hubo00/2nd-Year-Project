@@ -4,6 +4,7 @@ from .views import BlogCreateView, BlogUpdateView, BlogDeleteView
 
 
 urlpatterns = [
+    path('<slug:slug>/', views.post_detail, name='post_detail'),
     path('post/<slug:slug>/delete/', BlogDeleteView.as_view(), name='post_delete'),
     path('post/<int:pk>/edit/', BlogUpdateView.as_view(), name='post_edit'),
     path('post/new/', BlogCreateView.as_view(), name='post_new'),

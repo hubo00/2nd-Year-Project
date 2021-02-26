@@ -15,9 +15,9 @@
         </div>
     </div>
 </header>
+<a href="{% url 'post_new' %}" class="btn btn-warning mt-3 float-right">+ Blog Post</a>
 <div class="container">
     <div class="row">
-        <!-- Blog Entries Column -->
         <div class="col-md-8 mt-3 left">
             {% for post in post_list %}
             <div class="card mb-4">
@@ -36,7 +36,7 @@
             </div>
             {% endfor %}
         </div>
-        {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+        {% block sidebar %}  {% endblock sidebar %} 
     </div>
 </div>
 {%endblock%}

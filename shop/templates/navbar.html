@@ -2,7 +2,7 @@
     <a class="navbar-brand" href="{% url 'shop:allProdCat' %}">
         <img src="" alt="Store_Logo">
     </a>
-    <ul class="navbar-nav">
+    <ul class="navbar-nav mr-auto">
         <li class="nav-item">
             <a class="nav-link nav-button" href = "{% url 'shop:allProdCat' %}">Home</a>
         </li>
@@ -10,43 +10,45 @@
         <li>
             <a class="nav-link nav-button" href = "blog/">Blogs</a>
         </li>
-        {% else %}
-        <li>
-            <a class="nav-link nav-button disabled" href = "blog/">Blogs</a>
-        </li>
         {% endif %}
-        <li>
-            <a class="nav-link nav-button" href = "cart/">Your Cart</a>
+    </ul>
+    <ul class="navbar-nav mx-auto">
+        <form class="form-inline my-2 my-lg-0" action="{% url 'search_app:searchResult'%}" method="get">
+            {% csrf_token %}
+            <input class="form-control mr-sm-2" id="nav-search" type="search" placeholder="Search" aria-label="Search" name="q">
+            <button class="btn my-2 my-sm-0 btn-search" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link nav-button" href="{% url 'cart:cart_detail' %}"><i class="fas fa-shopping-cart"></i>
+                {% if item_count > 0 %}
+                ({{item_count}})
+                {% endif%}
+            </a>
         </li>
+        {% if user.is_superuser %}
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav-button" href="" id="navbardrop" data-toggle="dropdown">Admin <i class="fas fa-users-cog"></i></a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item border" href="{% url 'shop:create_product' %}" >Add Product</a>
+                </div>
+            </li>
+        {% endif %}
         {% if user.is_authenticated %}
-			<li>
-                <a class="nav-button nav-link" href="#" >{{ user.username }} &#128100</a>
-			</li>
-            {% if user.is_superuser %}
-            <li>
-                <a class="nav-button nav-link" href="{% url 'shop:create_product' %}" >Add Product</a>
-			</li>
-            {% endif %}
-			<li>
-				<a class="nav-link nav-button" href="{% url 'signout' %}">Sign Out</a>
-			</li>
-			{% else %}
+			<li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav-button" href="" id="navbardrop" data-toggle="dropdown">{{ user.username }} <i class="fas fa-user"></i></a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item border" href="{% url 'signout' %}">Sign Out</a>
+                </div>
+            </li>
+		{% else %}
 			<li>
 				<a class="nav-link nav-button" href="{% url 'signup' %}">Sign Up</a>
 			</li>
 			<li>
 				<a class="nav-link nav-button" href="{% url 'signin' %}">Sign In</a>
             </li>
-            {% endif %}
-            {% if item_count > 0 %}
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'cart:cart_detail' %}"><i class="fas fa-shopping-cart"></i>({{item_count}})</a>
-            </li>
-            {% endif%}
+        {% endif %}
     </ul>
-    <form class="form-inline my-2 my-lg-0" action="{% url 'search_app:searchResult'%}" method="get">
-        {% csrf_token %}
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="q">
-        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-    </form>
 </nav>

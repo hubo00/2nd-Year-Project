@@ -92,3 +92,25 @@ body {
     background-color: #cccc00;
     color: black;
 }
+
+#nav-search{
+    width: 60em;
+}
+
+.btn-search{
+    background-color: white;
+    border-radius: 50%;
+}
+
+.btn-search:hover{
+    background-color: #cccc00;
+}
+
+.dropdown-item{
+    background-color: #009933;
+    color: white;
+}
+
+.dropdown-item:hover{
+    background-color: #cccc00;
+}

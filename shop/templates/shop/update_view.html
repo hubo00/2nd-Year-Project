@@ -4,13 +4,70 @@
 
 {% block content %}
 
-{% if not form.is_valid %}
-    <form enctype="multipart/form-data" method="POST"> 
+<div class="row mt-5">
+    <div class="col-9">
+        <h1 class="text-center">Current</h1>
+        <table class="table text-center">
+            <thead>
+                <tr>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Name Alt
+                    </th>
+                    <th>
+                        Description
+                    </th>
+                    <th>
+                        Price
+                    </th>
+                    <th>
+                        Image
+                    </th>
+                    <th>
+                        Stock
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        {{product.name}}
+                    </td>
+                    <td>
+                        {{product.name_alt}}
+                    </td>
+                    <td>
+                        {{product.description}}
+                    </td>
+                    <td>
+                        €{{product.price}}
+                    </td>
+                    <td>
+                        <img id="update-image" src="{{product.image_thumbnail.url}}" alt="Product-Image">
+                    </td>
+                    <td>
+                        {{product.stock}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-3">
+    {% if not form.is_valid %}
+        <h1 class="text-center">Edit</h1>
+        <form enctype="multipart/form-data" method="POST"> 
         {% csrf_token %} 
         <p>{{ form | crispy }}</p>
         <input type="submit" value="Update"> 
-    </form>
-{% else %}
-    <p>Product updated successfully</p>
-{% endif %}
+        </form>
+    {% else %}
+        <div class="text-center">
+            <p>Product updated successfully</p>
+            <a href="{% url 'shop:prod_detail' product.id %}"><button type="button" class="btn btn-outline-plants">Back to Product</button></a>
+        </div>
+    {% endif %}
+    </div>
+</div>
 {% endblock %}

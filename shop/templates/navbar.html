@@ -41,6 +41,7 @@
                 <div class="dropdown-menu">
                     <a class="dropdown-item border" href="{% url 'signout' %}">Sign Out</a>
                     <a class="dropdown-item border" href="{% url 'account_update' request.user.pk %}">Update</a>
+                    <a class="dropdown-item border" href="{% url 'profile' %}">Profile</a>
                 </div>
             </li>
 		{% else %}

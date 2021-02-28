@@ -45,8 +45,11 @@ def signoutView(request):
 class updateView(UpdateView):
     model = CustomUser
     form_class = CustomUserUpdateForm
-    success_url = reverse_lazy('shop:allProdCat')
+    success_url = reverse_lazy('profile')
 
 class deleteView(DeleteView):
     model = CustomUser
     success_url = reverse_lazy('signup')
+
+def profileView(request):
+    return render(request,'profile.html')

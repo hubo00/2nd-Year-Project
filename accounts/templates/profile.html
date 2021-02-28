@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<br>
+<h2>{{ user.username }}'s Profile</h2>
+<h5 class="font-weight-bold">Username: {{ user.username }}</h5>
+<h5 class="font-weight-bold">Email Address: {{ user.email }}</h5>
+<h5 class="font-weight-bold">Age: {{ user.age }}</h5>
+
+<a class="btn btn-success" href="{% url 'account_update' request.user.pk %}">Update</a>
+<a class="btn btn-danger" href="{% url 'account_delete' request.user.pk %}" class="text-muted">Delete your account</a>
+{% endblock content %}

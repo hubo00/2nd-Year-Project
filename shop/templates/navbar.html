@@ -8,7 +8,7 @@
         </li>
         {% if user.is_authenticated %}
         <li>
-            <a class="nav-link nav-button" href = "blog/">Blogs</a>
+            <a class="nav-link nav-button" href = "{% url 'home' %}">Blogs</a>
         </li>
         {% endif %}
     </ul>

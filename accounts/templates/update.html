@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <h1>Update Account</h1>
+    <form action="" method="post">{% csrf_token %}
+        <p>{{ form | crispy }}</p>
+        <input class="btn btn-success" type="submit" value="Update" />
+    </form>
+    <br>
+    <a class="btn btn-danger" href="{% url 'account_delete' request.user.pk %}" class="text-muted">Delete your account</a>
+{% endblock content %}
+
+
+
+

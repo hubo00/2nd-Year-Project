@@ -1,9 +1,11 @@
 from django.shortcuts import render, redirect
-from .forms import CustomUserCreationForm
+from .forms import CustomUserCreationForm, CustomUserUpdateForm
 from .models import CustomUser
 from django.contrib.auth.models import Group
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login, authenticate, logout
+from django.views.generic.edit import UpdateView, DeleteView
+from django.urls import reverse_lazy
 
 
 
@@ -40,3 +42,11 @@ def signoutView(request):
     logout(request)
     return redirect('signin')
 
+class updateView(UpdateView):
+    model = CustomUser
+    form_class = CustomUserUpdateForm
+    success_url = reverse_lazy('shop:allProdCat')
+
+class deleteView(DeleteView):
+    model = CustomUser
+    success_url = reverse_lazy('signup')

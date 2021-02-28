@@ -114,3 +114,39 @@ body {
 .dropdown-item:hover{
     background-color: #cccc00;
 }
+
+.search-images{
+    width: 10em;
+}
+
+#cart-image{
+    width: 10em;
+}
+
+.cart-button{
+    color: #009933;
+}
+
+.cart-button:hover{
+    color: #cccc00;
+}
+
+.cart-trash{
+    color: black;
+}
+
+.cart-trash:hover{
+    color: red;
+}
+
+.btn-outline-plants{
+    color: #009933;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #009933;
+}
+
+.btn-outline-plants:hover{
+    color: white;
+    background-color: #009933;
+}

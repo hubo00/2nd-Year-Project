@@ -4,11 +4,11 @@ from .models import Category, Product, CatProd
 from django.core.paginator import Paginator, EmptyPage, InvalidPage
 from .forms import ProductForm, CatProdForm
 
-def allProdCat(request, category_id=None):
+def allProdCat(request, slug=None):
     c_page = None
     products_list = None
-    if category_id != None:
-        c_page = get_object_or_404(Category, id=category_id)
+    if slug != None:
+        c_page = get_object_or_404(Category, slug=slug)
         products_list = Product.objects.filter(category=c_page, available=True)
     else:
         products_list = Product.objects.all().filter(available=True)
@@ -25,9 +25,9 @@ def allProdCat(request, category_id=None):
         products = paginator.page(paginator.num_pages)
     return render(request, 'shop/category.html', {'category':c_page, 'products':products})
 
-def prod_detail(request,product_id):
+def prod_detail(request, slug):
     try:
-        product = Product.objects.get(id=product_id)
+        product = Product.objects.get(slug=slug)
     except Exception as e:
         raise e
     return render(request, 'shop/product.html', {'product':product})
@@ -43,8 +43,8 @@ def prod_create(request):
 
     return render(request, 'shop/create_view.html',{'form':form,'prod':Product.objects.all()})
 
-def prod_update(request, product_id):
-    product = get_object_or_404(Product, id=product_id)
+def prod_update(request, slug):
+    product = get_object_or_404(Product, slug=slug)
     init_dict = {
         'name':product.name,
         'name_alt':product.name_alt,
@@ -58,8 +58,8 @@ def prod_update(request, product_id):
 
     return render(request, 'shop/update_view.html',{'form':form, 'product':product})
 
-def prod_delete(request, product_id):
-    product = Product.objects.get(id=product_id)
+def prod_delete(request, slug):
+    product = Product.objects.get(slug=slug)
     if request.method == "POST":
         product.delete()
 

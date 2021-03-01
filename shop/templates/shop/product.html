@@ -20,8 +20,8 @@
 				<div class="col-4">
 					<div class="row">
 						<h4>Admin Options:</h4>
-						<a class="btn btn-warning" href="{% url 'shop:edit_product' product.id %}">Edit Product</a>
-						<a class="btn btn-danger" href="{% url 'shop:delete_product' product.id %}">Delete Product</a>
+						<a class="btn btn-warning" href="{% url 'shop:edit_product' product.slug %}">Edit Product</a>
+						<a class="btn btn-danger" href="{% url 'shop:delete_product' product.slug %}">Delete Product</a>
 					</div>
 				</div>
 			</div>
@@ -53,14 +53,14 @@
 					<div class="row">
 						{% if product.stock == 0 %}
 						<div class="col-6">
-							<a class ="btn disabled btn-plants" href="{% url 'cart:add_cart' product.id %}">Add to Cart</a>
+							<a class ="btn disabled btn-plants" href="{% url 'cart:add_cart' product.slug %}">Add to Cart</a>
 						</div>
 						<div class="col-6">
 							<p class="stock-notif"><b><i class="far fa-times-circle stock-icon-bad"></i> Out of Stock</b></p>
 						</div>
 						{% else %}
 						<div class="col-6">
-							<a class ="btn btn-plants" href="{% url 'cart:add_cart' product.id %}">Add to Cart</a>
+							<a class ="btn btn-plants" href="{% url 'cart:add_cart' product.slug %}">Add to Cart</a>
 						</div>
 						<div class="col-6">
 							<p class="stock-notif"><b><i class="far fa-check-circle stock-icon-good"></i> In Stock</b></p>

@@ -57,17 +57,17 @@
 									Qty: {{cart_item.quantity}}
 									<br>
 									{% if cart_item.quantity < cart_item.product.stock %}
-										<a href="{% url 'cart:add_cart' cart_item.product.id %}" class="cart-button"><i class="fas fa-plus-circle custom_icon"></i></a>
-										<a href="{% url 'cart:cart_remove' cart_item.product.id %}" class="cart-button"><i class="fas fa-minus-circle custom_icon"></i></a>
+										<a href="{% url 'cart:add_cart' cart_item.product.slug %}" class="cart-button"><i class="fas fa-plus-circle custom_icon"></i></a>
+										<a href="{% url 'cart:cart_remove' cart_item.product.slug %}" class="cart-button"><i class="fas fa-minus-circle custom_icon"></i></a>
 									{% else %}
-										<a href="{% url 'cart:cart_remove' cart_item.product.id %}" class="cart-button"><i class="fas fa-minus-circle custom_icon"></i></a>
+										<a href="{% url 'cart:cart_remove' cart_item.product.slug %}" class="cart-button"><i class="fas fa-minus-circle custom_icon"></i></a>
 									{% endif %}
 								</td>
 								<td>
 									<h5>€{{cart_item.sub_total}}</h5>
 								</td>
 								<td>
-									<a href="{% url 'cart:full_remove' cart_item.product.id %}" class="cart-trash"><i class="fas fa-times"></i></a>
+									<a href="{% url 'cart:full_remove' cart_item.product.slug %}" class="cart-trash"><i class="fas fa-times"></i></a>
 								</td>
 							</tr>
 						{% endfor %}

@@ -65,7 +65,7 @@
     {% else %}
         <div class="text-center">
             <p>Product updated successfully</p>
-            <a href="{% url 'shop:prod_detail' product.id %}"><button type="button" class="btn btn-outline-plants">Back to Product</button></a>
+            <a href="{% url 'shop:prod_detail' product.slug %}"><button type="button" class="btn btn-outline-plants">Back to Product</button></a>
         </div>
     {% endif %}
     </div>

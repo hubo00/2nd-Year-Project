@@ -33,7 +33,7 @@ class Product(models.Model):
     slug = models.SlugField(max_length=250, unique=True, null=True)
     description = models.TextField(blank=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
-    image = models.ImageField(upload_to='product', blank=True)
+    image = models.ImageField(upload_to='product', default='product/DEFAULT/placeholder.png', blank=True)
     image_thumbnail = ImageSpecField(source='image', processors=[ResizeToFill(500,500)],
     format='JPEG', options={'quality': 100})
     stock = models.IntegerField()

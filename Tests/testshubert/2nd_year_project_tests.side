@@ -1,0 +1,2531 @@
+{
+  "id": "0c5d0ab1-843b-4725-a931-a708343c705f",
+  "version": "2.0",
+  "name": "2nd_year_project_tests",
+  "url": "http://127.0.0.1:8000/",
+  "tests": [{
+    "id": "a792f36e-53c8-494e-8460-bbe604eba417",
+    "name": "test_EditProduct",
+    "commands": [{
+      "id": "c0113669-de16-4b88-8ce8-4a43c205a31d",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:8000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cfee8718-1785-43ad-8d74-20e90a113e5b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1096",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01a3553d-d6b4-45a7-a219-13bbdbe2974e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.col-lg-3:nth-child(1) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(1) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Bonsai Scissors']", "xpath:img"],
+        ["xpath=//div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62a9ed2e-8e69-4aa7-a1ba-6521a20ab8d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-3:nth-child(1) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(1) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Bonsai Scissors']", "xpath:img"],
+        ["xpath=//div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05d6a663-868b-4519-aa86-c33df39ee021",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Bonsai Scissors - Plant Oasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6580c1a4-aeee-4c75-9ce2-32b5a14dc697",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Edit Product",
+      "targets": [
+        ["linkText=Edit Product", "linkText"],
+        ["css=.btn-warning", "css:finder"],
+        ["xpath=//a[contains(text(),'Edit Product')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/product/bonsai-scissors/edit')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Edit Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "135578cf-a407-4f49-ba6a-b2047d877721",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Delete Product",
+      "targets": [
+        ["linkText=Delete Product", "linkText"],
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//a[contains(text(),'Delete Product')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/product/bonsai-scissors/delete')]", "xpath:href"],
+        ["xpath=//div[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Delete Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d0f886c-6b75-4704-bddc-618c1de35542",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(4) > .col-6:nth-child(2)",
+      "targets": [
+        ["css=.row:nth-child(4) > .col-6:nth-child(2)", "css:finder"],
+        ["xpath=//div[3]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4cda781-0db4-4119-9b0c-e77cbb1c7bce",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Add to Cart",
+      "targets": [
+        ["linkText=Add to Cart", "linkText"],
+        ["css=.btn-plants", "css:finder"],
+        ["xpath=//a[contains(text(),'Add to Cart')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/cart/add/bonsai-scissors/')]", "xpath:href"],
+        ["xpath=//div[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add to Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "409bc71b-5674-4554-8758-173326e0c09e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Edit Product",
+      "targets": [
+        ["linkText=Edit Product", "linkText"],
+        ["css=.btn-warning", "css:finder"],
+        ["xpath=//a[contains(text(),'Edit Product')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/product/bonsai-scissors/edit')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Edit Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e1e9897-7057-4424-9024-4faac2ce72f4",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=id_name",
+      "targets": [
+        ["id=id_name", "id"],
+        ["name=name", "name"],
+        ["css=#id_name", "css:finder"],
+        ["xpath=//input[@id='id_name']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_name']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee9b0177-9074-42d0-b8b8-8096fc3c0e75",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=id_name_alt",
+      "targets": [
+        ["id=id_name_alt", "id"],
+        ["name=name_alt", "name"],
+        ["css=#id_name_alt", "css:finder"],
+        ["xpath=//input[@id='id_name_alt']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_name_alt']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a9502f6-f7c4-4040-8e8d-1b13de126805",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=id_description",
+      "targets": [
+        ["id=id_description", "id"],
+        ["css=#id_description", "css:finder"],
+        ["xpath=//textarea[@id='id_description']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_description']/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f447b2f8-f72c-400c-844d-8fb0171ae8b7",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=id_price",
+      "targets": [
+        ["id=id_price", "id"],
+        ["name=price", "name"],
+        ["css=#id_price", "css:finder"],
+        ["xpath=//input[@id='id_price']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_price']/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00671901-e874-48ca-9562-e9e1aaa2c79d",
+      "comment": "",
+      "command": "verifyNotChecked",
+      "target": "id=image-clear_id",
+      "targets": [
+        ["id=image-clear_id", "id"],
+        ["name=image-clear", "name"],
+        ["css=#image-clear_id", "css:finder"],
+        ["xpath=//input[@id='image-clear_id']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_image']/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1844f350-d653-4eb1-9cf7-7bd28eea1424",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=id_image",
+      "targets": [
+        ["id=id_image", "id"],
+        ["name=image", "name"],
+        ["css=#id_image", "css:finder"],
+        ["xpath=//input[@id='id_image']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_image']/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5558d39c-4fbd-4a95-a0db-d028eaa95105",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=id_stock",
+      "targets": [
+        ["id=id_stock", "id"],
+        ["name=stock", "name"],
+        ["css=#id_stock", "css:finder"],
+        ["xpath=//input[@id='id_stock']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_stock']/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "4.8125,13.1875"
+    }, {
+      "id": "d943ea54-55cd-4492-ada9-b263ae230fd5",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=id_stock",
+      "targets": [
+        ["id=id_stock", "id"],
+        ["name=stock", "name"],
+        ["css=#id_stock", "css:finder"],
+        ["xpath=//input[@id='id_stock']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_stock']/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "4.8125,13.1875"
+    }, {
+      "id": "c633b0be-1216-4003-b547-3c4b1c53cb7c",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=id_stock",
+      "targets": [
+        ["id=id_stock", "id"],
+        ["name=stock", "name"],
+        ["css=#id_stock", "css:finder"],
+        ["xpath=//input[@id='id_stock']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_stock']/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "4.8125,13.1875"
+    }, {
+      "id": "112d8bbe-aad6-4153-9f19-3915250cc03d",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_stock",
+      "targets": [
+        ["id=id_stock", "id"],
+        ["name=stock", "name"],
+        ["css=#id_stock", "css:finder"],
+        ["xpath=//input[@id='id_stock']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_stock']/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c47792e-8503-47e4-b351-3c3651466521",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=id_stock",
+      "targets": [
+        ["id=id_stock", "id"],
+        ["name=stock", "name"],
+        ["css=#id_stock", "css:finder"],
+        ["xpath=//input[@id='id_stock']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_stock']/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27e592b6-0fe7-4082-9e4c-51b1bed3d34f",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_stock",
+      "targets": [
+        ["id=id_stock", "id"],
+        ["name=stock", "name"],
+        ["css=#id_stock", "css:finder"],
+        ["xpath=//input[@id='id_stock']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_stock']/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "e201603e-5c48-4b63-8ceb-97f405acbf70",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=input:nth-child(10)",
+      "targets": [
+        ["css=input:nth-child(10)", "css:finder"],
+        ["xpath=//input[@value='Update']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ffd590e-eb38-4932-bdca-043c644ecaac",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(10)",
+      "targets": [
+        ["css=input:nth-child(10)", "css:finder"],
+        ["xpath=//input[@value='Update']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95c5dede-a3d9-40e3-b27b-0593db0e7cfe",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(6)",
+      "targets": [
+        ["css=td:nth-child(6)", "css:finder"],
+        ["xpath=//td[6]", "xpath:position"],
+        ["xpath=//td[contains(.,'0')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "566801aa-5b9a-48df-b291-7f31ba27d032",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=td:nth-child(6)",
+      "targets": [
+        ["css=td:nth-child(6)", "css:finder"],
+        ["xpath=//td[6]", "xpath:position"],
+        ["xpath=//td[contains(.,'0')]", "xpath:innerText"]
+      ],
+      "value": "0"
+    }, {
+      "id": "79ea8451-eb8b-4178-b47a-7e1d1e04d33a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.btn-outline-plants",
+      "targets": [
+        ["css=.btn-outline-plants", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Back to Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8728e43b-c9d7-408f-854e-3844e3758bee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-plants",
+      "targets": [
+        ["css=.btn-outline-plants", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Back to Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7729297-fbde-437a-854d-54bcdcdfe0a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.stock-notif",
+      "targets": [
+        ["css=.stock-notif", "css:finder"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,' Out of Stock')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "39447818-6ec5-48c3-992d-de649cff83dd",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.stock-notif > b",
+      "targets": [
+        ["css=.stock-notif > b", "css:finder"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,' Out of Stock')]", "xpath:innerText"]
+      ],
+      "value": "Out of Stock"
+    }, {
+      "id": "0281b2ce-ca89-4d86-97e1-f7b35a1fdf59",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c260aece-1a51-4941-b1db-28c077c2aae5",
+    "name": "test_deleteProduct",
+    "commands": [{
+      "id": "29fe25c0-e1ad-499c-899e-9aa1c1a55760",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:8000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f663ab88-8d02-437d-831f-8c8b1787891b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1096",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aae273d5-a7a7-4cad-b312-d4a9c28d34e5",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.col-lg-3:nth-child(1) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(1) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Bonsai Scissors']", "xpath:img"],
+        ["xpath=//div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "457f06a0-fd2c-4056-a7ea-6e9d78b1b24e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-3:nth-child(1) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(1) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Bonsai Scissors']", "xpath:img"],
+        ["xpath=//div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64363b0c-7cbf-4132-b529-86a96d9eb66c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Delete Product",
+      "targets": [
+        ["linkText=Delete Product", "linkText"],
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//a[contains(text(),'Delete Product')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/product/bonsai-scissors/delete')]", "xpath:href"],
+        ["xpath=//div[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Delete Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "71923a86-a0ec-4ec6-935c-d650f8e57acb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Delete Product",
+      "targets": [
+        ["linkText=Delete Product", "linkText"],
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//a[contains(text(),'Delete Product')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/product/bonsai-scissors/delete')]", "xpath:href"],
+        ["xpath=//div[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Delete Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab5969bb-1c07-4624-9c96-69498a8a27c9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Cancel",
+      "targets": [
+        ["linkText=Cancel", "linkText"],
+        ["css=a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Cancel')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/')])[12]", "xpath:href"],
+        ["xpath=//form/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cancel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2880a334-37a8-4c78-b072-58b9aed5f19c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cancel",
+      "targets": [
+        ["linkText=Cancel", "linkText"],
+        ["css=a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Cancel')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/')])[12]", "xpath:href"],
+        ["xpath=//form/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cancel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea270190-a10f-4ae4-a165-85f72f10e2a7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-3:nth-child(1) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(1) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Bonsai Scissors']", "xpath:img"],
+        ["xpath=//div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "779db265-ef82-41b0-87e1-b8b3182e7b1c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Delete Product",
+      "targets": [
+        ["linkText=Delete Product", "linkText"],
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//a[contains(text(),'Delete Product')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/product/bonsai-scissors/delete')]", "xpath:href"],
+        ["xpath=//div[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Delete Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bdb44daa-64e9-4866-acdb-c870cf1f5905",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.col-10 input:nth-child(2)",
+      "targets": [
+        ["css=.col-10 input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Yes']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bb79a25-d1c6-48f0-9830-c38b06d46387",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "fad33fea-949c-4b21-a9ff-4ee154ce3fda",
+    "name": "test_addProduct",
+    "commands": [{
+      "id": "f38a9d02-b5dc-4d56-bf93-14c8e77d3890",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:8000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "907cda2f-8bd1-42d6-abdf-5fc4b59fe9a9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1096",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb694fd9-4a47-4f7a-93ab-de48f2c278f9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=navbardrop",
+      "targets": [
+        ["id=navbardrop", "id"],
+        ["linkText=Admin", "linkText"],
+        ["css=.nav-item:nth-child(2) > #navbardrop", "css:finder"],
+        ["xpath=//a[contains(text(),'Admin')]", "xpath:link"],
+        ["xpath=//a[@id='navbardrop']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[5]", "xpath:href"],
+        ["xpath=//ul[3]/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Admin ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "167f41b3-41c0-4385-babd-1d9f569852b0",
+      "comment": "",
+      "command": "click",
+      "target": "id=navbardrop",
+      "targets": [
+        ["id=navbardrop", "id"],
+        ["linkText=Admin", "linkText"],
+        ["css=.nav-item:nth-child(2) > #navbardrop", "css:finder"],
+        ["xpath=//a[contains(text(),'Admin')]", "xpath:link"],
+        ["xpath=//a[@id='navbardrop']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[5]", "xpath:href"],
+        ["xpath=//ul[3]/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Admin ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "35d9547c-6161-431f-89eb-51642af03c6c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Add Product",
+      "targets": [
+        ["linkText=Add Product", "linkText"],
+        ["css=.show > .dropdown-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Add Product')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/product/create_new')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d49d311-234f-4bec-a46e-c2e3af2be359",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add Product",
+      "targets": [
+        ["linkText=Add Product", "linkText"],
+        ["css=.show > .dropdown-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Add Product')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/product/create_new')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "59be57c3-175b-493f-b649-dec7bad29bdf",
+      "comment": "",
+      "command": "click",
+      "target": "css=#div_id_name > .control-label",
+      "targets": [
+        ["css=#div_id_name > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_name']/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Name*')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "37f01d5f-8fc7-4792-8b8a-3b0e2af2c5d8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#div_id_name > .control-label",
+      "targets": [
+        ["css=#div_id_name > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_name']/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Name*')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "961f1ee9-67ab-4787-b27a-da98290df766",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#div_id_name > .control-label",
+      "targets": [
+        ["css=#div_id_name > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_name']/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Name*')]", "xpath:innerText"]
+      ],
+      "value": "Name*"
+    }, {
+      "id": "62ae6569-0202-487c-92dd-d80d537d2bec",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=id_name",
+      "targets": [
+        ["id=id_name", "id"],
+        ["name=name", "name"],
+        ["css=#id_name", "css:finder"],
+        ["xpath=//input[@id='id_name']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_name']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eede9112-9f0c-44fe-88fc-e260a55de954",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_name",
+      "targets": [
+        ["id=id_name", "id"],
+        ["name=name", "name"],
+        ["css=#id_name", "css:finder"],
+        ["xpath=//input[@id='id_name']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_name']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "d751c518-caab-47c1-8011-15b8f62d25e6",
+      "comment": "",
+      "command": "click",
+      "target": "id=div_id_name_alt",
+      "targets": [
+        ["id=div_id_name_alt", "id"],
+        ["css=#div_id_name_alt", "css:finder"],
+        ["xpath=//div[@id='div_id_name_alt']", "xpath:attributes"],
+        ["xpath=//form/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca61e233-3025-47b1-ba4e-07226ea0c235",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#div_id_name_alt > .control-label",
+      "targets": [
+        ["css=#div_id_name_alt > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_name_alt']/label", "xpath:idRelative"],
+        ["xpath=//div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Name alt')]", "xpath:innerText"]
+      ],
+      "value": "Name alt"
+    }, {
+      "id": "6cfda572-f6e8-4398-9518-748d33fa6de2",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=id_name_alt",
+      "targets": [
+        ["id=id_name_alt", "id"],
+        ["name=name_alt", "name"],
+        ["css=#id_name_alt", "css:finder"],
+        ["xpath=//input[@id='id_name_alt']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_name_alt']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fa79803-dd18-4774-8f39-85051151922e",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_name_alt",
+      "targets": [
+        ["id=id_name_alt", "id"],
+        ["name=name_alt", "name"],
+        ["css=#id_name_alt", "css:finder"],
+        ["xpath=//input[@id='id_name_alt']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_name_alt']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "3ced8cb1-03eb-4647-a73f-59b3be592b41",
+      "comment": "",
+      "command": "click",
+      "target": "id=div_id_description",
+      "targets": [
+        ["id=div_id_description", "id"],
+        ["css=#div_id_description", "css:finder"],
+        ["xpath=//div[@id='div_id_description']", "xpath:attributes"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6336f781-c11c-45f6-8348-2c8e785e949b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#div_id_description > .control-label",
+      "targets": [
+        ["css=#div_id_description > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_description']/label", "xpath:idRelative"],
+        ["xpath=//div[3]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Description')]", "xpath:innerText"]
+      ],
+      "value": "Description"
+    }, {
+      "id": "1658775e-69ab-4205-b547-223f40531ede",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=id_description",
+      "targets": [
+        ["id=id_description", "id"],
+        ["css=#id_description", "css:finder"],
+        ["xpath=//textarea[@id='id_description']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_description']/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6defbff-c7a6-47cb-9b5f-45b5195a082a",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_description",
+      "targets": [
+        ["id=id_description", "id"],
+        ["css=#id_description", "css:finder"],
+        ["xpath=//textarea[@id='id_description']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_description']/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "testing"
+    }, {
+      "id": "17646b71-4874-40da-aff7-e568d531e925",
+      "comment": "",
+      "command": "click",
+      "target": "css=#div_id_price > .control-label",
+      "targets": [
+        ["css=#div_id_price > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_price']/label", "xpath:idRelative"],
+        ["xpath=//div[4]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Price*')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "57e430f6-a4c5-4937-94fe-87fc825f6a0b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#div_id_price > .control-label",
+      "targets": [
+        ["css=#div_id_price > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_price']/label", "xpath:idRelative"],
+        ["xpath=//div[4]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Price*')]", "xpath:innerText"]
+      ],
+      "value": "Price*"
+    }, {
+      "id": "98bc2fe2-f89f-4ab0-9f78-6733e8127d5f",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=id_price",
+      "targets": [
+        ["id=id_price", "id"],
+        ["name=price", "name"],
+        ["css=#id_price", "css:finder"],
+        ["xpath=//input[@id='id_price']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_price']/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9219c8c2-e5af-4897-b548-3def1be995ed",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_price",
+      "targets": [
+        ["id=id_price", "id"],
+        ["name=price", "name"],
+        ["css=#id_price", "css:finder"],
+        ["xpath=//input[@id='id_price']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_price']/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "6.48"
+    }, {
+      "id": "82801aca-3abf-4d12-b059-fc9c0f7a5d34",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-10",
+      "targets": [
+        ["css=.col-10", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44e24470-b2fb-47d5-aab0-6b7f9f1e127f",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=#div_id_image > .control-label",
+      "targets": [
+        ["css=#div_id_image > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_image']/label", "xpath:idRelative"],
+        ["xpath=//div[5]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Image')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "13de29c9-9b57-4bb3-a786-a831d78efac0",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=id_image",
+      "targets": [
+        ["id=id_image", "id"],
+        ["name=image", "name"],
+        ["css=#id_image", "css:finder"],
+        ["xpath=//input[@id='id_image']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_image']/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30c35bfd-028e-445d-bd15-198bcab37c58",
+      "comment": "",
+      "command": "click",
+      "target": "css=#div_id_stock > .control-label",
+      "targets": [
+        ["css=#div_id_stock > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_stock']/label", "xpath:idRelative"],
+        ["xpath=//div[6]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Stock*')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d10270f-5f16-41fd-a74a-6f8692ad177a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#div_id_stock > .control-label",
+      "targets": [
+        ["css=#div_id_stock > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_stock']/label", "xpath:idRelative"],
+        ["xpath=//div[6]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Stock*')]", "xpath:innerText"]
+      ],
+      "value": "Stock*"
+    }, {
+      "id": "71897b89-1f68-4870-99c5-c3cd8e64d630",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_stock",
+      "targets": [
+        ["id=id_stock", "id"],
+        ["name=stock", "name"],
+        ["css=#id_stock", "css:finder"],
+        ["xpath=//input[@id='id_stock']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_stock']/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c33fb7c-ca01-4d44-be4a-45a4670ee301",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=id_stock",
+      "targets": [
+        ["id=id_stock", "id"],
+        ["name=stock", "name"],
+        ["css=#id_stock", "css:finder"],
+        ["xpath=//input[@id='id_stock']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_stock']/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cc70f28-69c2-4dd5-9e1f-f4280cc55a53",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_stock",
+      "targets": [
+        ["id=id_stock", "id"],
+        ["name=stock", "name"],
+        ["css=#id_stock", "css:finder"],
+        ["xpath=//input[@id='id_stock']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_stock']/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "12"
+    }, {
+      "id": "38703549-27b9-4a66-a5b2-42c15a7ff68e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=input:nth-child(10)",
+      "targets": [
+        ["css=input:nth-child(10)", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "003681d6-c141-489c-86ce-3938d9b18026",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(10)",
+      "targets": [
+        ["css=input:nth-child(10)", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4904b6ae-50b0-4f9a-b223-f3a258503214",
+      "comment": "",
+      "command": "click",
+      "target": "css=#div_id_category > .control-label",
+      "targets": [
+        ["css=#div_id_category > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_category']/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Category*')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "13f92034-ce66-440c-8505-2f6030c5cde5",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#div_id_category > .control-label",
+      "targets": [
+        ["css=#div_id_category > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_category']/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Category*')]", "xpath:innerText"]
+      ],
+      "value": "Category*"
+    }, {
+      "id": "be32b251-1316-428b-8cfc-d1d46738665c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=id_category",
+      "targets": [
+        ["id=id_category", "id"],
+        ["name=category", "name"],
+        ["css=#id_category", "css:finder"],
+        ["xpath=//select[@id='id_category']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_category']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ad8d9ae-0c05-4dc2-a6c5-d4ba6fd25ff5",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_category",
+      "targets": [
+        ["id=id_category", "id"],
+        ["name=category", "name"],
+        ["css=#id_category", "css:finder"],
+        ["xpath=//select[@id='id_category']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_category']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54b0ef81-7876-4f6c-bbe1-5bc7880aab5d",
+      "comment": "",
+      "command": "select",
+      "target": "id=id_category",
+      "targets": [],
+      "value": "label=Indoor Plants"
+    }, {
+      "id": "c7d75cd8-fb74-46c9-9590-d37ca7cf53a0",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_category",
+      "targets": [
+        ["id=id_category", "id"],
+        ["name=category", "name"],
+        ["css=#id_category", "css:finder"],
+        ["xpath=//select[@id='id_category']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_category']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "feac7305-7602-4e3c-9ee1-dd81d223be53",
+      "comment": "",
+      "command": "click",
+      "target": "id=div_id_product",
+      "targets": [
+        ["id=div_id_product", "id"],
+        ["css=#div_id_product", "css:finder"],
+        ["xpath=//div[@id='div_id_product']", "xpath:attributes"],
+        ["xpath=//form/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "419e5980-d0be-48d0-aba7-63621d9173b8",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#div_id_product > .control-label",
+      "targets": [
+        ["css=#div_id_product > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_product']/label", "xpath:idRelative"],
+        ["xpath=//div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Product*')]", "xpath:innerText"]
+      ],
+      "value": "Product*"
+    }, {
+      "id": "37eb81bf-44bc-48cd-b976-c610c8c65bcd",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_product",
+      "targets": [
+        ["id=id_product", "id"],
+        ["name=product", "name"],
+        ["css=#id_product", "css:finder"],
+        ["xpath=//select[@id='id_product']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_product']/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f48f885-9119-499a-a32c-6187bacff880",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=id_product",
+      "targets": [
+        ["id=id_product", "id"],
+        ["name=product", "name"],
+        ["css=#id_product", "css:finder"],
+        ["xpath=//select[@id='id_product']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_product']/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a8da7ac-7960-48b6-932e-2f5a07efaecc",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_product",
+      "targets": [
+        ["id=id_product", "id"],
+        ["name=product", "name"],
+        ["css=#id_product", "css:finder"],
+        ["xpath=//select[@id='id_product']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_product']/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e91012cb-2fb1-4355-bfa4-d23d7981eab2",
+      "comment": "",
+      "command": "select",
+      "target": "id=id_product",
+      "targets": [],
+      "value": "label=test"
+    }, {
+      "id": "f5e8dd49-42ea-4bd2-bbda-773aedfd1df7",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_product",
+      "targets": [
+        ["id=id_product", "id"],
+        ["name=product", "name"],
+        ["css=#id_product", "css:finder"],
+        ["xpath=//select[@id='id_product']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_product']/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cedc3d67-1280-418f-a00b-5de16c07b2a1",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=input:nth-child(6)",
+      "targets": [
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@value='Update']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4304b83-13af-4c58-9db3-fa58ebde3867",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(6)",
+      "targets": [
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@value='Update']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4def3c97-c425-4c28-927d-0f342827d140",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Yes",
+      "targets": [
+        ["linkText=Yes", "linkText"],
+        ["css=.col-10 > a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Yes')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/product/select_categories')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Yes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "006eeed3-8d39-43fa-a1e3-c1fe6b01a66a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Yes",
+      "targets": [
+        ["linkText=Yes", "linkText"],
+        ["css=.col-10 > a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Yes')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/product/select_categories')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Yes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b385630-ab10-4100-841a-39e89972d291",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_category",
+      "targets": [
+        ["id=id_category", "id"],
+        ["name=category", "name"],
+        ["css=#id_category", "css:finder"],
+        ["xpath=//select[@id='id_category']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_category']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fa477d9-d4b2-4b54-941f-cb1579b0fad5",
+      "comment": "",
+      "command": "select",
+      "target": "id=id_category",
+      "targets": [],
+      "value": "label=Outdoor Plants"
+    }, {
+      "id": "098a1fd7-12ef-427d-8d60-5ecfdbfc770c",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_category",
+      "targets": [
+        ["id=id_category", "id"],
+        ["name=category", "name"],
+        ["css=#id_category", "css:finder"],
+        ["xpath=//select[@id='id_category']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_category']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bb4f671-df77-406a-97bf-ef5005177b55",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_product",
+      "targets": [
+        ["id=id_product", "id"],
+        ["name=product", "name"],
+        ["css=#id_product", "css:finder"],
+        ["xpath=//select[@id='id_product']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_product']/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd921dfe-4f5f-425d-be28-f958264ef40a",
+      "comment": "",
+      "command": "select",
+      "target": "id=id_product",
+      "targets": [],
+      "value": "label=test"
+    }, {
+      "id": "b1f789a6-abf7-4282-a623-e504c84dd0df",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_product",
+      "targets": [
+        ["id=id_product", "id"],
+        ["name=product", "name"],
+        ["css=#id_product", "css:finder"],
+        ["xpath=//select[@id='id_product']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_product']/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "219e520d-676e-4409-a263-9c6e00317ae0",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(6)",
+      "targets": [
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@value='Update']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d71a20f-9767-426e-89b6-aabc7d1c3cdb",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=No",
+      "targets": [
+        ["linkText=No", "linkText"],
+        ["css=a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'No')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/')])[13]", "xpath:href"],
+        ["xpath=//div[2]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'No')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e79995c4-ad48-4f20-aa61-355eeb93285c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=No",
+      "targets": [
+        ["linkText=No", "linkText"],
+        ["css=a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'No')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/')])[13]", "xpath:href"],
+        ["xpath=//div[2]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'No')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "610625be-fb27-4fb6-955c-7fbe06cf32ce",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=2",
+      "targets": [
+        ["linkText=2", "linkText"],
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'2')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '?page=2')]", "xpath:href"],
+        ["xpath=//div[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0331605f-2b3b-4fed-8daf-1495afe23b7d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-lg-3:nth-child(2) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(2) .home-images", "css:finder"],
+        ["xpath=//img[@alt='test']", "xpath:img"],
+        ["xpath=//div[2]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ceae110-950c-47ec-83ce-17882fed5a02",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-3:nth-child(2) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(2) .home-images", "css:finder"],
+        ["xpath=//img[@alt='test']", "xpath:img"],
+        ["xpath=//div[2]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4942ba7-7596-4d41-82e0-4c0658ea23e1",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "test - Plant Oasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ad01eea-6489-48bd-b975-f3974db0d102",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3b68207f-35d9-41d0-b1c3-af5c119abeee",
+    "name": "test_categoryNavigation",
+    "commands": [{
+      "id": "1139852d-7a87-47ef-b813-764f898f24f4",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:8000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d79f433-706e-47c8-97b0-e187ee36c682",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1096",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce6684b9-06bf-4701-b3ee-d07335adbef1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Indoor Plants",
+      "targets": [
+        ["linkText=Indoor Plants", "linkText"],
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Indoor Plants')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/indoor-plants/')]", "xpath:href"],
+        ["xpath=//div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Indoor Plants')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "00b90980-2ac8-44d5-a5c4-2ba19e452f6f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Indoor Plants",
+      "targets": [
+        ["linkText=Indoor Plants", "linkText"],
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Indoor Plants')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/indoor-plants/')]", "xpath:href"],
+        ["xpath=//div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Indoor Plants')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1bff06c9-604d-40eb-a59c-b3baf2f244bc",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Indoor Plants | PlantOasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e0f8a4fe-bcf7-4187-8532-bd5abc4cfdc6",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Indoor Plants')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2050a6f0-b428-4e37-b49b-d3d311fc52f2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Indoor Plants')]", "xpath:innerText"]
+      ],
+      "value": "Indoor Plants"
+    }, {
+      "id": "d5b83955-0284-4ff8-ab29-e5fb9b75ed01",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'A wide variety of plants suitable for growing indoors')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2bd1b1d-7a23-4948-96e1-074960e2271a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'A wide variety of plants suitable for growing indoors')]", "xpath:innerText"]
+      ],
+      "value": "A wide variety of plants suitable for growing indoors"
+    }, {
+      "id": "5db331c8-7d75-43ee-9e53-e39f8e0874e2",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.col-lg-3:nth-child(2) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(2) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Swiss Cheese Plant']", "xpath:img"],
+        ["xpath=//div[2]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a01613a8-dea1-4136-819b-2b2735bc2806",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Outdoor Plants",
+      "targets": [
+        ["linkText=Outdoor Plants", "linkText"],
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Outdoor Plants')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/outdoor-plants/')]", "xpath:href"],
+        ["xpath=//div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Outdoor Plants')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "030ee12d-0f92-428f-8dd4-dc19504bd444",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Outdoor Plants",
+      "targets": [
+        ["linkText=Outdoor Plants", "linkText"],
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Outdoor Plants')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/outdoor-plants/')]", "xpath:href"],
+        ["xpath=//div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Outdoor Plants')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc2df184-96e1-4ca0-876f-4b64cd2e0379",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Outdoor Plants | PlantOasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da310ea4-b653-44b0-9853-e253f48e18f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Outdoor Plants')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a372d18-1a02-4f27-a146-208964e8478d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Outdoor Plants')]", "xpath:innerText"]
+      ],
+      "value": "Outdoor Plants"
+    }, {
+      "id": "c44ec17a-950f-4334-8071-7af2995d2215",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'A wide variety of plants suitable for growing outdoors')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "de5ab251-4fdc-417e-af43-4541373aa874",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'A wide variety of plants suitable for growing outdoors')]", "xpath:innerText"]
+      ],
+      "value": "A wide variety of plants suitable for growing outdoors"
+    }, {
+      "id": "5cba8e9e-9ffe-4bf6-8865-9d30d6dd9e9d",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.col-lg-3:nth-child(2) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(2) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Lily of the Valley']", "xpath:img"],
+        ["xpath=//div[2]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3d3b1fa-ff52-41f0-849a-0d209fb5ca39",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Plant Pots",
+      "targets": [
+        ["linkText=Plant Pots", "linkText"],
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Plant Pots')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/plant-pots/')]", "xpath:href"],
+        ["xpath=//div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Plant Pots')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9582668a-15e0-44b1-bcc3-824f108621af",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Plant Pots",
+      "targets": [
+        ["linkText=Plant Pots", "linkText"],
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Plant Pots')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/plant-pots/')]", "xpath:href"],
+        ["xpath=//div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Plant Pots')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e849e036-322a-4f0d-8d54-ec2ed33c4fb5",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Plant Pots | PlantOasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e055d2d9-621e-424e-b1b3-46d4004939e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-10",
+      "targets": [
+        ["css=.col-10", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a53ed03b-0bec-4ee6-957f-603e486013c7",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Plant Pots')]", "xpath:innerText"]
+      ],
+      "value": "Plant Pots"
+    }, {
+      "id": "31c55269-c63e-4643-a364-07b670de21ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'A selection of pots for all your potting needs, ranging from plastic to ceramic')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a306945-c15e-4739-a7ed-711e4c33687d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'A selection of pots for all your potting needs, ranging from plastic to ceramic')]", "xpath:innerText"]
+      ],
+      "value": "A selection of pots for all your potting needs, ranging from plastic to ceramic"
+    }, {
+      "id": "788fb647-4e52-47a2-9b9c-3d2fe0e9bb6c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.col-lg-3:nth-child(2) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(2) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Red Plant Pot']", "xpath:img"],
+        ["xpath=//div[2]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2fbbe5a-b522-4684-b3e1-f06b4f555afd",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Tools",
+      "targets": [
+        ["linkText=Tools", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Tools')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/tools/')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Tools')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eed984ad-659a-4446-b62a-11df943b11bd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Tools",
+      "targets": [
+        ["linkText=Tools", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Tools')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/tools/')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Tools')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8678b7dd-e1dc-4749-a1bd-bd0bfb910aaf",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Tools | PlantOasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6cef0e57-11fd-410c-a56c-3413db13cfd2",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Tools')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "67e3df96-8c02-4ce1-b2fe-b26504ea3f3c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Tools')]", "xpath:innerText"]
+      ],
+      "value": "Tools"
+    }, {
+      "id": "d42b4674-9d78-40ed-b2c0-1bcfb5fcb526",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'A variety of tools for gardening both indoors and outdoors')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad9f5c87-616b-4fc2-8646-3b5c9d1d2b42",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'A variety of tools for gardening both indoors and outdoors')]", "xpath:innerText"]
+      ],
+      "value": "A variety of tools for gardening both indoors and outdoors"
+    }, {
+      "id": "34f4c165-e0dd-449f-b6f2-2c239e7507e4",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.col-lg-3:nth-child(2) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(2) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Pruning Shears']", "xpath:img"],
+        ["xpath=//div[2]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fcbb917-6bfa-4d17-8d71-be0a4d14b8ec",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Our Product Collection",
+      "targets": [
+        ["linkText=Our Product Collection", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Our Product Collection')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/')])[12]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Our Product Collection')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "67ccb750-b1f1-4340-b25c-da7a8e481ee6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Our Product Collection",
+      "targets": [
+        ["linkText=Our Product Collection", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Our Product Collection')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/')])[12]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Our Product Collection')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9152166-b283-4ba3-bdd2-277562086d8a",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Check out our plants and tools! | PlantOasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ccfdde5f-1ab0-46d4-94bf-f720a35184fe",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7c1ec24d-34f8-4999-9e4f-cfb5bfb1df3f",
+    "name": "test_productNavigation",
+    "commands": [{
+      "id": "5e74dd95-fb04-41a3-8b2b-b79ae9277350",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:8000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3618b32d-433f-49ab-9df5-40522974fd38",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1096",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9980eede-684d-4678-ac3d-18fea42f30d5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-lg-3:nth-child(1) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(1) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Bonsai Scissors']", "xpath:img"],
+        ["xpath=//div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d996619-16b8-4c39-bfc9-ce1b1d47d8f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-3:nth-child(1) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(1) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Bonsai Scissors']", "xpath:img"],
+        ["xpath=//div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f36d25af-b57e-4e69-88d6-3e60a96ecadf",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Bonsai Scissors - Plant Oasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ed23a8f-3410-4faa-b29f-3bf8b4694e49",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=p > a:nth-child(1)",
+      "targets": [
+        ["css=p > a:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Home')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/')])[12]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f66b61b0-8704-4066-9105-4819210e1734",
+      "comment": "",
+      "command": "click",
+      "target": "css=p > a:nth-child(1)",
+      "targets": [
+        ["css=p > a:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Home')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/')])[12]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b8e282e-0d94-45d2-9639-1972ecf19289",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-lg-3:nth-child(3) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(3) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Dragon Tree']", "xpath:img"],
+        ["xpath=//div[3]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cc44fbc-afa7-4440-ad20-65b1f6ece2ff",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-3:nth-child(3) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(3) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Dragon Tree']", "xpath:img"],
+        ["xpath=//div[3]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89af5e79-28b6-4b69-9b81-cc4ab7c0a79a",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Dragon Tree - Plant Oasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9cfa5d16-54e2-47b8-b9d9-a7d6abdd3a18",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.prod-image",
+      "targets": [
+        ["css=.prod-image", "css:finder"],
+        ["xpath=//img[@alt='Dragon Tree']", "xpath:img"],
+        ["xpath=//div[2]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "040c6949-95f0-49bf-b270-abad16b170df",
+      "comment": "",
+      "command": "click",
+      "target": "css=.prod-title",
+      "targets": [
+        ["css=.prod-title", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Dragon Tree')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fa45b94-fe19-405f-b924-7e4ac2670ac8",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.prod-title",
+      "targets": [
+        ["css=.prod-title", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Dragon Tree')]", "xpath:innerText"]
+      ],
+      "value": "Dragon Tree"
+    }, {
+      "id": "9189a93e-abc4-4565-9632-dc61e702243d",
+      "comment": "",
+      "command": "click",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Dracaena Marginata')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "891b13a6-840d-489b-8e1a-837dd1c7766b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Dracaena Marginata')]", "xpath:innerText"]
+      ],
+      "value": "Dracaena Marginata"
+    }, {
+      "id": "07ec5efb-45d6-405e-8a7e-83bd445ec688",
+      "comment": "",
+      "command": "click",
+      "target": "css=.prod-price",
+      "targets": [
+        ["css=.prod-price", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'€11.99')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbdfe091-9b59-4f97-99dd-a7b8a4b7d52c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.prod-price",
+      "targets": [
+        ["css=.prod-price", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'€11.99')]", "xpath:innerText"]
+      ],
+      "value": "€11.99"
+    }, {
+      "id": "48496aad-8051-4663-b64a-c4b0a1df655a",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Add to Cart",
+      "targets": [
+        ["linkText=Add to Cart", "linkText"],
+        ["css=.btn-plants", "css:finder"],
+        ["xpath=//a[contains(text(),'Add to Cart')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/cart/add/dragon-tree/')]", "xpath:href"],
+        ["xpath=//div[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add to Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6be3674a-221f-4eab-b317-d62687fc1488",
+      "comment": "",
+      "command": "click",
+      "target": "css=.stock-notif > b",
+      "targets": [
+        ["css=.stock-notif > b", "css:finder"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,' In Stock')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "99147e7c-eb10-4e85-b7d7-2babbb323746",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.stock-notif > b",
+      "targets": [
+        ["css=.stock-notif > b", "css:finder"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,' In Stock')]", "xpath:innerText"]
+      ],
+      "value": "In Stock"
+    }, {
+      "id": "0028a6a9-52b9-448a-9fe8-0a728c3a16f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=h5",
+      "targets": [
+        ["css=h5", "css:finder"],
+        ["xpath=//h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Product Description')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab30a855-b6d4-439c-a4e8-6d481e30270d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h5 > b",
+      "targets": [
+        ["css=h5 > b", "css:finder"],
+        ["xpath=//h5/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Product Description')]", "xpath:innerText"]
+      ],
+      "value": "Product Description"
+    }, {
+      "id": "88c698a5-1533-4543-bff3-f5dcbb1d20d5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-10 > p",
+      "targets": [
+        ["css=.col-10 > p", "css:finder"],
+        ["xpath=//div[2]/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'it loves to eat sheep trees')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e14d2d4-3b34-4eef-91bd-25a3447f067f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.col-10 > p",
+      "targets": [
+        ["css=.col-10 > p", "css:finder"],
+        ["xpath=//div[2]/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'it loves to eat sheep trees')]", "xpath:innerText"]
+      ],
+      "value": "it loves to eat sheep trees"
+    }, {
+      "id": "52489fb2-b578-4c06-9351-09b21117e756",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col > h4",
+      "targets": [
+        ["css=.col > h4", "css:finder"],
+        ["xpath=//div[3]/div/div/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Reviews')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1441435-8f78-45f0-9bb2-8ce8a882dcbb",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h4 > b",
+      "targets": [
+        ["css=h4 > b", "css:finder"],
+        ["xpath=//h4/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Reviews')]", "xpath:innerText"]
+      ],
+      "value": "Reviews"
+    }, {
+      "id": "5c66ae0b-88f1-4421-80a0-b79af83017f3",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=p > a:nth-child(1)",
+      "targets": [
+        ["css=p > a:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Home')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/')])[12]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0829f923-1624-440e-9372-78c60b89dbf6",
+      "comment": "",
+      "command": "click",
+      "target": "css=p > a:nth-child(1)",
+      "targets": [
+        ["css=p > a:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Home')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/')])[12]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a8e2447-c6fa-4104-ae39-d09b13447cbd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Outdoor Plants",
+      "targets": [
+        ["linkText=Outdoor Plants", "linkText"],
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Outdoor Plants')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/outdoor-plants/')]", "xpath:href"],
+        ["xpath=//div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Outdoor Plants')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d30de37-c0b1-4eb4-8387-b34c1eae271a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-lg-3:nth-child(1) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(1) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Butterfly Bush']", "xpath:img"],
+        ["xpath=//div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "977f3ccc-c0dd-4939-8bd7-ee50da319f11",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-3:nth-child(1) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(1) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Butterfly Bush']", "xpath:img"],
+        ["xpath=//div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "061554f7-fcbd-4ffb-9bc4-9c7502ca967e",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Butterfly Bush - Plant Oasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb8d9642-6ac5-417c-82a1-2ba722c59788",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Plant Pots",
+      "targets": [
+        ["linkText=Plant Pots", "linkText"],
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Plant Pots')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/plant-pots/')]", "xpath:href"],
+        ["xpath=//div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Plant Pots')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d556790-dc76-48b2-8fff-ad99d6405d51",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Plant Pots",
+      "targets": [
+        ["linkText=Plant Pots", "linkText"],
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Plant Pots')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/plant-pots/')]", "xpath:href"],
+        ["xpath=//div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Plant Pots')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6545a008-0ed9-40bb-84fd-cbaba8699bcb",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-lg-3:nth-child(2) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(2) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Red Plant Pot']", "xpath:img"],
+        ["xpath=//div[2]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "764b8d4e-b17d-4117-8097-c1c449474f19",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-3:nth-child(2) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(2) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Red Plant Pot']", "xpath:img"],
+        ["xpath=//div[2]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8edba082-85df-4270-a051-5720ad41fefe",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Red Plant Pot - Plant Oasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb2821bf-4fcb-44cb-a16e-8bdba3e02985",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a3374803-7621-43cf-b988-3da7d8e6f448",
+    "name": "test_navbarNavigation",
+    "commands": [{
+      "id": "ed18ec50-4bf3-4520-a622-f95d69c2f6e4",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:8000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8842cf74-e192-40a6-8117-6a2e5192cdb0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1096",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4bc5cba-be42-4284-acd5-16381ba925dc",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Check out our plants and tools! | PlantOasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5b98ac8-41cb-44c0-bb44-684ed805851d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.navbar-brand > img",
+      "targets": [
+        ["css=.navbar-brand > img", "css:finder"],
+        ["xpath=//img[@alt='Store_Logo']", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cdd714e9-bf2e-411a-8c21-2d767e91202a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=.mr-auto > .nav-item > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "33097512-d8ed-44fb-95a2-b5b0a17bacdb",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Blogs",
+      "targets": [
+        ["linkText=Blogs", "linkText"],
+        ["css=.mr-auto > li:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Blogs')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/blog/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Blogs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cec76f8-de10-4a07-bf23-69ab2a5cdacc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Blogs",
+      "targets": [
+        ["linkText=Blogs", "linkText"],
+        ["css=.mr-auto > li:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Blogs')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/blog/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Blogs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcacc1a5-5134-449f-b5ba-d998d98bf35c",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88214c2a-4e37-4f7a-bff9-65ee49daac52",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=.mr-auto > .nav-item > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c6b0dc2-ad23-467f-828b-c5d85119cb0b",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Check out our plants and tools! | PlantOasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37a2488f-e492-4299-a95e-9471fed92126",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=nav-search",
+      "targets": [
+        ["id=nav-search", "id"],
+        ["name=q", "name"],
+        ["css=#nav-search", "css:finder"],
+        ["xpath=//input[@id='nav-search']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b023478-72cd-4693-ad92-7007e766ca1a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.fa-search",
+      "targets": [
+        ["css=.fa-search", "css:finder"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55172379-d6c9-4d81-bbd2-e9daed65ca37",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=(4)",
+      "targets": [
+        ["linkText=(4)", "linkText"],
+        ["css=.ml-auto > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'(4)')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/cart/')]", "xpath:href"],
+        ["xpath=//ul[3]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,' (4)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a88303b-45c5-4b55-a3a1-909de710545d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=(4)",
+      "targets": [
+        ["linkText=(4)", "linkText"],
+        ["css=.ml-auto > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'(4)')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/cart/')]", "xpath:href"],
+        ["xpath=//ul[3]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,' (4)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2a8408c-1590-4a47-9869-f2dfeeab7406",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Cart - Plant Oasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db278fee-dfd5-4d75-a6c8-a0408ff8ff02",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=.mr-auto > .nav-item > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4bca51d3-f070-4a2d-94a2-c05fb5ef29db",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Check out our plants and tools! | PlantOasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28049195-1e76-47bb-a9db-f94d6e21bd4d",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=navbardrop",
+      "targets": [
+        ["id=navbardrop", "id"],
+        ["linkText=Admin", "linkText"],
+        ["css=.nav-item:nth-child(2) > #navbardrop", "css:finder"],
+        ["xpath=//a[contains(text(),'Admin')]", "xpath:link"],
+        ["xpath=//a[@id='navbardrop']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[5]", "xpath:href"],
+        ["xpath=//ul[3]/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Admin ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44e2ad9b-5f2a-4def-bdc5-7ce2f0f0b71f",
+      "comment": "",
+      "command": "click",
+      "target": "id=navbardrop",
+      "targets": [
+        ["id=navbardrop", "id"],
+        ["linkText=Admin", "linkText"],
+        ["css=.nav-item:nth-child(2) > #navbardrop", "css:finder"],
+        ["xpath=//a[contains(text(),'Admin')]", "xpath:link"],
+        ["xpath=//a[@id='navbardrop']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[5]", "xpath:href"],
+        ["xpath=//ul[3]/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Admin ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b1db058-24b7-4914-9748-6b52e8ef24e1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add Product",
+      "targets": [
+        ["linkText=Add Product", "linkText"],
+        ["css=.show > .dropdown-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Add Product')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/product/create_new')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "894e1cf2-2156-49b5-9dff-03fb60dc873f",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "11994da4-0cb6-420f-8a89-74ba206ea4d5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=.mr-auto > .nav-item > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bde2c46-5cbc-4608-8519-89bd92a82072",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Check out our plants and tools! | PlantOasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29eb2044-6500-41dc-b148-44d1bc4a3be1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=hubo00",
+      "targets": [
+        ["linkText=hubo00", "linkText"],
+        ["css=.nav-item:nth-child(3) > #navbardrop", "css:finder"],
+        ["xpath=//a[contains(text(),'hubo00')]", "xpath:link"],
+        ["xpath=(//a[@id='navbardrop'])[2]", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[7]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'hubo00 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "28255dbc-38ad-4d5f-ae71-d59ab0ee5642",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=hubo00",
+      "targets": [
+        ["linkText=hubo00", "linkText"],
+        ["css=.nav-item:nth-child(3) > #navbardrop", "css:finder"],
+        ["xpath=//a[contains(text(),'hubo00')]", "xpath:link"],
+        ["xpath=(//a[@id='navbardrop'])[2]", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[7]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'hubo00 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "34741943-a2ae-4a5f-ac7f-9252a5523e5c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Profile",
+      "targets": [
+        ["linkText=Profile", "linkText"],
+        ["css=.dropdown-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Profile')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/accounts/view/')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Profile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0373f3aa-ca4f-4f25-8a35-3b2c2643945b",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ba32615-f12a-4b36-a39a-d45e53254083",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Blogs",
+      "targets": [
+        ["linkText=Blogs", "linkText"],
+        ["css=.mr-auto > li:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Blogs')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/blog/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Blogs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f193a5d-2e11-4f90-865b-5ff9dc32e55f",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d0decd2-4d4d-4763-8c99-de2f816f5912",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=(4)",
+      "targets": [
+        ["linkText=(4)", "linkText"],
+        ["css=.ml-auto > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'(4)')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/cart/')]", "xpath:href"],
+        ["xpath=//ul[3]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,' (4)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68cc7f1d-f314-465a-9889-6cfa49bdb197",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Cart - Plant Oasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75a4888c-f12f-4368-bb2e-9bf4dc3c8d6d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=.mr-auto > .nav-item > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c747ebe-1720-4322-8d0f-ee6fdea39133",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Check out our plants and tools! | PlantOasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1fb243f9-1514-4549-863a-e87a650de0c5",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c01149cf-65eb-4c67-941d-29f5f6ac772f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a792f36e-53c8-494e-8460-bbe604eba417"]
+  }],
+  "urls": ["http://127.0.0.1:8000/"],
+  "plugins": []
+}

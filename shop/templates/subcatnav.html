@@ -1,0 +1,9 @@
+<nav class="navbar navbar-expand-sm bg-light">
+    <ul class="navbar-nav mx-auto">
+      {% for sub in subcategory %}
+        <li class="nav-item px-3">
+          <a class="nav-link text-dark" href="{{sub.get_absolute_url}}"><button>{{ sub.name }}</button></a>
+        </li>
+      {% endfor %}
+    </ul>
+</nav>

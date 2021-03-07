@@ -22,12 +22,24 @@ Check out our plants and tools! | PlantOasis
 		<p><a href="{% url 'shop:allProdCat' %}">Our Product Collection</a> | {{category.name}}</p>
 	</div>
 </div>
+{% elif subcategory %}
+<div>
+	<div>
+		<p><a href="{% url 'shop:allProdCat' %}">Our Product Collection</a> | {{subcategory.name}}</p>
+	</div>
+</div>
 {% endif %}
 {% if category %}
+{% include 'subcatnav.html' %}
 <br>
 <div>
 	<h1>{{category.name}}</h1>
 	<p>{{category.description}}</p>
+</div>
+{% elif subcategory %}
+<div>
+	<h1>{{subcategory.name}}</h1>
+	<p>{{subcategory.description}}</p>
 </div>
 {% else %}
 <br>

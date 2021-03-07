@@ -38,13 +38,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # LOCAL
     'accounts',
     'shop',
     'blog',
     'search_app',
+    'cart',
+    # IMPORT
     'crispy_forms',
     'imagekit',
-    'cart',
 ]
 
 MIDDLEWARE = [

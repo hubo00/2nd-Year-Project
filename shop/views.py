@@ -1,15 +1,20 @@
 # Importing utilities from django shortcuts. Importing category, product models
-from django.shortcuts import render, get_object_or_404, HttpResponseRedirect, redirect
-from .models import Category, Product, CatProd
+from django.shortcuts import render, get_object_or_404, get_list_or_404, HttpResponseRedirect, redirect
+from .models import Category, Product, subCategory
 from django.core.paginator import Paginator, EmptyPage, InvalidPage
-from .forms import ProductForm, CatProdForm
+from .forms import ProductForm
 
-def allProdCat(request, slug=None):
+def allProdCat(request, cat_slug=None, subcat_slug=None):
     c_page = None
     products_list = None
-    if slug != None:
-        c_page = get_object_or_404(Category, slug=slug)
-        products_list = Product.objects.filter(category=c_page, available=True)
+    subcat = None
+    if cat_slug != None:
+        c_page = get_object_or_404(Category, slug=cat_slug)
+        subcat = get_list_or_404(subCategory, category=c_page)
+        products_list = Product.objects.filter(category__in=subcat, available=True)
+    elif subcat_slug != None:
+        subcat = get_object_or_404(subCategory, slug=subcat_slug)
+        products_list = Product.objects.filter(category=subcat, available=True)
     else:
         products_list = Product.objects.all().filter(available=True)
 
@@ -23,11 +28,11 @@ def allProdCat(request, slug=None):
         products = paginator.page(page)
     except (EmptyPage, InvalidPage):
         products = paginator.page(paginator.num_pages)
-    return render(request, 'shop/category.html', {'category':c_page, 'products':products})
+    return render(request, 'shop/category.html', {'category':c_page,'subcategory':subcat, 'products':products})
 
-def prod_detail(request, slug):
+def prod_detail(request, prod_slug):
     try:
-        product = Product.objects.get(slug=slug)
+        product = Product.objects.get(slug=prod_slug)
     except Exception as e:
         raise e
     return render(request, 'shop/product.html', {'product':product})
@@ -39,12 +44,12 @@ def prod_create(request):
         if form.is_valid():
             form.save()
 
-            return redirect("shop:cat_select")
+            return redirect("shop:allProdCat")
 
     return render(request, 'shop/create_view.html',{'form':form,'prod':Product.objects.all()})
 
-def prod_update(request, slug):
-    product = get_object_or_404(Product, slug=slug)
+def prod_update(request, prod_slug):
+    product = get_object_or_404(Product, slug=prod_slug)
     init_dict = {
         'name':product.name,
         'name_alt':product.name_alt,
@@ -58,18 +63,11 @@ def prod_update(request, slug):
 
     return render(request, 'shop/update_view.html',{'form':form, 'product':product})
 
-def prod_delete(request, slug):
-    product = Product.objects.get(slug=slug)
+def prod_delete(request, prod_slug):
+    product = Product.objects.get(slug=prod_slug)
     if request.method == "POST":
         product.delete()
 
         return redirect("shop:allProdCat")
 
     return render(request, 'shop/delete_view.html',{'product':product})
-
-def prod_cat_select(request):
-    form = CatProdForm(request.POST)
-    if form.is_valid():
-        form.save()
-
-    return render(request, 'shop/select_category.html',{'form':form})

@@ -95,8 +95,21 @@
 					</tbody>
 				</table>
 				<div class="mx-auto">
-					<a href="{% url 'shop:allProdCat' %}" class="btn btn-plants btn-block disabled">Checkout</a>
-					Checkout is unavailable for now
+					<form action="" method="POST">
+						{% csrf_token %}
+							<script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+						 data-key="{{ data_key }}"
+								 data-amount="{{ stripe_total }}"
+								 data-name="Plant Oasis Store"
+								 data-description="{{ description }}"
+								 data-image="{% static 'images/flower.png' %}"
+								 data-locale="auto"
+								 data-currency="eur"
+								 data-shipping-address="true"
+								 data-billing-address="true"
+								 data-zip-code="true">
+							 </script>
+						</form>
 				</div>
 			</div>
 		</div>

@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'blog',
     'search_app',
     'cart',
+    'stripe',
     # IMPORT
     'crispy_forms',
     'imagekit',
@@ -143,3 +144,7 @@ STATICFILES_FINDERS = [
 ]
 MEDIA_URL = '/media/'
 MEDIA_ROOT = str(BASE_DIR.joinpath('media'))
+
+#stripe keys
+STRIPE_SECRET_KEY = 'sk_test_51IT7MNDIVsXF6nZtgybPQGHJtZ9wffFUtjLotiJ2l5XI1XQ8LS3GWKedmMWQvULA8JE5CP2n5sPxl2wl5mTZoTef00Jrt3V8Q7'
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51IT7MNDIVsXF6nZtURC3HC24KxmNaDHrzRN5DvODQD3ZiA9ZvIn0ad8e0qdXjw3Ih3Bb2RDfnVaMFZ8jDvqL0ZxA00gXhSnUts'

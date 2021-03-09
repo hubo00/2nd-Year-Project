@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     # IMPORT
     'crispy_forms',
     'imagekit',
+    'vouchers',
 ]
 
 MIDDLEWARE = [

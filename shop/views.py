@@ -3,6 +3,7 @@ from django.shortcuts import render, get_object_or_404, get_list_or_404, HttpRes
 from .models import Category, Product, subCategory
 from django.core.paginator import Paginator, EmptyPage, InvalidPage
 from .forms import ProductForm
+from reviews.models import Review
 
 def allProdCat(request, cat_slug=None, subcat_slug=None):
     c_page = None
@@ -33,9 +34,10 @@ def allProdCat(request, cat_slug=None, subcat_slug=None):
 def prod_detail(request, prod_slug):
     try:
         product = Product.objects.get(slug=prod_slug)
+        reviews = Review.objects.filter(product=product)
     except Exception as e:
         raise e
-    return render(request, 'shop/product.html', {'product':product})
+    return render(request, 'shop/product.html', {'product':product, 'reviews':reviews})
 
 def prod_create(request):
     form = ProductForm()

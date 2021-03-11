@@ -7,7 +7,7 @@
 	{{ product.name }} - Plant Oasis
 {% endblock %}
 {% block content %}
-	<div>
+	<div class="mb-5">
 		<div>
 			<p><a href="{% url 'shop:allProdCat' %}">Home</a> | <a href="{{ product.category.get_absolute_url }}">{{product.category}}</a> | {{product.name}}</p>
 		</div>
@@ -86,10 +86,77 @@
 					<div class="row mt-5">
 						<div class="col">
 							<h4><b>Reviews</b></h4>
+							<a href="{% url 'reviews:add_review' product.slug %}">Add Review</a>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col">
+						<div class="col-8">
+							{% if reviews %}
+							{% for review in reviews %}
+								<div class="col border my-2">
+									<div class="row">
+										<div class="col-6">
+											<div class="row ml-2 mt-3 mb-2">
+												<h3>{{review.username}}</h3>
+												<div class="ml-4">
+													{% if review.rating == 1 %}
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+													{% elif review.rating == 2 %}
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+													{% elif review.rating == 3 %}
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+													{% elif review.rating == 4 %}
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+													{% elif review.rating == 5 %}
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>										<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+													{% endif %}
+												</div>
+											</div>
+											<div class="row ml-2">
+												<h4>{{review.title}}</h4>
+											</div>
+											<div class="row ml-2">
+												<p>{{review.content}}</p>
+											</div>
+											<div class="row ml-2">
+												{{review.pub_date}}
+											</div>
+										</div>
+										<div class="col-6">
+											{% if review.image_thumbnail %}
+												<img id="review-image" src="{{review.image_thumbnail.url}}" alt="{{review.title}}">
+											{% else %}
+												<p>Image unavailable</p>
+											{% endif %}
+										</div>
+									</div>
+								</div>
+							{% endfor %}
+							{% else %}
+							<p>No reviews have been posted for this product</p>
+							{% endif %}
+						</div>
+						<div class="col-4">
 
 						</div>
 					</div>

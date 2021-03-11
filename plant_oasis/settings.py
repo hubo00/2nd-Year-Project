@@ -44,12 +44,13 @@ INSTALLED_APPS = [
     'blog',
     'search_app',
     'cart',
-    'stripe',
     'order',
+    'vouchers',
+    'reviews',
     # IMPORT
     'crispy_forms',
+    'stripe',
     'imagekit',
-    'vouchers',
 ]
 
 MIDDLEWARE = [
@@ -71,6 +72,7 @@ TEMPLATES = [
                 str(BASE_DIR.joinpath('search_app', 'templates')),
                 str(BASE_DIR.joinpath('cart', 'templates')),
                 str(BASE_DIR.joinpath('order', 'templates')),
+                str(BASE_DIR.joinpath('reviews', 'templates')),
                 TEMPLATES_DIRS],
         'APP_DIRS': True,
         'OPTIONS': {

@@ -8,6 +8,8 @@ from django.db.models import Avg, Func
 
 """
 I used a course on Udemy to learn how to use machine learning in the django framework
+A part of it showed how to create a review model, I used it to create this model with additional functionality implemented by myself.
+-- Hubert Bukowski x00161897
 source = https://www.udemy.com/course/machine-learning-projects-recommendation-system-website/
 """
 
@@ -29,3 +31,6 @@ class Review(models.Model):
     image_thumbnail = ImageSpecField(source='image', processors=[ResizeToFill(200,200)],
     format='JPEG', options={'quality': 100})
     rating = models.FloatField(choices=RATING_OPTIONS, default=None, null=True, blank=True)
+
+    def __str__(self):
+        return str(self.id)

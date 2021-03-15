@@ -124,10 +124,8 @@
 				</div>
 				<div class="container">
 					<div class="row mt-5">
-						<div class="col">
-							<h4><b>Reviews</b></h4>
-							<a href="{% url 'reviews:add_review' product.slug %}">Add Review</a>
-						</div>
+						<h4><b>Reviews&nbsp;</b></h4>
+						<a href="{% url 'reviews:add_review' product.slug %}"><button type="button" class="btn btn-outline-plants">Leave Review</button></a>
 					</div>
 					<div class="row">
 						<div class="col-8">
@@ -184,10 +182,10 @@
 											{% if user.username == review.username %}
 											<div class="row ml-2">
 												<div>
-													<a class="text-danger" href="{% url 'reviews:edit_review' product.slug review.id %}">Edit&nbsp;</a>
+													<a href="{% url 'reviews:edit_review' product.slug review.id %}">Edit&nbsp;</a>
 												</div>
 												<div>
-													<a class="text-plant" href="{% url 'reviews:delete_review' product.slug review.id %}">&nbsp;Delete</a>
+													<a class="text-danger" href="{% url 'reviews:delete_review' product.slug review.id %}">&nbsp;Delete</a>
 												</div>
 											</div>
 											{% endif %}
@@ -203,7 +201,7 @@
 								</div>
 							{% endfor %}
 							{% else %}
-							<p>No reviews have been posted for this product</p>
+							<p>No reviews have been posted for this product <a href="{% url 'reviews:add_review' product.slug %}"><button type="button" class="btn btn-outline-plants">Leave Review</button></a></p>
 							{% endif %}
 						</div>
 						<div class="col-4">

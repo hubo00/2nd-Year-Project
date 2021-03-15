@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
+from django.contrib.auth.decorators import login_required
 from shop.models import Product
 from .forms import ReviewForm
 from django.http import HttpResponseRedirect
@@ -7,6 +8,14 @@ from accounts.models import CustomUser
 from .models import Review
 import datetime
 
+"""
+I used a course on Udemy to learn how to use machine learning in the django framework
+A part of it showed how to create views for the review, I created the view myself, using pieces from the course, I created the update and delete views solely by myself.
+-- Hubert Bukowski x00161897
+source = https://www.udemy.com/course/machine-learning-projects-recommendation-system-website/
+"""
+
+@login_required
 def add_review(request, prod_slug):
     product = get_object_or_404(Product, slug=prod_slug)
     form = ReviewForm()
@@ -31,6 +40,7 @@ def add_review(request, prod_slug):
             return HttpResponseRedirect(reverse('shop:prod_detail', kwargs={'prod_slug': prod_slug}))
     return render(request, 'add_review.html', {'product':product, 'form':form})
 
+@login_required
 def review_update(request, prod_slug, id):
     product = get_object_or_404(Product, slug=prod_slug)
     review = get_object_or_404(Review, id=id)
@@ -48,6 +58,7 @@ def review_update(request, prod_slug, id):
     
     return render(request, 'update_review.html',{'form':form, 'product':product, 'review':review})
 
+@login_required
 def review_delete(request, prod_slug, id):
     product = get_object_or_404(Product, slug=prod_slug)
     review = get_object_or_404(Review, id=id)

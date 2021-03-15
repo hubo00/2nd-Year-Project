@@ -1,9 +1,10 @@
+from django.shortcuts import get_object_or_404
 from django.db import models
-from shop.models import Product
 from accounts.models import CustomUser
 from django.urls import reverse
 from imagekit.models import ImageSpecField
 from imagekit.processors import ResizeToFill
+from django.db.models import Avg, Func
 
 """
 I used a course on Udemy to learn how to use machine learning in the django framework
@@ -18,7 +19,7 @@ class Review(models.Model):
         (4, '4'),
         (5, '5'),
     )
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    product = models.ForeignKey('shop.Product', on_delete=models.CASCADE)
     pub_date = models.DateTimeField('date published')
     user = models.ForeignKey(CustomUser, default=None, null=True, blank=True, on_delete=models.CASCADE)
     username = models.CharField(max_length=100, default='user')

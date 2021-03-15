@@ -3,6 +3,7 @@ from django.urls import reverse
 from imagekit.models import ImageSpecField
 from imagekit.processors import ResizeToFill
 from django.utils.text import slugify
+from reviews.models import Review
 
 class Category(models.Model):
     name = models.CharField(max_length=250, unique=True)
@@ -77,3 +78,13 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_review_avg(self):
+        reviews = Review.objects.filter(product=self)
+        count = len(reviews)
+        sum = 0
+        for review in reviews:
+            sum += review.rating
+        average = sum / count
+        average = round(average, 0)
+        return (average)

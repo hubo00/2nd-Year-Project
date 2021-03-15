@@ -40,16 +40,56 @@
 						</div>
 					{% if product.name_alt %}
 					</div>
-					<div class="row top-row">
+					<div class="row">
 						<div class="col-8">
 							<h3>{{product.name_alt}}</h3>
 						</div>
 					</div>
-					<hr>
 					{% else %}
-						</div>
-						<hr>
+					</div>
 					{% endif %}
+					<div class="row">
+						<div class="col-8">
+							{% if product.get_review_avg == 1 %}
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+							{% elif product.get_review_avg == 2 %}
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+							{% elif product.get_review_avg == 3 %}
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+							{% elif product.get_review_avg == 4 %}
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+							{% elif product.get_review_avg == 5 %}
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							{% else %}
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+							{% endif %}
+						</div>
+					</div>
+					<hr>
 					<div class="row">
 						{% if product.stock == 0 %}
 						<div class="col-6">
@@ -141,6 +181,16 @@
 											<div class="row ml-2">
 												{{review.pub_date}}
 											</div>
+											{% if user.username == review.username %}
+											<div class="row ml-2">
+												<div>
+													<a class="text-danger" href="{% url 'reviews:edit_review' product.slug review.id %}">Edit&nbsp;</a>
+												</div>
+												<div>
+													<a class="text-plant" href="{% url 'reviews:delete_review' product.slug review.id %}">&nbsp;Delete</a>
+												</div>
+											</div>
+											{% endif %}
 										</div>
 										<div class="col-6">
 											{% if review.image_thumbnail %}

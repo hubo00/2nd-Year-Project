@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<form method="POST"> 
+    {% csrf_token %} 
+    Are you sure want to delete this item ? 
+    <input type="submit" value="Yes"/>
+    <a href="{% url 'shop:allProdCat' %}">Cancel </a> 
+</form> 
+</div> 
+
+{% endblock %}

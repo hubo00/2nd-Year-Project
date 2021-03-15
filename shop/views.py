@@ -32,6 +32,7 @@ def allProdCat(request, cat_slug=None, subcat_slug=None):
     return render(request, 'shop/category.html', {'category':c_page,'subcategory':subcat, 'products':products})
 
 def prod_detail(request, prod_slug):
+    average = 0
     try:
         product = Product.objects.get(slug=prod_slug)
         reviews = Review.objects.filter(product=product)

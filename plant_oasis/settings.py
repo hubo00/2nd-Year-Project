@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'order',
     'vouchers',
     'reviews',
+    'wishlist',
     # IMPORT
     'crispy_forms',
     'stripe',
@@ -74,6 +75,7 @@ TEMPLATES = [
                 str(BASE_DIR.joinpath('cart', 'templates')),
                 str(BASE_DIR.joinpath('order', 'templates')),
                 str(BASE_DIR.joinpath('reviews', 'templates')),
+                str(BASE_DIR.joinpath('wishlist', 'templates')),
                 TEMPLATES_DIRS],
         'APP_DIRS': True,
         'OPTIONS': {

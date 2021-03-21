@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% load static %}
+{% block metadescription %}
+	{{ wishlist.user.username }}'s plantoasis wishlist
+{% endblock %}
+{% block title %}
+	{{ wishlist.slug }} - Plant Oasis
+{% endblock %}
+{% block content %}
+
+<div class="text-center">
+    <br>
+    <h1>
+        Your Wishlist
+    </h1>
+    <br>
+</div>
+<div class="row">
+    {% if products %}
+        <div class="col-9">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="text-center" colspan="100">
+                            <h3>
+                            Products
+                            </h3>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for product in products %}
+                    <tr>
+                        <td>
+                            <h3>{{product.product.name}}</h3>
+                            <h4>{{product.product.name_alt}}</h4>
+                            <h5>{{product.product.category}}</h5>
+                            <p>{{product.date_added}}</p>
+                        </td>
+                        <td>
+                            <a href="{{product.product.get_absolute_url}}"><img id="cart-image" src="{{product.product.image_thumbnail.url}}"></a>
+                        </td>
+                        <td>
+                            <div class="col">
+                                <a class="cart-button" href="{% url 'cart:add_cart' product.product.slug %}"><i class="fas fa-shopping-cart"></i></a>
+                                <br>
+                                <a class="cart-trash ml-1" href="{% url 'wishlist:remove_from_wishlist' product.product.slug %}"><i class="fas fa-times"></i></a>
+                            </div>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="col-3">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="text-center" colspan="100">
+                            <h3>
+                                Details
+                            </h3>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <h3><b>User</b></h3>
+                            <h4>{{wishlist.user}}</h4>
+                            <h3><b>Created</b></h3>
+                            <h6>{{wishlist.date_created}}</h6>
+                        </td>
+                        <td>
+                            <button class="btn btn-plants" onclick="window.print();"><i class="fas fa-print"></i>Print Wishlist</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    {% else %}
+        <p>You have no items in your wishlist</p>
+    {% endif %}
+</div>
+
+{% endblock content %}

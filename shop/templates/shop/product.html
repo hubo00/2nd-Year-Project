@@ -94,6 +94,7 @@
 						{% if product.stock == 0 %}
 						<div class="col-6">
 							<a class ="btn disabled btn-plants" href="{% url 'cart:add_cart' product.slug %}">Add to Cart</a>
+							<a class="" href="{% url 'wishlist:add_to_wishlist' product.slug %}"><i class="fas fa-heart"></i></a>
 						</div>
 						<div class="col-6">
 							<p class="stock-notif"><b><i class="far fa-times-circle stock-icon-bad"></i> Out of Stock</b></p>
@@ -101,6 +102,7 @@
 						{% else %}
 						<div class="col-6">
 							<a class ="btn btn-plants" href="{% url 'cart:add_cart' product.slug %}">Add to Cart</a>
+							<a class="" href="{% url 'wishlist:add_to_wishlist' product.slug %}"><i class="fas fa-heart"></i></a>
 						</div>
 						<div class="col-6">
 							<p class="stock-notif"><b><i class="far fa-check-circle stock-icon-good"></i> In Stock</b></p>

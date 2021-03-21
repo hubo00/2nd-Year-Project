@@ -7,6 +7,8 @@
 <h5 class="font-weight-bold">Email Address: {{ user.email }}</h5>
 <h5 class="font-weight-bold">Age: {{ user.age }}</h5>
 {% if request.user.is_superuser %}
+<h5 class="font-weight-bold">Status: Admin</h5>
+{% elif request.user.is_staff %}
 <h5 class="font-weight-bold">Status: Manager</h5>
 {% else %}
 <h5 class="font-weight-bold">Status: Customer</h5>

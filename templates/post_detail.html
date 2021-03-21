@@ -9,6 +9,11 @@
         <p class=" text-muted">{{ post.author }} | {{ post.created_on }}</p>
         <p class="card-text ">{{ post.content | safe }}</p>
         <br>
+        <form action="{% url 'like_post' post.slug %}" method="POST">
+          {% csrf_token %}
+          <button type="submit", name="post_id", value="{{ post.slug }}", class="btn btn-success mr-2">Like</button> {{ post.total_likes }} Likes
+        </form>
+        <br>
         <h4>Comments:</h4>
         {% if comments.count == 0 %}
           <p>There are no comments</p>

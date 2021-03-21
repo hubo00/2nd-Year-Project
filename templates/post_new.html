@@ -5,6 +5,7 @@
     <h1>New Blog</h1>
     <form action="" method="post">{% csrf_token %}
         <p>{{ form | crispy }}</p>
+        name = {{ user.username }}
         <input type="submit" value="Save" />
     </form>
 {% endblock content %}

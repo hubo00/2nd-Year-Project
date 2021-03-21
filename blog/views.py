@@ -2,8 +2,14 @@ from django.views import generic
 from .models import Post
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.shortcuts import render, redirect, get_object_or_404
-from django.urls import reverse_lazy
+from django.urls import reverse_lazy, reverse
 from .forms import CommentForm
+from django.http import HttpResponseRedirect
+
+def LikeView(request, slug):
+    post = get_object_or_404(Post, slug=request.POST.get('post_id'))
+    post.likes.add(request.user)
+    return HttpResponseRedirect(reverse('post_detail', args=[str(slug)]))
 
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by('-created_on')
@@ -12,6 +18,12 @@ class PostList(generic.ListView):
 class PostDetail(generic.DetailView):
     model = Post
     template_name = 'post_detail.html'
+
+    def get_context_data(self, **kwargs):
+        data = super().get_context_data(**kwargs)
+        likes_connected = get_object_or_404(Post, slug=self.kwargs['slug'])
+        data['total_likes'] = likes_connected.total_likes()
+        return data
 
 class BlogCreateView(CreateView):
     model = Post

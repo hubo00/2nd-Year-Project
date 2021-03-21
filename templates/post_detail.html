@@ -11,7 +11,7 @@
         <br>
         <form action="{% url 'like_post' post.slug %}" method="POST">
           {% csrf_token %}
-          <button type="submit", name="post_id", value="{{ post.slug }}", class="btn btn-success mr-2">Like</button> {{ post.total_likes }} Likes
+          <button type="submit", name="post_id", value="{{ post.slug }}", class="btn btn-success mr-2">Like / Unlike</button> {{ post.total_likes }} Likes
         </form>
         <br>
         <h4>Comments:</h4>

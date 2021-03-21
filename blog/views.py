@@ -1,3 +1,4 @@
+#likes view from https://dev.to/radualexandrub/how-to-add-like-unlike-button-to-your-django-blog-5gkg
 from django.views import generic
 from .models import Post
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
@@ -8,7 +9,10 @@ from django.http import HttpResponseRedirect
 
 def LikeView(request, slug):
     post = get_object_or_404(Post, slug=request.POST.get('post_id'))
-    post.likes.add(request.user)
+    if post.likes.filter(username=request.user).exists():
+        post.likes.remove(request.user)
+    else:
+        post.likes.add(request.user)
     return HttpResponseRedirect(reverse('post_detail', args=[str(slug)]))
 
 class PostList(generic.ListView):
@@ -19,11 +23,6 @@ class PostDetail(generic.DetailView):
     model = Post
     template_name = 'post_detail.html'
 
-    def get_context_data(self, **kwargs):
-        data = super().get_context_data(**kwargs)
-        likes_connected = get_object_or_404(Post, slug=self.kwargs['slug'])
-        data['total_likes'] = likes_connected.total_likes()
-        return data
 
 class BlogCreateView(CreateView):
     model = Post

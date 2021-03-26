@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
+from django.contrib.messages import constants as messages
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -156,3 +157,10 @@ MEDIA_ROOT = str(BASE_DIR.joinpath('media'))
 #stripe keys
 STRIPE_SECRET_KEY = 'sk_test_51IT7MNDIVsXF6nZtgybPQGHJtZ9wffFUtjLotiJ2l5XI1XQ8LS3GWKedmMWQvULA8JE5CP2n5sPxl2wl5mTZoTef00Jrt3V8Q7'
 STRIPE_PUBLISHABLE_KEY = 'pk_test_51IT7MNDIVsXF6nZtURC3HC24KxmNaDHrzRN5DvODQD3ZiA9ZvIn0ad8e0qdXjw3Ih3Bb2RDfnVaMFZ8jDvqL0ZxA00gXhSnUts'
+
+MESSAGE_TAGS = {
+    messages.DEBUG: 'alert-secondary',
+    messages.INFO: 'alert-info',
+    messages.SUCCESS: 'alert-success',
+    messages.WARNING: 'alert-warning',
+    messages.ERROR: 'alert-danger',}

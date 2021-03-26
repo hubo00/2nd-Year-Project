@@ -1,0 +1,4069 @@
+{
+  "id": "1bfbdf12-a7e3-4b02-a51b-57bda4bdbd1e",
+  "version": "2.0",
+  "name": "Iteration2-Tests",
+  "url": "http://127.0.0.1:8000/",
+  "tests": [{
+    "id": "937f6fd9-67a6-409f-9a29-ef2a3e5d7e4f",
+    "name": "test_subCategoryNavigation",
+    "commands": [{
+      "id": "b90c56d8-24c6-4ab4-a384-bbc0d8cd601d",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:8000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f0bff0c0-fd6b-4367-8d25-878d6174e515",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1096",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc189e82-488c-478a-ab95-833da9be44f8",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Check out our plants and tools! | PlantOasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f91e178-9752-486b-9861-3730ad5d8d4a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Indoor Plants",
+      "targets": [
+        ["linkText=Indoor Plants", "linkText"],
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Indoor Plants')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/indoor-plants/')]", "xpath:href"],
+        ["xpath=//div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Indoor Plants')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa333d64-45a4-4a91-9c0d-66cd0ac06522",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Indoor Plants | PlantOasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "049e3c21-de79-4754-b53d-27e8f0abfc47",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.nav-item:nth-child(1) button",
+      "targets": [
+        ["css=.nav-item:nth-child(1) button", "css:finder"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Aloe')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d23f4ea-38be-4f3b-864c-747975433eaf",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.nav-item:nth-child(3) button",
+      "targets": [
+        ["css=.nav-item:nth-child(3) button", "css:finder"],
+        ["xpath=//li[3]/a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Dracaenae')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "955adaf2-6bd1-4db0-9a8a-a29055484318",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Maranta",
+      "targets": [
+        ["linkText=Maranta", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/shop/subcategory/maranta/')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Maranta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bcf4e7e-3cc3-4c91-ad79-c92d75149c2d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(1) button",
+      "targets": [
+        ["css=.nav-item:nth-child(1) button", "css:finder"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Aloe')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a32e4a3-3bc0-42c3-96ea-9778cf13701a",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Check out our plants and tools! | PlantOasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "17ffce4c-c470-4ab8-a7b6-301b38ea787a",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.home-images",
+      "targets": [
+        ["css=.home-images", "css:finder"],
+        ["xpath=//img[@alt='Aloe Vera']", "xpath:img"],
+        ["xpath=//div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b659e4cc-4b0f-481d-8c28-25ba263a09a3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Outdoor Plants",
+      "targets": [
+        ["linkText=Outdoor Plants", "linkText"],
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Outdoor Plants')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/outdoor-plants/')]", "xpath:href"],
+        ["xpath=//div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Outdoor Plants')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "31973d33-ab9b-47c9-9600-1682626241a3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.nav-item:nth-child(1) button",
+      "targets": [
+        ["css=.nav-item:nth-child(1) button", "css:finder"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Geranium')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6adf8181-328c-4895-8637-fc5d9ffca080",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.nav-item:nth-child(3) button",
+      "targets": [
+        ["css=.nav-item:nth-child(3) button", "css:finder"],
+        ["xpath=//li[3]/a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Lilium')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d803c8a-2479-43ae-a0de-e941a2e8e3af",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(1) button",
+      "targets": [
+        ["css=.nav-item:nth-child(1) button", "css:finder"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Geranium')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b534b14e-6527-47ba-a467-29d876e80ce6",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Check out our plants and tools! | PlantOasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49a7327e-7a26-4cf6-a647-8f4d54ac7f63",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.home-images",
+      "targets": [
+        ["css=.home-images", "css:finder"],
+        ["xpath=//img[@alt='Citronella']", "xpath:img"],
+        ["xpath=//div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9445c4d-9da9-4d47-8a31-18e676c43c2d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Plant pots",
+      "targets": [
+        ["linkText=Plant pots", "linkText"],
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Plant pots')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/plant-pots/')]", "xpath:href"],
+        ["xpath=//div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Plant pots')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf6ea1ce-d3ce-40f5-a099-e1100f301406",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.nav-item:nth-child(1) button",
+      "targets": [
+        ["css=.nav-item:nth-child(1) button", "css:finder"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ceramic')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "897cf42b-716b-4b8c-8471-e34457885c66",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.nav-item:nth-child(3) button",
+      "targets": [
+        ["css=.nav-item:nth-child(3) button", "css:finder"],
+        ["xpath=//li[3]/a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Terracotta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7bf8ad3-1043-4c99-b3df-8afee3c7b755",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(3) button",
+      "targets": [
+        ["css=.nav-item:nth-child(3) button", "css:finder"],
+        ["xpath=//li[3]/a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Terracotta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c22fc40-58c9-445e-9e85-2bb263184d03",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Check out our plants and tools! | PlantOasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2dc1c5c-9152-406b-ab36-c0a8d43a211b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.home-images",
+      "targets": [
+        ["css=.home-images", "css:finder"],
+        ["xpath=//img[@alt='Terracotta Plant Pot']", "xpath:img"],
+        ["xpath=//div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b956314-b4c4-4e54-a9bf-bfac12bbcf5f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Tools",
+      "targets": [
+        ["linkText=Tools", "linkText"],
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Tools')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/tools/')]", "xpath:href"],
+        ["xpath=//div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Tools')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "01090cb8-6fcd-40d6-a29a-b7aeff2384a0",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Tools | PlantOasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0883edf3-ea0e-4b01-9d52-e5677c46e6c7",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.nav-item:nth-child(1) button",
+      "targets": [
+        ["css=.nav-item:nth-child(1) button", "css:finder"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Gloves')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb40999b-8bc8-4ab1-b277-d16d7f43147d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.nav-item:nth-child(3) button",
+      "targets": [
+        ["css=.nav-item:nth-child(3) button", "css:finder"],
+        ["xpath=//li[3]/a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Trimmers')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8b26352-eefc-430f-97a9-45c416dbb673",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(2) button",
+      "targets": [
+        ["css=.nav-item:nth-child(2) button", "css:finder"],
+        ["xpath=//li[2]/a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Shears')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7697fdbd-5caf-4018-ad1e-3d459de75809",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Check out our plants and tools! | PlantOasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3577455-65ec-4162-846b-4849349e96b1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.home-images",
+      "targets": [
+        ["css=.home-images", "css:finder"],
+        ["xpath=//img[@alt='Hedge Shears']", "xpath:img"],
+        ["xpath=//div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "163e1615-8f24-41dd-9d45-bf8155b714d1",
+    "name": "test_browseReviews",
+    "commands": [{
+      "id": "669c4d5d-f9e1-4c34-bb22-bb1c45d3dfe7",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:8000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "93ce1b37-7ef7-47cc-84e6-ba4d459826e2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1096",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c553243c-7169-4128-aed4-dfe370ed717a",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Check out our plants and tools! | PlantOasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b9a4c3e-dd13-429f-a8bb-c9de4f097e1d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-3:nth-child(1) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(1) .home-images", "css:finder"],
+        ["xpath=//img[@alt=\"Adanson's Monstera\"]", "xpath:img"],
+        ["xpath=//div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66c55109-3f58-4295-96d5-60c5571432f2",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Adanson's Monstera - Plant Oasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff16f60e-bbbe-4add-a5ce-ca52bc17261c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-8 > .fas:nth-child(1)",
+      "targets": [
+        ["css=.col-8 > .fas:nth-child(1)", "css:finder"],
+        ["xpath=//div/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f959a433-e545-4e5d-953b-4dc10c99d63b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-8 > .far",
+      "targets": [
+        ["css=.col-8 > .far", "css:finder"],
+        ["xpath=//i[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "25f6cc18-33cb-4c37-982d-67a214e5626c",
+      "comment": "",
+      "command": "click",
+      "target": "css=h4 > b",
+      "targets": [
+        ["css=h4 > b", "css:finder"],
+        ["xpath=//h4/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Reviews ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44210c4f-d3f3-4bf4-8896-71cb9bc99f73",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h4 > b",
+      "targets": [
+        ["css=h4 > b", "css:finder"],
+        ["xpath=//h4/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Reviews ')]", "xpath:innerText"]
+      ],
+      "value": "Reviews "
+    }, {
+      "id": "7df73ef9-d041-4c47-b7e8-83dd0bd45906",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.btn-outline-plants",
+      "targets": [
+        ["css=.btn-outline-plants", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Leave Review')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b8a7ef2-6abf-4b06-999e-6adab129fbd5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(1) h3",
+      "targets": [
+        ["css=.col:nth-child(1) h3", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'admin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ee5178c-8694-44ae-96dd-83cbb4dbfc7f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.col:nth-child(1) h3",
+      "targets": [
+        ["css=.col:nth-child(1) h3", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'admin')]", "xpath:innerText"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "340297a0-650f-4919-b0e1-30042d9402bc",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.col:nth-child(1) h3",
+      "targets": [
+        ["css=.col:nth-child(1) h3", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'admin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "92767571-7466-4d5c-987a-116964df7941",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(1) h4",
+      "targets": [
+        ["css=.col:nth-child(1) h4", "css:finder"],
+        ["xpath=//div[2]/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Hey this is admin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1d0a061-fd65-43d3-9988-19bfce00fd5d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.col:nth-child(1) h4",
+      "targets": [
+        ["css=.col:nth-child(1) h4", "css:finder"],
+        ["xpath=//div[2]/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Hey this is admin')]", "xpath:innerText"]
+      ],
+      "value": "Hey this is admin"
+    }, {
+      "id": "ea12b34c-c2db-4b46-821a-a840d02c75b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(1) .row:nth-child(3)",
+      "targets": [
+        ["css=.col:nth-child(1) .row:nth-child(3)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "257fa730-a0ed-4708-a687-871f3eeafa56",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.col:nth-child(1) .row > p",
+      "targets": [
+        ["css=.col:nth-child(1) .row > p", "css:finder"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'and this is an awesome review')]", "xpath:innerText"]
+      ],
+      "value": "and this is an awesome review"
+    }, {
+      "id": "64954cc9-4d31-468c-8466-c449174e370c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(1) .row:nth-child(4)",
+      "targets": [
+        ["css=.col:nth-child(1) .row:nth-child(4)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e99341e-6524-46c0-8e90-f551291be262",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.col:nth-child(1) .row:nth-child(4)",
+      "targets": [
+        ["css=.col:nth-child(1) .row:nth-child(4)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/div[4]", "xpath:position"]
+      ],
+      "value": "March 11, 2021, 6:32 p.m."
+    }, {
+      "id": "7694828d-18b5-4680-a0d0-0aa4f1543549",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.col:nth-child(1) .row:nth-child(4)",
+      "targets": [
+        ["css=.col:nth-child(1) .row:nth-child(4)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b7ddd22-2074-4cea-b4ac-4e0b05702a33",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(1) > .col-6 > p",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-6 > p", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Image unavailable')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f8685c3-ff63-436e-83f7-304890a5676d",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.row:nth-child(1) > .col-6 > p",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-6 > p", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Image unavailable')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "773a871e-8ccd-42fb-9546-8348f56c1fa6",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.row:nth-child(1) > .col-6 > p",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-6 > p", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Image unavailable')]", "xpath:innerText"]
+      ],
+      "value": "Image unavailable"
+    }, {
+      "id": "57d97436-751f-4019-966a-2ee257443444",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(2) h3",
+      "targets": [
+        ["css=.col:nth-child(2) h3", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'hubo00')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "34dbfe35-f5ed-4977-8903-5bb822f42d7c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.col:nth-child(2) h3",
+      "targets": [
+        ["css=.col:nth-child(2) h3", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'hubo00')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "124b816b-913b-43bb-8bfd-5b02f01d496a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.col:nth-child(2) h3",
+      "targets": [
+        ["css=.col:nth-child(2) h3", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'hubo00')]", "xpath:innerText"]
+      ],
+      "value": "hubo00"
+    }, {
+      "id": "7169cba8-3693-49b7-af3e-11b4c57474fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(2) .row:nth-child(2)",
+      "targets": [
+        ["css=.col:nth-child(2) .row:nth-child(2)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b396899-445d-4a2c-aa94-4e3beeef2343",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.col:nth-child(2) h4",
+      "targets": [
+        ["css=.col:nth-child(2) h4", "css:finder"],
+        ["xpath=//div[2]/div/div/div[2]/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Really Awesome plant')]", "xpath:innerText"]
+      ],
+      "value": "Really Awesome plant"
+    }, {
+      "id": "28264887-96a9-4dd6-ab08-197c3b044637",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(2) p",
+      "targets": [
+        ["css=.col:nth-child(2) p", "css:finder"],
+        ["xpath=//div[2]/div/div/div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Thanks for quick service, plant arrived in one day! incredible shipping! will shop with you again! most definitely!!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f4e09c5-be71-4f12-ae6b-46ce308968a0",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.col:nth-child(2) p",
+      "targets": [
+        ["css=.col:nth-child(2) p", "css:finder"],
+        ["xpath=//div[2]/div/div/div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Thanks for quick service, plant arrived in one day! incredible shipping! will shop with you again! most definitely!!')]", "xpath:innerText"]
+      ],
+      "value": "Thanks for quick service, plant arrived in one day! incredible shipping! will shop with you again! most definitely!!"
+    }, {
+      "id": "9d9b0d81-4183-4379-bb77-78b70146f338",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(2) .row:nth-child(4)",
+      "targets": [
+        ["css=.col:nth-child(2) .row:nth-child(4)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div[2]/div/div/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b68db1f-250a-47e7-878d-a3ae4ada367c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.col:nth-child(2) .row:nth-child(4)",
+      "targets": [
+        ["css=.col:nth-child(2) .row:nth-child(4)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div[2]/div/div/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7c1bd44-ca39-47be-8472-02d61e4a06d2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.col:nth-child(2) .row:nth-child(4)",
+      "targets": [
+        ["css=.col:nth-child(2) .row:nth-child(4)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div[2]/div/div/div[4]", "xpath:position"]
+      ],
+      "value": "March 15, 2021, 1:33 p.m."
+    }, {
+      "id": "8bb632d9-76ca-48c3-90ec-a33fe7f88364",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Edit",
+      "targets": [
+        ["linkText=Edit", "linkText"],
+        ["css=.ml-2 > div:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Edit')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/reviews/adansons-monsteramonstera-adansonii/13/edit')]", "xpath:href"],
+        ["xpath=//div[5]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Edit ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "818d4cfe-db69-4b4d-9319-6a4d4f4addbf",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Delete",
+      "targets": [
+        ["linkText=Delete", "linkText"],
+        ["css=.text-danger", "css:finder"],
+        ["xpath=(//a[contains(text(),'Delete')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/reviews/adansons-monsteramonstera-adansonii/13/delete')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2111dc7-618f-402e-b6b5-45c0e4dc86d0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.review-image",
+      "targets": [
+        ["css=.review-image", "css:finder"],
+        ["xpath=//img[@alt='Really Awesome plant']", "xpath:img"],
+        ["xpath=//div[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de3dcada-8cde-4eba-97a9-b66556bb2ec4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-brand > img",
+      "targets": [
+        ["css=.navbar-brand > img", "css:finder"],
+        ["xpath=//img[@alt='Store_Logo']", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3192761-0350-4129-a8d1-c0cd4a572684",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-3:nth-child(4) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(4) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Citronella']", "xpath:img"],
+        ["xpath=//div[4]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "981606c3-1372-40e5-9e52-fbf32144bc75",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Citronella - Plant Oasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff251c8c-a2ba-472a-902b-68108c5c097e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-8 > .far",
+      "targets": [
+        ["css=.col-8 > .far", "css:finder"],
+        ["xpath=//i[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1627fa1f-9f36-4615-a21e-21bccc8d8424",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-8 > .fas:nth-child(2)",
+      "targets": [
+        ["css=.col-8 > .fas:nth-child(2)", "css:finder"],
+        ["xpath=//i[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "adc2ce64-7385-43e8-b5c1-519ac420c2d3",
+      "comment": "",
+      "command": "click",
+      "target": "css=h4 > b",
+      "targets": [
+        ["css=h4 > b", "css:finder"],
+        ["xpath=//h4/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Reviews ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "147f7478-f7f1-4744-b6fb-7381a68205d4",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=h4 > b",
+      "targets": [
+        ["css=h4 > b", "css:finder"],
+        ["xpath=//h4/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Reviews ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e466f36e-4e57-4f4d-a41d-fe5e374216f7",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h4 > b",
+      "targets": [
+        ["css=h4 > b", "css:finder"],
+        ["xpath=//h4/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Reviews ')]", "xpath:innerText"]
+      ],
+      "value": "Reviews "
+    }, {
+      "id": "5a87aefd-2cba-46ee-9457-38a03c24913c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.btn-outline-plants",
+      "targets": [
+        ["css=.btn-outline-plants", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Leave Review')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "041c5925-592a-4290-a835-92fe96a74fcb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row > h3",
+      "targets": [
+        ["css=.row > h3", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'hubo00')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "209220eb-29e6-49ef-8186-5942cfbb2cb3",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.row > h3",
+      "targets": [
+        ["css=.row > h3", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'hubo00')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "82ca6590-811f-4771-b537-0f985e364a4e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.row > h3",
+      "targets": [
+        ["css=.row > h3", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'hubo00')]", "xpath:innerText"]
+      ],
+      "value": "hubo00"
+    }, {
+      "id": "7cf01b98-64da-4e2d-8fc5-ea8b3cd8678a",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.ml-4 > .fas:nth-child(1)",
+      "targets": [
+        ["css=.ml-4 > .fas:nth-child(1)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/div/div/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "963ec4bf-13fe-463c-9f69-a7355713909f",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.ml-4 > .far",
+      "targets": [
+        ["css=.ml-4 > .far", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/div/div/i[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce5b1525-a977-4a45-a63d-4adc2e5e2933",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-6 > .ml-2:nth-child(2)",
+      "targets": [
+        ["css=.col-6 > .ml-2:nth-child(2)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5409cfa-34cf-475c-a37a-e5021d4df06d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.ml-2 > h4",
+      "targets": [
+        ["css=.ml-2 > h4", "css:finder"],
+        ["xpath=//div[2]/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Smells Great')]", "xpath:innerText"]
+      ],
+      "value": "Smells Great"
+    }, {
+      "id": "20584345-ab47-49e7-a4ca-1d8e995fb7c7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(1) > .col-6:nth-child(1)",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-6:nth-child(1)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3dda2eb2-96ba-4fc4-8983-e3bfab7b4cd2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.row > p",
+      "targets": [
+        ["css=.row > p", "css:finder"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'What an incredible plant! grows so big and smells so wonderful!')]", "xpath:innerText"]
+      ],
+      "value": "What an incredible plant! grows so big and smells so wonderful!"
+    }, {
+      "id": "fcd73476-3370-4301-8ffa-d3b7c6db886c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(4)",
+      "targets": [
+        ["css=.row:nth-child(4)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cf60be0-0d02-437e-bba2-f2d5266a0f4a",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.row:nth-child(4)",
+      "targets": [
+        ["css=.row:nth-child(4)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "97f02820-5032-44ce-a7e9-51f4fc1938b4",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.row:nth-child(4)",
+      "targets": [
+        ["css=.row:nth-child(4)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/div[4]", "xpath:position"]
+      ],
+      "value": "March 12, 2021, 11:30 a.m."
+    }, {
+      "id": "f49442e0-b66e-46f9-8066-dc122bc8b275",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Edit",
+      "targets": [
+        ["linkText=Edit", "linkText"],
+        ["css=.ml-2 > div:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Edit')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/reviews/citronellageranium-cripsum/5/edit')]", "xpath:href"],
+        ["xpath=//div[5]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Edit ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "39a72c5c-ae63-46fe-a5fe-7b663b8d31c1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Delete",
+      "targets": [
+        ["linkText=Delete", "linkText"],
+        ["css=.text-danger", "css:finder"],
+        ["xpath=(//a[contains(text(),'Delete')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/reviews/citronellageranium-cripsum/5/delete')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1df1cd66-54e9-4f82-aab8-42795f6480ad",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.review-image",
+      "targets": [
+        ["css=.review-image", "css:finder"],
+        ["xpath=//img[@alt='Smells Great']", "xpath:img"],
+        ["xpath=//div[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5d12153a-62b3-4757-9d5d-e5ffffeb24fc",
+    "name": "test_addNewReview",
+    "commands": [{
+      "id": "e0ded7c2-cd2c-4a29-a13c-997f8f8e7c57",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:8000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3bcd2b5a-d6dd-4b2a-a5c3-791c2aa1dc9d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1096",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b12aa592-9a61-4c4e-958c-c39f425b7bba",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Check out our plants and tools! | PlantOasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1161f48-94e8-432a-8d6e-577a6bba6a3b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-lg-3:nth-child(3) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(3) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Bunch Flowered Daffodil']", "xpath:img"],
+        ["xpath=//div[3]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89052d67-a89a-46f3-bfe9-d739e5586cd0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-3:nth-child(3) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(3) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Bunch Flowered Daffodil']", "xpath:img"],
+        ["xpath=//div[3]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ec9a8be-731e-44e1-8622-3182be29a414",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Bunch Flowered Daffodil - Plant Oasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3a21d11-b4c9-42d4-876d-fd51ab497b00",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.fa-star:nth-child(1)",
+      "targets": [
+        ["css=.fa-star:nth-child(1)", "css:finder"],
+        ["xpath=//div/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70f08de4-28c0-4216-be6e-453114cb11fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=h4 > b",
+      "targets": [
+        ["css=h4 > b", "css:finder"],
+        ["xpath=//h4/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Reviews ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fef79455-dc81-4324-ab54-04fecf37ea9a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h4 > b",
+      "targets": [
+        ["css=h4 > b", "css:finder"],
+        ["xpath=//h4/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Reviews ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ca3caa9-d783-4c71-8569-4daac431adb1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h4 > b",
+      "targets": [
+        ["css=h4 > b", "css:finder"],
+        ["xpath=//h4/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Reviews ')]", "xpath:innerText"]
+      ],
+      "value": "Reviews "
+    }, {
+      "id": "bfd7b861-3f15-4c74-833f-c16ce6bb22b8",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=a:nth-child(2) > .btn",
+      "targets": [
+        ["css=a:nth-child(2) > .btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Leave Review')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3121b6e7-3130-4308-aef3-c6fbce601475",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(2) > .btn",
+      "targets": [
+        ["css=a:nth-child(2) > .btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Leave Review')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "63a4e72c-1878-4a57-bb32-afad79c08ad0",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "164fe628-cee7-45ec-bee1-7670a743a2c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#div_id_rating > .control-label",
+      "targets": [
+        ["css=#div_id_rating > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_rating']/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Rating')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4493c5e4-bf10-45f7-b8a8-a1e5f9e06067",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#div_id_rating > .control-label",
+      "targets": [
+        ["css=#div_id_rating > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_rating']/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Rating')]", "xpath:innerText"]
+      ],
+      "value": "Rating"
+    }, {
+      "id": "b7ef466a-dac8-4712-901b-9fe3d724009b",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=id_rating",
+      "targets": [
+        ["id=id_rating", "id"],
+        ["name=rating", "name"],
+        ["css=#id_rating", "css:finder"],
+        ["xpath=//select[@id='id_rating']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_rating']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8576d450-fe1f-4e60-bea4-41aafbcc6f68",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_rating",
+      "targets": [
+        ["id=id_rating", "id"],
+        ["name=rating", "name"],
+        ["css=#id_rating", "css:finder"],
+        ["xpath=//select[@id='id_rating']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_rating']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6052c08-bd1e-4344-88ce-7f39eb2d0f42",
+      "comment": "",
+      "command": "select",
+      "target": "id=id_rating",
+      "targets": [],
+      "value": "label=4"
+    }, {
+      "id": "ed112b41-5e1f-4f27-970b-eef58092cb0d",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_rating",
+      "targets": [
+        ["id=id_rating", "id"],
+        ["name=rating", "name"],
+        ["css=#id_rating", "css:finder"],
+        ["xpath=//select[@id='id_rating']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_rating']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9880d94-d7bd-4691-b642-cdc1804400e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#div_id_title > .control-label",
+      "targets": [
+        ["css=#div_id_title > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_title']/label", "xpath:idRelative"],
+        ["xpath=//div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Title*')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b948efe6-07c9-4a10-996a-91d9533ebc74",
+      "comment": "",
+      "command": "click",
+      "target": "id=div_id_title",
+      "targets": [
+        ["id=div_id_title", "id"],
+        ["css=#div_id_title", "css:finder"],
+        ["xpath=//div[@id='div_id_title']", "xpath:attributes"],
+        ["xpath=//form/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bba53e1-a856-45c2-9fb5-7208098d8e4c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=#div_id_title > .control-label",
+      "targets": [
+        ["css=#div_id_title > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_title']/label", "xpath:idRelative"],
+        ["xpath=//div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Title*')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "141e1614-e943-49b0-895c-84aeb60e5d87",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#div_id_title > .control-label",
+      "targets": [
+        ["css=#div_id_title > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_title']/label", "xpath:idRelative"],
+        ["xpath=//div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Title*')]", "xpath:innerText"]
+      ],
+      "value": "Title*"
+    }, {
+      "id": "4bb26012-4ceb-40b8-b63f-c97d6cfc053f",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=id_title",
+      "targets": [
+        ["id=id_title", "id"],
+        ["name=title", "name"],
+        ["css=#id_title", "css:finder"],
+        ["xpath=//input[@id='id_title']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_title']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3bf82742-4ae7-4240-84a9-2025232c2cf1",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_title",
+      "targets": [
+        ["id=id_title", "id"],
+        ["name=title", "name"],
+        ["css=#id_title", "css:finder"],
+        ["xpath=//input[@id='id_title']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_title']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fd57aba-6307-423b-9c87-c2512ca0d42c",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_title",
+      "targets": [
+        ["id=id_title", "id"],
+        ["name=title", "name"],
+        ["css=#id_title", "css:finder"],
+        ["xpath=//input[@id='id_title']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_title']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "testing"
+    }, {
+      "id": "84c32ef4-2450-4925-912c-e6864559e13e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-10",
+      "targets": [
+        ["css=.col-10", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "260674f1-e132-42d9-a540-072e73d1cd08",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=#div_id_content > .control-label",
+      "targets": [
+        ["css=#div_id_content > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_content']/label", "xpath:idRelative"],
+        ["xpath=//div[3]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Content*')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "51b22079-1e64-4ed9-87d3-e24008c85ad6",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#div_id_content > .control-label",
+      "targets": [
+        ["css=#div_id_content > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_content']/label", "xpath:idRelative"],
+        ["xpath=//div[3]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Content*')]", "xpath:innerText"]
+      ],
+      "value": "Content*"
+    }, {
+      "id": "6ddb834f-b4c1-4ef9-a095-aaf7a1b999df",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=id_content",
+      "targets": [
+        ["id=id_content", "id"],
+        ["name=content", "name"],
+        ["css=#id_content", "css:finder"],
+        ["xpath=//textarea[@id='id_content']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_content']/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d0d58f9-73fe-4648-9404-a0346df3ca5a",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_content",
+      "targets": [
+        ["id=id_content", "id"],
+        ["name=content", "name"],
+        ["css=#id_content", "css:finder"],
+        ["xpath=//textarea[@id='id_content']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_content']/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "for testing purposes"
+    }, {
+      "id": "bd16bd8d-4818-4ad4-9b2d-ca63fa8fdd51",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-10",
+      "targets": [
+        ["css=.col-10", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0829ef71-a38f-4fa7-951a-f5f6112acb40",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=#div_id_image > .control-label",
+      "targets": [
+        ["css=#div_id_image > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_image']/label", "xpath:idRelative"],
+        ["xpath=//div[4]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Image')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc060e95-9fa1-4a2d-89dc-7f212420e8bb",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#div_id_image > .control-label",
+      "targets": [
+        ["css=#div_id_image > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_image']/label", "xpath:idRelative"],
+        ["xpath=//div[4]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Image')]", "xpath:innerText"]
+      ],
+      "value": "Image"
+    }, {
+      "id": "4cd2e51a-002d-4c0c-ad84-eb5b4b5a24fa",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=id_image",
+      "targets": [
+        ["id=id_image", "id"],
+        ["name=image", "name"],
+        ["css=#id_image", "css:finder"],
+        ["xpath=//input[@id='id_image']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_image']/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0709643b-b11a-4167-a4c1-954524889dcb",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=input:nth-child(8)",
+      "targets": [
+        ["css=input:nth-child(8)", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f378f7ee-ab10-4f19-ad92-00471bd82feb",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(8)",
+      "targets": [
+        ["css=input:nth-child(8)", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "41f695f3-7290-4980-b84b-61f6dfbfc07a",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Bunch Flowered Daffodil - Plant Oasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b62f940f-36b7-4513-9304-565f25af8826",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-8 > .fas:nth-child(1)",
+      "targets": [
+        ["css=.col-8 > .fas:nth-child(1)", "css:finder"],
+        ["xpath=//div/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b28c5049-4fae-4bd1-ae9a-ea9656ea3813",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row > h3",
+      "targets": [
+        ["css=.row > h3", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'hubo00')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2c70eb6-3baf-4bc8-9553-c3512530d744",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.row > h3",
+      "targets": [
+        ["css=.row > h3", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'hubo00')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e783d48-c5a7-4d4d-b89a-eb65e306a3f8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.row > h3",
+      "targets": [
+        ["css=.row > h3", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'hubo00')]", "xpath:innerText"]
+      ],
+      "value": "hubo00"
+    }, {
+      "id": "1ae02b08-9763-435c-97d2-f733425e83ac",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.ml-4 > .fas:nth-child(3)",
+      "targets": [
+        ["css=.ml-4 > .fas:nth-child(3)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/div/div/i[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30632e3b-47fb-4344-ad02-0af4a5241452",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.ml-4 > .far",
+      "targets": [
+        ["css=.ml-4 > .far", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/div/div/i[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a863c0a-0c45-4ac3-ab97-750dc09b643f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ml-2 > h4",
+      "targets": [
+        ["css=.ml-2 > h4", "css:finder"],
+        ["xpath=//div[2]/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'testing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "24310efb-6e1e-4a6d-a3cd-a81374376785",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.ml-2 > h4",
+      "targets": [
+        ["css=.ml-2 > h4", "css:finder"],
+        ["xpath=//div[2]/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'testing')]", "xpath:innerText"]
+      ],
+      "value": "testing"
+    }, {
+      "id": "dd5e7232-b7bf-46bb-a09d-01df60ddde1d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row > p",
+      "targets": [
+        ["css=.row > p", "css:finder"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'for testing purposes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9842829-26a3-45a3-a634-60c2faf05a7d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.row > p",
+      "targets": [
+        ["css=.row > p", "css:finder"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'for testing purposes')]", "xpath:innerText"]
+      ],
+      "value": "for testing purposes"
+    }, {
+      "id": "afe7d90b-01eb-4bd5-85c0-9168499209d1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(4)",
+      "targets": [
+        ["css=.row:nth-child(4)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60d9ab3d-38f4-4031-830b-9fc6def0a15c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.row:nth-child(4)",
+      "targets": [
+        ["css=.row:nth-child(4)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a45e514-2273-4eaf-868e-2eb3a8fdc51b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.row:nth-child(4)",
+      "targets": [
+        ["css=.row:nth-child(4)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/div[4]", "xpath:position"]
+      ],
+      "value": "March 24, 2021, 5:59 p.m."
+    }, {
+      "id": "23135f15-faba-47f0-b0bd-4f16f04de705",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(1) > .col-6 > p",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-6 > p", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Image unavailable')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7b69d7e-2cbd-4370-8506-e84838597c9e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.row:nth-child(1) > .col-6 > p",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-6 > p", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Image unavailable')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fecf180-8ee7-449b-9d63-4c353e1a8197",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.row:nth-child(1) > .col-6 > p",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-6 > p", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Image unavailable')]", "xpath:innerText"]
+      ],
+      "value": "Image unavailable"
+    }, {
+      "id": "39d4e9b9-78ec-450a-8df6-fd22eef5bdb6",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Edit",
+      "targets": [
+        ["linkText=Edit", "linkText"],
+        ["css=.ml-2 > div:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Edit')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/reviews/bunch-flowered-daffodilnarcissus-tazetta/14/edit')]", "xpath:href"],
+        ["xpath=//div[5]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Edit ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e2662c6-9eda-4f57-addd-51b15b7ecea0",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Delete",
+      "targets": [
+        ["linkText=Delete", "linkText"],
+        ["css=.text-danger", "css:finder"],
+        ["xpath=(//a[contains(text(),'Delete')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/reviews/bunch-flowered-daffodilnarcissus-tazetta/14/delete')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "910d5a4f-4d53-45fb-8b75-556449f11e56",
+    "name": "test_editReview",
+    "commands": [{
+      "id": "aa3f4798-18aa-4f23-95bc-3149da6c8f8b",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:8000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "25c127e5-3c6d-4e10-ab64-81d3062af31f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1096",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "489f1fa0-c554-4b55-8ecb-a2555d7de1b3",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Check out our plants and tools! | PlantOasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b062a3e7-0953-463f-8e97-5506132ac068",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-lg-3:nth-child(3) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(3) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Bunch Flowered Daffodil']", "xpath:img"],
+        ["xpath=//div[3]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c70fe92f-bc52-499a-8b6b-8fe0b344f78f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-3:nth-child(3) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(3) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Bunch Flowered Daffodil']", "xpath:img"],
+        ["xpath=//div[3]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ef3f674-991f-4bd3-a782-0263069d685e",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Bunch Flowered Daffodil - Plant Oasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "148773b1-471a-45f2-9270-3ac16a5dcf9a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-8 > .fas:nth-child(4)",
+      "targets": [
+        ["css=.col-8 > .fas:nth-child(4)", "css:finder"],
+        ["xpath=//i[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33b8347d-9a4e-4b30-8573-95d401e85c4a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-6 > .ml-2:nth-child(2)",
+      "targets": [
+        ["css=.col-6 > .ml-2:nth-child(2)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "822c552e-924b-4ba3-bb25-14860c8f66eb",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.ml-2 > h4",
+      "targets": [
+        ["css=.ml-2 > h4", "css:finder"],
+        ["xpath=//div[2]/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'testing')]", "xpath:innerText"]
+      ],
+      "value": "testing"
+    }, {
+      "id": "c55cb62c-ba48-4458-98b3-e74bebbe9cb9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ml-2:nth-child(3)",
+      "targets": [
+        ["css=.ml-2:nth-child(3)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f39194e6-beea-48ab-a6b8-6dc71996a210",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.row > p",
+      "targets": [
+        ["css=.row > p", "css:finder"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'for testing purposes')]", "xpath:innerText"]
+      ],
+      "value": "for testing purposes"
+    }, {
+      "id": "6e88592c-2cfa-4215-8c9f-eaf761e5d9ec",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.ml-4 > .fas:nth-child(3)",
+      "targets": [
+        ["css=.ml-4 > .fas:nth-child(3)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/div/div/i[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8aca33e-9c29-4638-80e0-486f2e7ecdb8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(4)",
+      "targets": [
+        ["css=.row:nth-child(4)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab96bfc5-9f4e-4d34-99f4-88add024411c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.row:nth-child(4)",
+      "targets": [
+        ["css=.row:nth-child(4)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddbda78d-da62-461c-a592-3a0c083e5bf7",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.row:nth-child(4)",
+      "targets": [
+        ["css=.row:nth-child(4)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/div[4]", "xpath:position"]
+      ],
+      "value": "March 24, 2021, 5:59 p.m."
+    }, {
+      "id": "a1fd9ce2-c8dd-48f6-a63f-f3d7309a21c7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(1) > .col-6:nth-child(2)",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-6:nth-child(2)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4774b9a-2236-4f9c-86a4-ac1548a5cf09",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.row:nth-child(1) > .col-6 > p",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-6 > p", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Image unavailable')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4da843e-b931-438a-b376-08dab3a3efd4",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.row:nth-child(1) > .col-6 > p",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-6 > p", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Image unavailable')]", "xpath:innerText"]
+      ],
+      "value": "Image unavailable"
+    }, {
+      "id": "1fe5ace0-2230-46b9-9d8c-f374670d3b4f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Edit",
+      "targets": [
+        ["linkText=Edit", "linkText"],
+        ["css=.ml-2 > div:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Edit')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/reviews/bunch-flowered-daffodilnarcissus-tazetta/15/edit')]", "xpath:href"],
+        ["xpath=//div[5]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Edit ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b217ccfc-4d57-40b0-8b84-1b9b0e006eae",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Edit",
+      "targets": [
+        ["linkText=Edit", "linkText"],
+        ["css=.ml-2 > div:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Edit')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/reviews/bunch-flowered-daffodilnarcissus-tazetta/15/edit')]", "xpath:href"],
+        ["xpath=//div[5]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Edit ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e7bb2cb-ba10-4fc8-98ad-03e56c25f97e",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ddd7284-c51f-4543-9f78-5324ef61b489",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-10",
+      "targets": [
+        ["css=.col-10", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b74a5ff4-22af-4625-a131-195febda8112",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=#div_id_rating > .control-label",
+      "targets": [
+        ["css=#div_id_rating > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_rating']/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Rating')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d4e0ded-ca08-491a-bf7b-7f5f0b54d5da",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#div_id_rating > .control-label",
+      "targets": [
+        ["css=#div_id_rating > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_rating']/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Rating')]", "xpath:innerText"]
+      ],
+      "value": "Rating"
+    }, {
+      "id": "4925a231-b312-48ae-9dfb-8260d4ebdb22",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=id_rating",
+      "targets": [
+        ["id=id_rating", "id"],
+        ["name=rating", "name"],
+        ["css=#id_rating", "css:finder"],
+        ["xpath=//select[@id='id_rating']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_rating']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2efd34c-a9ce-4c51-bf2b-cb1929bde23c",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_rating",
+      "targets": [
+        ["id=id_rating", "id"],
+        ["name=rating", "name"],
+        ["css=#id_rating", "css:finder"],
+        ["xpath=//select[@id='id_rating']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_rating']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c2b0914-330a-4c50-bf38-bd758e2a9b82",
+      "comment": "",
+      "command": "select",
+      "target": "id=id_rating",
+      "targets": [],
+      "value": "label=1"
+    }, {
+      "id": "711dd23f-4d16-43bf-9dcf-c538eff654f8",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_rating",
+      "targets": [
+        ["id=id_rating", "id"],
+        ["name=rating", "name"],
+        ["css=#id_rating", "css:finder"],
+        ["xpath=//select[@id='id_rating']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_rating']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e311ae64-5bba-431d-8cc7-5a66df226c81",
+      "comment": "",
+      "command": "click",
+      "target": "id=div_id_title",
+      "targets": [
+        ["id=div_id_title", "id"],
+        ["css=#div_id_title", "css:finder"],
+        ["xpath=//div[@id='div_id_title']", "xpath:attributes"],
+        ["xpath=//form/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4569936f-3d22-4cd5-a028-6f55ad4dcec6",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=#div_id_title > .control-label",
+      "targets": [
+        ["css=#div_id_title > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_title']/label", "xpath:idRelative"],
+        ["xpath=//div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Title*')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "faf439c0-8ef6-482f-8aa7-05453268ca9c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#div_id_title > .control-label",
+      "targets": [
+        ["css=#div_id_title > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_title']/label", "xpath:idRelative"],
+        ["xpath=//div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Title*')]", "xpath:innerText"]
+      ],
+      "value": "Title*"
+    }, {
+      "id": "1f2ec6e2-1610-4544-8157-afc71b632b08",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=id_title",
+      "targets": [
+        ["id=id_title", "id"],
+        ["name=title", "name"],
+        ["css=#id_title", "css:finder"],
+        ["xpath=//input[@id='id_title']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_title']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3899fb77-0500-453b-be9b-7ec7911e7ef6",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_title",
+      "targets": [
+        ["id=id_title", "id"],
+        ["name=title", "name"],
+        ["css=#id_title", "css:finder"],
+        ["xpath=//input[@id='id_title']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_title']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a85ac84-7028-4e09-88b6-77af76c88250",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_title",
+      "targets": [
+        ["id=id_title", "id"],
+        ["name=title", "name"],
+        ["css=#id_title", "css:finder"],
+        ["xpath=//input[@id='id_title']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_title']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "testing-edit"
+    }, {
+      "id": "ac044aa0-865e-499c-a9ed-d50724acb016",
+      "comment": "",
+      "command": "click",
+      "target": "css=#div_id_content > .control-label",
+      "targets": [
+        ["css=#div_id_content > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_content']/label", "xpath:idRelative"],
+        ["xpath=//div[3]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Content*')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6aa44e0f-2727-4183-bb10-7da37475ed1e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=#div_id_content > .control-label",
+      "targets": [
+        ["css=#div_id_content > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_content']/label", "xpath:idRelative"],
+        ["xpath=//div[3]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Content*')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "97026e26-eac0-4a58-a27d-a69a8d062cec",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#div_id_content > .control-label",
+      "targets": [
+        ["css=#div_id_content > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_content']/label", "xpath:idRelative"],
+        ["xpath=//div[3]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Content*')]", "xpath:innerText"]
+      ],
+      "value": "Content*"
+    }, {
+      "id": "4fa3e95c-09bc-4814-bf75-1aa8ff93fd54",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=id_content",
+      "targets": [
+        ["id=id_content", "id"],
+        ["name=content", "name"],
+        ["css=#id_content", "css:finder"],
+        ["xpath=//textarea[@id='id_content']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_content']/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbe53dbc-9eb0-4964-9b04-10b027fd500c",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_content",
+      "targets": [
+        ["id=id_content", "id"],
+        ["name=content", "name"],
+        ["css=#id_content", "css:finder"],
+        ["xpath=//textarea[@id='id_content']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_content']/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c363ccf-0256-42eb-8f0a-21c3a12d14f5",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_content",
+      "targets": [
+        ["id=id_content", "id"],
+        ["name=content", "name"],
+        ["css=#id_content", "css:finder"],
+        ["xpath=//textarea[@id='id_content']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_content']/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "for testing purposes now editing the review"
+    }, {
+      "id": "1b30547c-ad7f-4fa4-b702-e7501a479365",
+      "comment": "",
+      "command": "click",
+      "target": "css=#div_id_image > .control-label",
+      "targets": [
+        ["css=#div_id_image > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_image']/label", "xpath:idRelative"],
+        ["xpath=//div[4]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Image')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1dea7a15-870d-4e9e-ae3d-311373a5ecf8",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=#div_id_image > .control-label",
+      "targets": [
+        ["css=#div_id_image > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_image']/label", "xpath:idRelative"],
+        ["xpath=//div[4]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Image')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9670d77a-7ed6-408d-9301-f46c2d1aa002",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#div_id_image > .control-label",
+      "targets": [
+        ["css=#div_id_image > .control-label", "css:finder"],
+        ["xpath=//div[@id='div_id_image']/label", "xpath:idRelative"],
+        ["xpath=//div[4]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Image')]", "xpath:innerText"]
+      ],
+      "value": "Image"
+    }, {
+      "id": "79e4f654-b52f-42d9-a34f-1355b35e880a",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=id_image",
+      "targets": [
+        ["id=id_image", "id"],
+        ["name=image", "name"],
+        ["css=#id_image", "css:finder"],
+        ["xpath=//input[@id='id_image']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_image']/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22d9c15e-66c2-4485-8ff2-d7830f3e438c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=input:nth-child(8)",
+      "targets": [
+        ["css=input:nth-child(8)", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9382e379-33c0-41ab-9b33-1d9476fcaaba",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(8)",
+      "targets": [
+        ["css=input:nth-child(8)", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d6c06ba-30cb-4e6b-ba73-07efe746e27b",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Bunch Flowered Daffodil - Plant Oasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2e1de8d-6174-47e7-9a86-3ba61ad2898f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-8 > .far:nth-child(3)",
+      "targets": [
+        ["css=.col-8 > .far:nth-child(3)", "css:finder"],
+        ["xpath=//i[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "63e90523-bb8b-4828-8483-e5cb153fe441",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-6 > .ml-2:nth-child(2)",
+      "targets": [
+        ["css=.col-6 > .ml-2:nth-child(2)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc8c0a13-d149-4893-8af3-38f88d16a15f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.ml-2 > h4",
+      "targets": [
+        ["css=.ml-2 > h4", "css:finder"],
+        ["xpath=//div[2]/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'testing-edit')]", "xpath:innerText"]
+      ],
+      "value": "testing-edit"
+    }, {
+      "id": "0ec35eac-2c26-4e34-b945-11627e992c41",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row > p",
+      "targets": [
+        ["css=.row > p", "css:finder"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'for testing purposes now editing the review')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "269438f5-501d-489e-a2d5-6c269ad30182",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.row > p",
+      "targets": [
+        ["css=.row > p", "css:finder"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'for testing purposes now editing the review')]", "xpath:innerText"]
+      ],
+      "value": "for testing purposes now editing the review"
+    }, {
+      "id": "18706430-1c81-479c-9671-9926c92340e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(4)",
+      "targets": [
+        ["css=.row:nth-child(4)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e53f8079-90b2-4e45-a40f-2fd773641e57",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.row:nth-child(4)",
+      "targets": [
+        ["css=.row:nth-child(4)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53d044ba-5232-4467-a6e2-83bebf2cc67f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.row:nth-child(4)",
+      "targets": [
+        ["css=.row:nth-child(4)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/div[4]", "xpath:position"]
+      ],
+      "value": "March 24, 2021, 5:59 p.m."
+    }, {
+      "id": "e81a9fdd-37ce-4e0c-8bc1-3d46cf750794",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(1) > .col-6 > p",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-6 > p", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Image unavailable')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a2b030f-7c9b-4731-b20c-e0f7b3746485",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.row:nth-child(1) > .col-6 > p",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-6 > p", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Image unavailable')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dced3bd8-98f8-48b5-ae6b-ceac54f4ebdd",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.row:nth-child(1) > .col-6 > p",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-6 > p", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Image unavailable')]", "xpath:innerText"]
+      ],
+      "value": "Image unavailable"
+    }]
+  }, {
+    "id": "d831aa5b-7e27-445f-85eb-aa53b83766c5",
+    "name": "test_deleteReview",
+    "commands": [{
+      "id": "4c2028ef-8b6a-4ef2-beb8-d69bc798b224",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:8000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e38ebc39-9e74-464e-8cae-eb7cd2ecabe6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1096",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b84ee70c-39fd-4c5f-84cc-4e779b536b4e",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Check out our plants and tools! | PlantOasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44ad8c4e-4df2-409e-96ef-960c7cb4338d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-lg-3:nth-child(3) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(3) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Bunch Flowered Daffodil']", "xpath:img"],
+        ["xpath=//div[3]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8727c97-0a70-4594-a96c-dd19a7609d72",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-3:nth-child(3) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(3) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Bunch Flowered Daffodil']", "xpath:img"],
+        ["xpath=//div[3]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f92bc5ec-7ed0-49cc-8c6b-047b3310b128",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Bunch Flowered Daffodil - Plant Oasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2feca8a-e615-4c41-b9f5-d950ee0181d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row > h3",
+      "targets": [
+        ["css=.row > h3", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'hubo00')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3792436c-82a1-41f4-a61a-d6bd28f99b63",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.row > h3",
+      "targets": [
+        ["css=.row > h3", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'hubo00')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a05608cb-6065-4268-9474-96adcf1e46aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-6 > .ml-2:nth-child(2)",
+      "targets": [
+        ["css=.col-6 > .ml-2:nth-child(2)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ea73d30-b85b-4d63-940c-cdaa390d42ac",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.ml-2 > h4",
+      "targets": [
+        ["css=.ml-2 > h4", "css:finder"],
+        ["xpath=//div[2]/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'testing-edit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "36d58d05-2a92-4ee1-8f3f-4b29b2efe562",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(1) > .col-6:nth-child(1)",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-6:nth-child(1)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23da6268-d6bc-4e7f-97a2-caa1b9bc06d0",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.row > p",
+      "targets": [
+        ["css=.row > p", "css:finder"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'for testing purposes now editing the review')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b698347-33e1-4ea2-a45b-a0e2de3fe3c4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(4)",
+      "targets": [
+        ["css=.row:nth-child(4)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1db7239-24b4-4da7-a749-9011d9761aa8",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.row:nth-child(4)",
+      "targets": [
+        ["css=.row:nth-child(4)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45b4bbbb-f2bb-4461-95ff-a3aa5a482c29",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(1) > .col-6:nth-child(2)",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-6:nth-child(2)", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6f03065-5bb3-4c64-a378-afb6f6e13477",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.row:nth-child(1) > .col-6 > p",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-6 > p", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Image unavailable')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb795701-6f94-49c7-9d09-31e9a0ae5347",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Delete",
+      "targets": [
+        ["linkText=Delete", "linkText"],
+        ["css=.text-danger", "css:finder"],
+        ["xpath=(//a[contains(text(),'Delete')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/reviews/bunch-flowered-daffodilnarcissus-tazetta/15/delete')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "07684a5b-8fed-4ac0-8e06-50e8525ac1eb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Delete",
+      "targets": [
+        ["linkText=Delete", "linkText"],
+        ["css=.text-danger", "css:finder"],
+        ["xpath=(//a[contains(text(),'Delete')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/reviews/bunch-flowered-daffodilnarcissus-tazetta/15/delete')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "94ab49c0-9dd3-42b6-a3f4-0d331529f683",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16da2cb0-46a5-4db8-85cd-093fdb88fe44",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-10 > form",
+      "targets": [
+        ["css=.col-10 > form", "css:finder"],
+        ["xpath=//div[2]/form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1f349cb-bef2-47c9-b389-79887c64f430",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.col-10 > form",
+      "targets": [
+        ["css=.col-10 > form", "css:finder"],
+        ["xpath=//div[2]/form", "xpath:position"]
+      ],
+      "value": "Are you sure want to delete this item ? Cancel"
+    }, {
+      "id": "95128497-29fa-418e-a475-922ad121de22",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Cancel",
+      "targets": [
+        ["linkText=Cancel", "linkText"],
+        ["css=form > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Cancel')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/')])[14]", "xpath:href"],
+        ["xpath=//form/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cancel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "11e5b881-272e-4c93-9994-fa4aeab3aa62",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cancel",
+      "targets": [
+        ["linkText=Cancel", "linkText"],
+        ["css=form > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Cancel')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/')])[14]", "xpath:href"],
+        ["xpath=//form/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cancel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "85ef22cd-73b9-426b-980c-8ae48d12f34e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-3:nth-child(3) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(3) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Bunch Flowered Daffodil']", "xpath:img"],
+        ["xpath=//div[3]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d777d51e-dd07-4c82-9c0d-c14f3604862c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Delete",
+      "targets": [
+        ["linkText=Delete", "linkText"],
+        ["css=.text-danger", "css:finder"],
+        ["xpath=(//a[contains(text(),'Delete')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/reviews/bunch-flowered-daffodilnarcissus-tazetta/15/delete')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd0df14e-1e9c-4edd-8ff8-7787a950dcca",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-10 input:nth-child(2)",
+      "targets": [
+        ["css=.col-10 input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Yes']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "652bbcf8-c368-4acc-9eee-371c65e85e42",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-10 input:nth-child(2)",
+      "targets": [
+        ["css=.col-10 input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Yes']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "339dd6e1-b458-455e-8948-36b08675a0dc",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Check out our plants and tools! | PlantOasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e80f0f86-7e16-497e-aa0f-74ba210d9121",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-3:nth-child(3) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(3) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Bunch Flowered Daffodil']", "xpath:img"],
+        ["xpath=//div[3]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7d597b5-99f8-4c9c-9e00-51d3ea5fa054",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-8 > p",
+      "targets": [
+        ["css=.col-8 > p", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'No reviews have been posted for this product Leave Review')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "376b46ef-db12-4da1-a1d0-5a9be75c1649",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.col-8 > p",
+      "targets": [
+        ["css=.col-8 > p", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'No reviews have been posted for this product Leave Review')]", "xpath:innerText"]
+      ],
+      "value": "No reviews have been posted for this product Leave Review"
+    }, {
+      "id": "2e70642e-a36b-49be-8b9c-406801bc1d68",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=a:nth-child(1) > .btn",
+      "targets": [
+        ["css=a:nth-child(1) > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//p/a/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ca65be96-f325-41a6-9d73-aa8064a2b6b9",
+    "name": "test_wishlistNavigation",
+    "commands": [{
+      "id": "ddf90c5b-b6a4-4ba7-b675-463c0f5fbd3f",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:8000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a6f473f-ec50-475d-a627-7bb313b869d8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1096",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b5fbd44-9efe-4dfd-bc6c-2b6c863369e4",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Check out our plants and tools! | PlantOasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "020f4162-d0ad-4a61-827b-9a1155c4f623",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.fa-heart",
+      "targets": [
+        ["css=.fa-heart", "css:finder"],
+        ["xpath=//li[4]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f64b6d5-a10e-4a7e-a4c5-a1ad3a86ebb6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-heart",
+      "targets": [
+        ["css=.fa-heart", "css:finder"],
+        ["xpath=//li[4]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9e14e91-3c44-4e2f-afdb-c091ff2d0858",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "hubo00's_wishlist - Plant Oasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "251a1ce7-59f4-4aa9-86ac-65e795f443de",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Your Wishlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fb9f3f3-3d24-43f6-82f9-8b28a340f907",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Your Wishlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4ddbd9c-c71c-4797-812c-50b3f90858a5",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Your Wishlist')]", "xpath:innerText"]
+      ],
+      "value": "Your Wishlist"
+    }, {
+      "id": "5561161a-ea23-4c84-b1e5-eb96aab9a41b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row > p",
+      "targets": [
+        ["css=.row > p", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'You have no items in your wishlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb9ce1f2-0c8e-476a-9332-2fdf4b9fa9f5",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.row > p",
+      "targets": [
+        ["css=.row > p", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'You have no items in your wishlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "22251874-e414-4b02-9d6a-6615a07abf12",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.row > p",
+      "targets": [
+        ["css=.row > p", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'You have no items in your wishlist')]", "xpath:innerText"]
+      ],
+      "value": "You have no items in your wishlist"
+    }, {
+      "id": "7043a86e-98b6-4c1e-a295-7c22b86ebc22",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-brand > img",
+      "targets": [
+        ["css=.navbar-brand > img", "css:finder"],
+        ["xpath=//img[@alt='Store_Logo']", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6956ed0f-4a3d-490a-bb54-70ccffbcfd04",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Check out our plants and tools! | PlantOasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e7d50100-4fbc-43de-8336-ff59cca5110a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-lg-3:nth-child(1) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(1) .home-images", "css:finder"],
+        ["xpath=//img[@alt=\"Adanson's Monstera\"]", "xpath:img"],
+        ["xpath=//div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "686ffdce-8d9f-4e16-90e9-7df5be930101",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-3:nth-child(1) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(1) .home-images", "css:finder"],
+        ["xpath=//img[@alt=\"Adanson's Monstera\"]", "xpath:img"],
+        ["xpath=//div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d796669-e2bb-44c2-827e-884fbbe38e5f",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Adanson's Monstera - Plant Oasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f38da19d-81ab-46e1-9336-216f6ad99ad0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=a:nth-child(2) > .fas",
+      "targets": [
+        ["css=a:nth-child(2) > .fas", "css:finder"],
+        ["xpath=//a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6097b3c-ce57-4941-9cbc-93e41cafc103",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(2) > .fas",
+      "targets": [
+        ["css=a:nth-child(2) > .fas", "css:finder"],
+        ["xpath=//a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a887ce5-ef1f-4402-bae9-9c43254afc8e",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "hubo00's_wishlist - Plant Oasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b6eb2f1-90ec-457e-822d-310fbedd3b71",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-9 .text-center > h3",
+      "targets": [
+        ["css=.col-9 .text-center > h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Products')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dece5546-ca6b-4345-8cb1-33064ae8cb01",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.col-9 .text-center > h3",
+      "targets": [
+        ["css=.col-9 .text-center > h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Products')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "94fd4f28-5a30-4438-a33d-b666380cac84",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.col-9 .text-center > h3",
+      "targets": [
+        ["css=.col-9 .text-center > h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Products')]", "xpath:innerText"]
+      ],
+      "value": "Products"
+    }, {
+      "id": "50615fac-5fd8-49c7-89bc-79c8b13d8a1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-3 .text-center > h3",
+      "targets": [
+        ["css=.col-3 .text-center > h3", "css:finder"],
+        ["xpath=//div[2]/table/thead/tr/th/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Details')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eaafc764-cb6d-4832-8fbd-bfee0780a120",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.col-3 .text-center > h3",
+      "targets": [
+        ["css=.col-3 .text-center > h3", "css:finder"],
+        ["xpath=//div[2]/table/thead/tr/th/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Details')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1df0566-9a34-48d3-8884-6c26572cb3f5",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.col-3 .text-center > h3",
+      "targets": [
+        ["css=.col-3 .text-center > h3", "css:finder"],
+        ["xpath=//div[2]/table/thead/tr/th/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Details')]", "xpath:innerText"]
+      ],
+      "value": "Details"
+    }, {
+      "id": "ff015fe8-dc70-4fdb-90ce-db074829a58b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-9 tbody h3",
+      "targets": [
+        ["css=.col-9 tbody h3", "css:finder"],
+        ["xpath=//td/h3", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3badbb11-719d-44ae-8407-6edc8ccbffea",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.col-9 tbody h3",
+      "targets": [
+        ["css=.col-9 tbody h3", "css:finder"],
+        ["xpath=//td/h3", "xpath:position"]
+      ],
+      "value": "Adanson's Monstera"
+    }, {
+      "id": "6cc547c4-c02f-437b-b30c-d29b431c4cab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-9 h4",
+      "targets": [
+        ["css=.col-9 h4", "css:finder"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Monstera Adansonii')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "35c33394-0d5b-413a-a370-7907a5e645db",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.col-9 h4",
+      "targets": [
+        ["css=.col-9 h4", "css:finder"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Monstera Adansonii')]", "xpath:innerText"]
+      ],
+      "value": "Monstera Adansonii"
+    }, {
+      "id": "fc3e0a8c-e524-4e5f-80a5-767bb39d2033",
+      "comment": "",
+      "command": "click",
+      "target": "css=h5",
+      "targets": [
+        ["css=h5", "css:finder"],
+        ["xpath=//h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Monsterae')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c9886fe-1f2b-40de-af7e-f58f2980087c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h5",
+      "targets": [
+        ["css=h5", "css:finder"],
+        ["xpath=//h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Monsterae')]", "xpath:innerText"]
+      ],
+      "value": "Monsterae"
+    }, {
+      "id": "e5e59596-a2b9-44b0-b71d-d9e88aade7db",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=cart-image",
+      "targets": [
+        ["id=cart-image", "id"],
+        ["css=#cart-image", "css:finder"],
+        ["xpath=//img[@id='cart-image']", "xpath:attributes"],
+        ["xpath=//td[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60f2964c-c6c3-483b-86bc-bb540ec1e31b",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.fa-times",
+      "targets": [
+        ["css=.fa-times", "css:finder"],
+        ["xpath=//a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f003de2-5529-4b3e-a8b6-45718e812ac5",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.cart-button > .fas",
+      "targets": [
+        ["css=.cart-button > .fas", "css:finder"],
+        ["xpath=//div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4afe0c50-324c-4857-98ac-c8b97d844a42",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-3 tbody h3:nth-child(1)",
+      "targets": [
+        ["css=.col-3 tbody h3:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/table/tbody/tr/td/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'User')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a2223fa-f78d-47bc-8520-8980ebe3ddc6",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h3:nth-child(1) > b",
+      "targets": [
+        ["css=h3:nth-child(1) > b", "css:finder"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'User')]", "xpath:innerText"]
+      ],
+      "value": "User"
+    }, {
+      "id": "38376e6f-1ca8-4943-a480-1d1610375fb7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-3 h4",
+      "targets": [
+        ["css=.col-3 h4", "css:finder"],
+        ["xpath=//div[2]/table/tbody/tr/td/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'hubo00')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc43d7f5-b084-407e-9943-88ac3aff25ca",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.col-3 h4",
+      "targets": [
+        ["css=.col-3 h4", "css:finder"],
+        ["xpath=//div[2]/table/tbody/tr/td/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'hubo00')]", "xpath:innerText"]
+      ],
+      "value": "hubo00"
+    }, {
+      "id": "f918fbdb-5a78-4220-8987-3ba79b9099d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=h3:nth-child(3)",
+      "targets": [
+        ["css=h3:nth-child(3)", "css:finder"],
+        ["xpath=//h3[2]", "xpath:position"],
+        ["xpath=//h3[contains(.,'Created')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b65abcac-5b07-49cc-95d5-e434d234c4a4",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h3:nth-child(3) > b",
+      "targets": [
+        ["css=h3:nth-child(3) > b", "css:finder"],
+        ["xpath=//h3[2]/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Created')]", "xpath:innerText"]
+      ],
+      "value": "Created"
+    }, {
+      "id": "09c6f074-4ca2-413d-a26c-8c6c635f8d31",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.btn-plants",
+      "targets": [
+        ["css=.btn-plants", "css:finder"],
+        ["xpath=//button[@onclick='window.print();']", "xpath:attributes"],
+        ["xpath=//td[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Print Wishlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9c40368-cc2a-4de8-908d-ca32b963d931",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-brand > img",
+      "targets": [
+        ["css=.navbar-brand > img", "css:finder"],
+        ["xpath=//img[@alt='Store_Logo']", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90b730d6-d5dc-433c-a87a-e6e35e91220c",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Check out our plants and tools! | PlantOasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab3b460e-b653-4cad-b96e-fa9ee00c060a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-lg-3:nth-child(7) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(7) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Furry Feather Calathea']", "xpath:img"],
+        ["xpath=//div[7]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e32e4de-5514-4bef-b9ef-a88697ffd6da",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-3:nth-child(7) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(7) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Furry Feather Calathea']", "xpath:img"],
+        ["xpath=//div[7]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b093261a-4ef6-477a-8b84-0f409bfe9147",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Furry Feather Calathea - Plant Oasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee6db0e0-89b2-41be-a030-bbf6b5e28a98",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=a:nth-child(2) > .fas",
+      "targets": [
+        ["css=a:nth-child(2) > .fas", "css:finder"],
+        ["xpath=//a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc7512a6-2ed2-4443-b490-2907bc2bdc50",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(2) > .fas",
+      "targets": [
+        ["css=a:nth-child(2) > .fas", "css:finder"],
+        ["xpath=//a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e76cb05b-c3b5-4075-965f-7e1c783b18c7",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "hubo00's_wishlist - Plant Oasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a10e1c96-4bb0-45ae-8fe9-33272e998407",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) h3",
+      "targets": [
+        ["css=tr:nth-child(2) h3", "css:finder"],
+        ["xpath=//tr[2]/td/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Furry Feather Calathea')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "31e239ea-a7ee-4956-beb1-ae6cc8bf9225",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=tr:nth-child(2) h3",
+      "targets": [
+        ["css=tr:nth-child(2) h3", "css:finder"],
+        ["xpath=//tr[2]/td/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Furry Feather Calathea')]", "xpath:innerText"]
+      ],
+      "value": "Furry Feather Calathea"
+    }, {
+      "id": "bbe0d2f6-33a6-44db-92a4-16b23468e55b",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) h4",
+      "targets": [
+        ["css=tr:nth-child(2) h4", "css:finder"],
+        ["xpath=//tr[2]/td/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Calathea Rufibarba')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac4c36b3-7d12-44b8-b6c9-5df82b1ba22e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=tr:nth-child(2) h4",
+      "targets": [
+        ["css=tr:nth-child(2) h4", "css:finder"],
+        ["xpath=//tr[2]/td/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Calathea Rufibarba')]", "xpath:innerText"]
+      ],
+      "value": "Calathea Rufibarba"
+    }, {
+      "id": "3e965cc1-0b3b-449d-a615-76b8083c2d76",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) h5",
+      "targets": [
+        ["css=tr:nth-child(2) h5", "css:finder"],
+        ["xpath=//tr[2]/td/h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Calathea')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44ae10eb-8074-4c49-b8e0-1b202248feb7",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=tr:nth-child(2) h5",
+      "targets": [
+        ["css=tr:nth-child(2) h5", "css:finder"],
+        ["xpath=//tr[2]/td/h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Calathea')]", "xpath:innerText"]
+      ],
+      "value": "Calathea"
+    }, {
+      "id": "778603c2-20ba-4ae9-9e27-aa0f9a3a8593",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=tr:nth-child(2) #cart-image",
+      "targets": [
+        ["css=tr:nth-child(2) #cart-image", "css:finder"],
+        ["xpath=(//img[@id='cart-image'])[2]", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4a98641-2b60-42bd-b1d5-131429c87114",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=tr:nth-child(2) .cart-trash > .fas",
+      "targets": [
+        ["css=tr:nth-child(2) .cart-trash > .fas", "css:finder"],
+        ["xpath=//tr[2]/td[3]/div/a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d3c3a23-ef47-4bd6-b278-83c4f3ae8b25",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=tr:nth-child(2) .cart-button > .fas",
+      "targets": [
+        ["css=tr:nth-child(2) .cart-button > .fas", "css:finder"],
+        ["xpath=//tr[2]/td[3]/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "251d2109-7f13-428e-8734-822816575e4b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-brand > img",
+      "targets": [
+        ["css=.navbar-brand > img", "css:finder"],
+        ["xpath=//img[@alt='Store_Logo']", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e08e57b-91b6-4378-96a6-e4d1ae1cfaac",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Check out our plants and tools! | PlantOasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b9b9546-e97b-4cdb-8492-349a97fc7453",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-lg-3:nth-child(5) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(5) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Dragon Tree']", "xpath:img"],
+        ["xpath=//div[5]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11d7b9db-98a8-4814-830d-4a08ff7babe6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-3:nth-child(5) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(5) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Dragon Tree']", "xpath:img"],
+        ["xpath=//div[5]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd3df8c5-3461-484c-8439-72cc625ef7d0",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Dragon Tree - Plant Oasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c69ee85-1742-49fb-be69-e4b8ec599636",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=a:nth-child(2) > .fas",
+      "targets": [
+        ["css=a:nth-child(2) > .fas", "css:finder"],
+        ["xpath=//a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6127315-343d-4cf2-82cc-88af66039c64",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(2) > .fas",
+      "targets": [
+        ["css=a:nth-child(2) > .fas", "css:finder"],
+        ["xpath=//a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f51041e7-f4db-4f74-bd78-6ac695637d76",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "hubo00's_wishlist - Plant Oasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cbe2e5a0-8c81-4ebb-94f3-f863825abf5f",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) h3",
+      "targets": [
+        ["css=tr:nth-child(3) h3", "css:finder"],
+        ["xpath=//tr[3]/td/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Dragon Tree')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c1629e4-3cd4-4a34-9e87-b12a25310cab",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=tr:nth-child(3) h3",
+      "targets": [
+        ["css=tr:nth-child(3) h3", "css:finder"],
+        ["xpath=//tr[3]/td/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Dragon Tree')]", "xpath:innerText"]
+      ],
+      "value": "Dragon Tree"
+    }, {
+      "id": "9567a33a-3ef0-40c4-9498-fe7e45634a55",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) h4",
+      "targets": [
+        ["css=tr:nth-child(3) h4", "css:finder"],
+        ["xpath=//tr[3]/td/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Dracaena Marginata')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7209487c-db75-447c-9b34-1a3a46d8b28a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=tr:nth-child(3) h4",
+      "targets": [
+        ["css=tr:nth-child(3) h4", "css:finder"],
+        ["xpath=//tr[3]/td/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Dracaena Marginata')]", "xpath:innerText"]
+      ],
+      "value": "Dracaena Marginata"
+    }, {
+      "id": "f5d69ecd-f787-4eea-98ba-e31ce7b1389a",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) h5",
+      "targets": [
+        ["css=tr:nth-child(3) h5", "css:finder"],
+        ["xpath=//tr[3]/td/h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Dracaenae')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb0cbf35-b2cc-4c5c-8391-dc2820edc19f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=tr:nth-child(3) h5",
+      "targets": [
+        ["css=tr:nth-child(3) h5", "css:finder"],
+        ["xpath=//tr[3]/td/h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Dracaenae')]", "xpath:innerText"]
+      ],
+      "value": "Dracaenae"
+    }, {
+      "id": "45dc7dc7-05e3-4f08-a58e-dd222216df06",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=tr:nth-child(3) .cart-trash > .fas",
+      "targets": [
+        ["css=tr:nth-child(3) .cart-trash > .fas", "css:finder"],
+        ["xpath=//tr[3]/td[3]/div/a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "46cb1a6c-7f06-48ba-9226-db2afe810d31",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=tr:nth-child(3) .cart-button > .fas",
+      "targets": [
+        ["css=tr:nth-child(3) .cart-button > .fas", "css:finder"],
+        ["xpath=//tr[3]/td[3]/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e2f8cb2-a6ef-4f62-83ed-de2b5bb07796",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-9 tbody > tr:nth-child(1) h3",
+      "targets": [
+        ["css=.col-9 tbody > tr:nth-child(1) h3", "css:finder"],
+        ["xpath=//td/h3", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fde41f65-4bcd-4628-9750-03efe0dc23dc",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.col-9 tbody > tr:nth-child(1) h3",
+      "targets": [
+        ["css=.col-9 tbody > tr:nth-child(1) h3", "css:finder"],
+        ["xpath=//td/h3", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21c39235-963d-4b93-a3eb-b7ea3b829f6c",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) h3",
+      "targets": [
+        ["css=tr:nth-child(2) h3", "css:finder"],
+        ["xpath=//tr[2]/td/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Furry Feather Calathea')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "383e7a6d-7292-4fc3-bc9c-857365668491",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=tr:nth-child(2) h3",
+      "targets": [
+        ["css=tr:nth-child(2) h3", "css:finder"],
+        ["xpath=//tr[2]/td/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Furry Feather Calathea')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "367977ad-1385-44a8-baff-8662cbe03fc9",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) h3",
+      "targets": [
+        ["css=tr:nth-child(3) h3", "css:finder"],
+        ["xpath=//tr[3]/td/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Dragon Tree')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "380adac7-c46c-4096-a120-bffaa82051cc",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=tr:nth-child(3) h3",
+      "targets": [
+        ["css=tr:nth-child(3) h3", "css:finder"],
+        ["xpath=//tr[3]/td/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Dragon Tree')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c01877b7-e540-48cd-857b-282871009ef4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-plants",
+      "targets": [
+        ["css=.btn-plants", "css:finder"],
+        ["xpath=//button[@onclick='window.print();']", "xpath:attributes"],
+        ["xpath=//td[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Print Wishlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c7f00b2-7d97-4c49-a9dc-a216f2094a5f",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=tr:nth-child(3) h3",
+      "targets": [
+        ["css=tr:nth-child(3) h3", "css:finder"],
+        ["xpath=//tr[3]/td/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Dragon Tree')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "73143133-7ae1-4cba-96f6-bcc34b58f143",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=tr:nth-child(3) h3",
+      "targets": [
+        ["css=tr:nth-child(3) h3", "css:finder"],
+        ["xpath=//tr[3]/td/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Dragon Tree')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9f28922-c0ff-450b-be3b-a2ea87e3bad6",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=tr:nth-child(3) h3",
+      "targets": [
+        ["css=tr:nth-child(3) h3", "css:finder"],
+        ["xpath=//tr[3]/td/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Dragon Tree')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2b060159-b1f9-4c4e-b485-1da7de743db1",
+    "name": "test_removeFromWishlist",
+    "commands": [{
+      "id": "1e74c8bb-1f1a-4e15-92af-c5ecb017adfb",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:8000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "339cedc6-c1b7-4ab6-96b3-5848d046fdf2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1096",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e77cc8de-5a9b-46b2-b805-b5be015b0ab7",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Check out our plants and tools! | PlantOasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "357b1912-6782-43fb-acc8-95f8b5348d17",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.fa-heart",
+      "targets": [
+        ["css=.fa-heart", "css:finder"],
+        ["xpath=//li[4]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1b71771-2190-4c55-987c-c3afb1890a0c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-heart",
+      "targets": [
+        ["css=.fa-heart", "css:finder"],
+        ["xpath=//li[4]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "afdeea73-0e8a-4bda-a84e-9759ee5f3ce5",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "hubo00's_wishlist - Plant Oasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14ab76fa-df3d-4022-b22b-1cd7f3093dbc",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Your Wishlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea8a6b85-a9ac-4770-a498-eefa558bb29d",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Your Wishlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4705d09-d8eb-4524-8c4f-6664ec390329",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Your Wishlist')]", "xpath:innerText"]
+      ],
+      "value": "Your Wishlist"
+    }, {
+      "id": "d4933a2d-6b94-4000-99f9-13ccc61ad781",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-9 tbody > tr:nth-child(1) h3",
+      "targets": [
+        ["css=.col-9 tbody > tr:nth-child(1) h3", "css:finder"],
+        ["xpath=//td/h3", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2706992-c790-484c-8e66-a3adc2df325b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.col-9 tbody > tr:nth-child(1) h3",
+      "targets": [
+        ["css=.col-9 tbody > tr:nth-child(1) h3", "css:finder"],
+        ["xpath=//td/h3", "xpath:position"]
+      ],
+      "value": "Adanson's Monstera"
+    }, {
+      "id": "5f60a1d0-cd26-4577-8b07-fbeed905ed1c",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) h3",
+      "targets": [
+        ["css=tr:nth-child(2) h3", "css:finder"],
+        ["xpath=//tr[2]/td/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Furry Feather Calathea')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c63f2bc8-50b4-49fc-83e7-fe67106dfa71",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=tr:nth-child(2) h3",
+      "targets": [
+        ["css=tr:nth-child(2) h3", "css:finder"],
+        ["xpath=//tr[2]/td/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Furry Feather Calathea')]", "xpath:innerText"]
+      ],
+      "value": "Furry Feather Calathea"
+    }, {
+      "id": "8d4217bd-91c1-4398-b1b5-be379d61333c",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) h3",
+      "targets": [
+        ["css=tr:nth-child(3) h3", "css:finder"],
+        ["xpath=//tr[3]/td/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Dragon Tree')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bda45848-0364-412d-bd15-b7110d12c96c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=tr:nth-child(3) h3",
+      "targets": [
+        ["css=tr:nth-child(3) h3", "css:finder"],
+        ["xpath=//tr[3]/td/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Dragon Tree')]", "xpath:innerText"]
+      ],
+      "value": "Dragon Tree"
+    }, {
+      "id": "7c6c3a14-be78-4464-89c5-bd526c5329b1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=tr:nth-child(3) .cart-trash > .fas",
+      "targets": [
+        ["css=tr:nth-child(3) .cart-trash > .fas", "css:finder"],
+        ["xpath=//tr[3]/td[3]/div/a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "618dbf36-dc4a-4fc2-b38e-d42f200444cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) .cart-trash > .fas",
+      "targets": [
+        ["css=tr:nth-child(3) .cart-trash > .fas", "css:finder"],
+        ["xpath=//tr[3]/td[3]/div/a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a999fdd-71c9-45f8-9a88-13e9d9b67518",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=tr:nth-child(2) .cart-trash > .fas",
+      "targets": [
+        ["css=tr:nth-child(2) .cart-trash > .fas", "css:finder"],
+        ["xpath=//tr[2]/td[3]/div/a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9abcb594-4388-49e9-aa35-7c44499cdb02",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) .cart-trash > .fas",
+      "targets": [
+        ["css=tr:nth-child(2) .cart-trash > .fas", "css:finder"],
+        ["xpath=//tr[2]/td[3]/div/a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64695168-eded-46f2-b673-fc766e378ba6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.fa-times",
+      "targets": [
+        ["css=.fa-times", "css:finder"],
+        ["xpath=//a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5c8152d-b06f-4a35-8685-82bb59935c87",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-times",
+      "targets": [
+        ["css=.fa-times", "css:finder"],
+        ["xpath=//a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7c8833d-96c0-4ae4-8c8d-ec923935bb37",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(2)",
+      "targets": [
+        ["css=.row:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db3cf974-c7e4-458d-b8b6-6dc3c3fd44cf",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.row > p",
+      "targets": [
+        ["css=.row > p", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'You have no items in your wishlist')]", "xpath:innerText"]
+      ],
+      "value": "You have no items in your wishlist"
+    }]
+  }, {
+    "id": "13b196e1-d06d-4150-a9df-147527a0714e",
+    "name": "test_wishlistAddToCart",
+    "commands": [{
+      "id": "57a8ff89-fb41-4a94-8813-66a75a957b6a",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:8000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4062434e-66e8-4c3f-af92-4177c773140c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1096",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e8c39fcc-075c-4c2a-ae95-ab2fc33d5c0c",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Check out our plants and tools! | PlantOasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "244ac04a-8b1c-410f-924d-3327274eded7",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.fa-heart",
+      "targets": [
+        ["css=.fa-heart", "css:finder"],
+        ["xpath=//li[4]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "542dfc1c-2bce-45f8-a477-7dc8e7c0b1fe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-heart",
+      "targets": [
+        ["css=.fa-heart", "css:finder"],
+        ["xpath=//li[4]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ead02cb-5e5a-4d38-94ee-1bc124d43838",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "hubo00's_wishlist - Plant Oasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c9fb9f8-a317-4983-b2a4-2517b16b93dc",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Your Wishlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "535b90dc-0546-411f-bf30-c036920eea90",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Your Wishlist')]", "xpath:innerText"]
+      ],
+      "value": "Your Wishlist"
+    }, {
+      "id": "2280a462-d820-462a-a851-38a11a403d8c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Your Wishlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "968b19a4-9916-4a88-ba1e-fea903594447",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-9 tbody > tr:nth-child(1) h3",
+      "targets": [
+        ["css=.col-9 tbody > tr:nth-child(1) h3", "css:finder"],
+        ["xpath=//td/h3", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fca3997-1582-4ff5-b081-e6af0ab5315c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.col-9 tbody > tr:nth-child(1) h3",
+      "targets": [
+        ["css=.col-9 tbody > tr:nth-child(1) h3", "css:finder"],
+        ["xpath=//td/h3", "xpath:position"]
+      ],
+      "value": "Adanson's Monstera"
+    }, {
+      "id": "c3b4ea01-7d60-44e2-9b40-53d2f37b4875",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) h3",
+      "targets": [
+        ["css=tr:nth-child(2) h3", "css:finder"],
+        ["xpath=//tr[2]/td/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Furry Feather Calathea')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c25965e-9146-4c85-9bdc-5d3aa194a758",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "hubo00's_wishlist - Plant Oasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a76b6d39-953a-47d3-9eab-9a471bdb9745",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=tr:nth-child(2) h3",
+      "targets": [
+        ["css=tr:nth-child(2) h3", "css:finder"],
+        ["xpath=//tr[2]/td/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Furry Feather Calathea')]", "xpath:innerText"]
+      ],
+      "value": "Furry Feather Calathea"
+    }, {
+      "id": "e8ad2dde-9b7a-4e92-8d53-c67c3ae54be2",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) h3",
+      "targets": [
+        ["css=tr:nth-child(3) h3", "css:finder"],
+        ["xpath=//tr[3]/td/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Dragon Tree')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc967d80-14a9-4f9e-8931-c5080b021a32",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=tr:nth-child(3) h3",
+      "targets": [
+        ["css=tr:nth-child(3) h3", "css:finder"],
+        ["xpath=//tr[3]/td/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Dragon Tree')]", "xpath:innerText"]
+      ],
+      "value": "Dragon Tree"
+    }, {
+      "id": "d5680c11-654b-4c01-99dd-e0d28c72ae8a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-3",
+      "targets": [
+        ["css=.col-3", "css:finder"],
+        ["xpath=//div[2]/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e8c5fb2-d5c7-4973-bedd-3dbf3accd17f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=tr:nth-child(1) .cart-button > .fas",
+      "targets": [
+        ["css=tr:nth-child(1) .cart-button > .fas", "css:finder"],
+        ["xpath=//div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f3c5d75-8657-4cd1-90e8-84ce8db64928",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .cart-button > .fas",
+      "targets": [
+        ["css=tr:nth-child(1) .cart-button > .fas", "css:finder"],
+        ["xpath=//div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3e7a8c9-6ca4-4835-9ba4-163fcae1eec7",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Cart - Plant Oasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d830056-ff40-4a58-8d4b-46990ac9e9d0",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Shopping cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e741560-46db-40cc-ac88-9b0d75ff0f47",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Shopping cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bb7b455-56f9-416f-9b69-d4e84c9e9163",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Shopping cart')]", "xpath:innerText"]
+      ],
+      "value": "Shopping cart"
+    }, {
+      "id": "954933dc-1e87-49d4-8b4c-c0003c459ed5",
+      "comment": "",
+      "command": "click",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d90683e-db0f-427e-ae17-9b34abf0a77c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"]
+      ],
+      "value": "Adanson's Monstera"
+    }, {
+      "id": "4fd904e3-1458-41fa-97fd-9a2bccdf90cf",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.fa-heart",
+      "targets": [
+        ["css=.fa-heart", "css:finder"],
+        ["xpath=//li[4]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "138c127d-f875-4e54-b444-6c93075a1af5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-heart",
+      "targets": [
+        ["css=.fa-heart", "css:finder"],
+        ["xpath=//li[4]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "683b376d-070a-418b-a600-a611754c1c15",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=tr:nth-child(2) .cart-button > .fas",
+      "targets": [
+        ["css=tr:nth-child(2) .cart-button > .fas", "css:finder"],
+        ["xpath=//tr[2]/td[3]/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "265c8243-9386-4a6c-9a27-af42edb2397b",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) .cart-button > .fas",
+      "targets": [
+        ["css=tr:nth-child(2) .cart-button > .fas", "css:finder"],
+        ["xpath=//tr[2]/td[3]/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4e4db36-0e43-4bc2-8b17-e060becc1bb9",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Cart - Plant Oasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85309d3e-dd5d-48c8-b976-ad2d58ef975b",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) h3",
+      "targets": [
+        ["css=tr:nth-child(2) h3", "css:finder"],
+        ["xpath=//tr[2]/td[2]/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Furry Feather Calathea')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "80a8b103-0463-41db-9325-a1621190322a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=tr:nth-child(2) h3",
+      "targets": [
+        ["css=tr:nth-child(2) h3", "css:finder"],
+        ["xpath=//tr[2]/td[2]/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Furry Feather Calathea')]", "xpath:innerText"]
+      ],
+      "value": "Furry Feather Calathea"
+    }, {
+      "id": "f1e2a079-0756-46a2-8fc0-56613cf635c6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.fa-heart",
+      "targets": [
+        ["css=.fa-heart", "css:finder"],
+        ["xpath=//li[4]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5acfbd5f-81a5-4d26-917d-6afb7d6056f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-heart",
+      "targets": [
+        ["css=.fa-heart", "css:finder"],
+        ["xpath=//li[4]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8859eb95-6f16-4171-839e-67248d5196e8",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=tr:nth-child(3) .cart-button > .fas",
+      "targets": [
+        ["css=tr:nth-child(3) .cart-button > .fas", "css:finder"],
+        ["xpath=//tr[3]/td[3]/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "849b64a4-c59b-4073-be84-7a13bed9af04",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) .cart-button > .fas",
+      "targets": [
+        ["css=tr:nth-child(3) .cart-button > .fas", "css:finder"],
+        ["xpath=//tr[3]/td[3]/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47e25785-9013-46f0-8643-acbf865d33d6",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Cart - Plant Oasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "815e3b34-30a4-4ae1-9caf-a4fa16149c45",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) h3",
+      "targets": [
+        ["css=tr:nth-child(3) h3", "css:finder"],
+        ["xpath=//tr[3]/td[2]/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Dragon Tree')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "57b2a3c7-17d3-4003-82e5-33796167d9a2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=tr:nth-child(3) h3",
+      "targets": [
+        ["css=tr:nth-child(3) h3", "css:finder"],
+        ["xpath=//tr[3]/td[2]/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Dragon Tree')]", "xpath:innerText"]
+      ],
+      "value": "Dragon Tree"
+    }]
+  }],
+  "suites": [{
+    "id": "68c70e47-4742-42dc-90a3-9ec5481fbd7b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["937f6fd9-67a6-409f-9a29-ef2a3e5d7e4f"]
+  }],
+  "urls": ["http://127.0.0.1:8000/"],
+  "plugins": []
+}

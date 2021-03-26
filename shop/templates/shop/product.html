@@ -102,10 +102,12 @@
 						{% else %}
 						<div class="col-6">
 							<a class ="btn btn-plants" href="{% url 'cart:add_cart' product.slug %}">Add to Cart</a>
-							{% if in_wishlist %}
-								<a href="{% url 'wishlist:add_to_wishlist' product.slug %}"><i class="fas fa-heart"></i></a>
-							{% else %}
-								<a href="{% url 'wishlist:add_to_wishlist' product.slug %}"><i class="far fa-heart"></i></a>
+							{% if user.is_authenticated %}
+								{% if in_wishlist %}
+									<a href="{% url 'wishlist:add_to_wishlist' product.slug %}"><i class="fas fa-heart"></i></a>
+								{% else %}
+									<a href="{% url 'wishlist:add_to_wishlist' product.slug %}"><i class="far fa-heart"></i></a>
+								{% endif %}
 							{% endif %}
 						</div>
 						<div class="col-6">

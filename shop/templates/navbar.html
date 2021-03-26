@@ -1,6 +1,7 @@
+{% load static %}
 <nav class="navbar navbar-expand-sm bg-plants">
     <a class="navbar-brand" href="{% url 'shop:allProdCat' %}">
-        <img style="width: 4.5em; height: 4.5em; border-radius: 0.5em;" src="../../images/flower.PNG" alt="Store_Logo">
+        <img style="width: 4.5em; height: 4.5em; border-radius: 0.5em;" src="../../../static/images/flower.PNG" alt="Store_Logo">
     </a>
     <ul class="navbar-nav mr-auto">
         <li class="nav-item">
@@ -46,8 +47,10 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link nav-button" href="{% url 'wishlist:wishlist_detail' %}"><i class="fas fa-heart"></i>
-                    {% if product_count > 0 %}
-                    ({{product_count}})
+                    {% if user.is_authenticated %}
+                        {% if product_count > 0 %}
+                        ({{product_count}})
+                        {% endif %}
                     {% endif %}
                 </a>
             </li>

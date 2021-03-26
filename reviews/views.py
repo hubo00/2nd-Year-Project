@@ -16,7 +16,7 @@ A part of it showed how to create views for the review, I created the view mysel
 source = https://www.udemy.com/course/machine-learning-projects-recommendation-system-website/
 """
 
-@login_required
+@login_required()
 def add_review(request, prod_slug):
     product = get_object_or_404(Product, slug=prod_slug)
     form = ReviewForm()
@@ -41,7 +41,7 @@ def add_review(request, prod_slug):
             return HttpResponseRedirect(reverse('shop:prod_detail', kwargs={'prod_slug': prod_slug}))
     return render(request, 'add_review.html', {'product':product, 'form':form})
 
-@login_required
+@login_required()
 def review_update(request, prod_slug, id):
     product = get_object_or_404(Product, slug=prod_slug)
     review = get_object_or_404(Review, id=id)
@@ -59,7 +59,7 @@ def review_update(request, prod_slug, id):
     
     return render(request, 'update_review.html',{'form':form, 'product':product, 'review':review})
 
-@login_required
+@login_required()
 def review_delete(request, prod_slug, id):
     product = get_object_or_404(Product, slug=prod_slug)
     review = get_object_or_404(Review, id=id)

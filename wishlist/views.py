@@ -6,15 +6,17 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.contrib import messages
 
 @login_required
-def wishlist_detail(request):
+def wishlist_detail(request, wishlist_counter=0):
     products = None
     try:
         wishlist = Wishlist.objects.get(user=request.user)
         products = WishlistItem.objects.filter(wishlist=wishlist)
+        for product in products:
+            wishlist_counter += 1
     except ObjectDoesNotExist:
         wishlist = Wishlist.objects.create(user=request.user)
         wishlist.save()
-    return render(request, 'wishlist_detail.html',{'wishlist':wishlist, 'products':products})
+    return render(request, 'wishlist_detail.html',{'wishlist':wishlist, 'products':products, 'wishlist_counter': wishlist_counter})
 
 @login_required
 def add_to_wishlist(request, prod_slug):

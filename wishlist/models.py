@@ -24,7 +24,7 @@ class Wishlist(models.Model):
     
     def __str__(self):
         return str(self.id)
-
+        
 class WishlistItem(models.Model):
     wishlist = models.ForeignKey(Wishlist, on_delete=models.CASCADE)
     product = models.ForeignKey(Product, null=True, on_delete=models.SET_NULL)

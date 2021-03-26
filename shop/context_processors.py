@@ -1,5 +1,4 @@
-from django.shortcuts import get_list_or_404
-from .models import Category, subCategory
+from .models import Category
 
 def menu_links(request):
     links = Category.objects.all()

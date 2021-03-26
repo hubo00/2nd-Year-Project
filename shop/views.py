@@ -4,7 +4,9 @@ from .models import Category, Product, subCategory
 from django.core.paginator import Paginator, EmptyPage, InvalidPage
 from .forms import ProductForm
 from reviews.models import Review
+from wishlist.models import WishlistItem, Wishlist
 from django.contrib import messages
+from django.core.exceptions import ObjectDoesNotExist
 
 def allProdCat(request, cat_slug=None, subcat_slug=None):
     c_page = None
@@ -33,13 +35,21 @@ def allProdCat(request, cat_slug=None, subcat_slug=None):
     return render(request, 'shop/category.html', {'category':c_page,'subcategory':subcat, 'products':products})
 
 def prod_detail(request, prod_slug):
-    average = 0
     try:
         product = Product.objects.get(slug=prod_slug)
         reviews = Review.objects.filter(product=product)
+        inWishlist = False
     except Exception as e:
         raise e
-    return render(request, 'shop/product.html', {'product':product, 'reviews':reviews})
+    try:
+        wishlist = Wishlist.objects.get(user=request.user)
+    except ObjectDoesNotExist:
+        wishlist = Wishlist.objects.create(user=request.user)
+        wishlist.save()
+    if WishlistItem.objects.filter(wishlist=wishlist, product=product).exists():
+        inWishlist = True
+
+    return render(request, 'shop/product.html', {'product':product, 'reviews':reviews, 'in_wishlist': inWishlist})
 
 def prod_create(request):
     form = ProductForm()

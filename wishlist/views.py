@@ -5,7 +5,7 @@ from django.contrib.auth.decorators import login_required
 from django.core.exceptions import ObjectDoesNotExist
 from django.contrib import messages
 
-@login_required
+@login_required()
 def wishlist_detail(request, wishlist_counter=0):
     products = None
     try:
@@ -18,7 +18,7 @@ def wishlist_detail(request, wishlist_counter=0):
         wishlist.save()
     return render(request, 'wishlist_detail.html',{'wishlist':wishlist, 'products':products, 'wishlist_counter': wishlist_counter})
 
-@login_required
+@login_required()
 def add_to_wishlist(request, prod_slug):
     product = get_object_or_404(Product, slug=prod_slug)
     try:
@@ -36,7 +36,7 @@ def add_to_wishlist(request, prod_slug):
     messages.success(request, "Product has been added to wishlist")
     return redirect('wishlist:wishlist_detail')
 
-@login_required
+@login_required()
 def remove_from_wishlist(request, prod_slug):
     wishlist = Wishlist.objects.get(user=request.user)
     product = get_object_or_404(Product, slug=prod_slug)

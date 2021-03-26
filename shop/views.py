@@ -7,6 +7,7 @@ from reviews.models import Review
 from wishlist.models import WishlistItem, Wishlist
 from django.contrib import messages
 from django.core.exceptions import ObjectDoesNotExist
+from django.contrib.auth.decorators import login_required
 
 def allProdCat(request, cat_slug=None, subcat_slug=None):
     c_page = None
@@ -41,16 +42,18 @@ def prod_detail(request, prod_slug):
         inWishlist = False
     except Exception as e:
         raise e
-    try:
-        wishlist = Wishlist.objects.get(user=request.user)
-    except ObjectDoesNotExist:
-        wishlist = Wishlist.objects.create(user=request.user)
-        wishlist.save()
-    if WishlistItem.objects.filter(wishlist=wishlist, product=product).exists():
-        inWishlist = True
+    if request.user.id:
+        try:
+            wishlist = Wishlist.objects.get(user=request.user)
+        except ObjectDoesNotExist:
+            wishlist = Wishlist.objects.create(user=request.user)
+            wishlist.save()
+        if WishlistItem.objects.filter(wishlist=wishlist, product=product).exists():
+            inWishlist = True
 
     return render(request, 'shop/product.html', {'product':product, 'reviews':reviews, 'in_wishlist': inWishlist})
 
+@login_required()
 def prod_create(request):
     form = ProductForm()
     if request.method=='POST':
@@ -62,6 +65,7 @@ def prod_create(request):
 
     return render(request, 'shop/create_view.html',{'form':form,'prod':Product.objects.all()})
 
+@login_required()
 def prod_update(request, prod_slug):
     product = get_object_or_404(Product, slug=prod_slug)
     init_dict = {
@@ -76,6 +80,7 @@ def prod_update(request, prod_slug):
         form.save()
     return render(request, 'shop/update_view.html',{'form':form, 'product':product})
 
+@login_required()
 def prod_delete(request, prod_slug):
     product = Product.objects.get(slug=prod_slug)
     if request.method == "POST":

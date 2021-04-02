@@ -41,6 +41,10 @@
                             <a href="{{product.product.get_absolute_url}}"><img id="cart-image" src="{{product.product.image_thumbnail.url}}"></a>
                         </td>
                         <td>
+                            <br>
+                            <h3>€{{product.product.price}}</h3>
+                        </td>
+                        <td>
                             <div class="col">
                                 <a class="cart-button" href="{% url 'cart:add_cart' product.product.slug %}"><i class="fas fa-shopping-cart"></i></a>
                                 <br>
@@ -73,6 +77,8 @@
                         </td>
                         <td>
                             <button class="btn btn-plants" onclick="window.print();"><i class="fas fa-print"></i>Print Wishlist</button>
+                            <br>
+                            <button class="btn btn-danger mt-3"><a href="{% url 'wishlist:remove_all' %}"><i class="far fa-trash-alt"></i>Clear Wishlist</a></button>
                         </td>
                     </tr>
                 </tbody>

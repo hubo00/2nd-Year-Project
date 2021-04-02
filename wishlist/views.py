@@ -44,3 +44,11 @@ def remove_from_wishlist(request, prod_slug):
     wishlist_item.delete()
     messages.error(request, "Product has been removed from wishlist")
     return redirect('wishlist:wishlist_detail')
+
+@login_required()
+def remove_all(request):
+    wishlist = Wishlist.objects.get(user=request.user)
+    products = WishlistItem.objects.all().filter(wishlist=wishlist)
+    products.delete()
+    messages.error(request, "Wishlist has been Cleared")
+    return redirect('wishlist:wishlist_detail')

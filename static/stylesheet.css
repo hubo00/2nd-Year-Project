@@ -96,6 +96,10 @@ body {
     color: white;
 }
 
+.btn-danger{
+    color: white;
+}
+
 .btn-plants:hover{
     background-color: #cccc00;
     color: black;

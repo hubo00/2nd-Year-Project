@@ -31,6 +31,7 @@ class Review(models.Model):
     image_thumbnail = ImageSpecField(source='image', processors=[ResizeToFill(200,200)],
     format='JPEG', options={'quality': 100})
     rating = models.FloatField(choices=RATING_OPTIONS, default=None, null=True, blank=True)
+    purchased = models.BooleanField(default=False)
 
     def __str__(self):
         return str(self.id)

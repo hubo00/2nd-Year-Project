@@ -187,6 +187,11 @@
 											<div class="row ml-2">
 												{{review.pub_date}}
 											</div>
+											{% if review.purchased == True %}
+											<div class="row ml-2">
+												<p id="purchase-verifier">Verified Purchase</p>
+											</div>
+											{% endif %}
 											{% if user.username == review.username %}
 											<div class="row ml-2">
 												<div>

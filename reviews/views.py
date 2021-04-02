@@ -5,6 +5,7 @@ from .forms import ReviewForm
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from accounts.models import CustomUser
+from order.models import Order, OrderItem
 from .models import Review
 import datetime
 from django.contrib import messages
@@ -18,6 +19,8 @@ source = https://www.udemy.com/course/machine-learning-projects-recommendation-s
 
 @login_required()
 def add_review(request, prod_slug):
+    email = str(request.user.email)
+    orders = Order.objects.all().filter(emailAddress=email)
     product = get_object_or_404(Product, slug=prod_slug)
     form = ReviewForm()
     if request.method == "POST":
@@ -30,12 +33,16 @@ def add_review(request, prod_slug):
             image = form.cleaned_data['image']
             review = Review()
             review.product = product
+            review.user = request.user
             review.username = username
             review.rating = rating
             review.content = content
             review.title = title
             review.pub_date = datetime.datetime.now()
             review.image = image
+            for order in orders:
+                if OrderItem.objects.filter(order=order, product=product).exists:
+                    review.purchased = True
             review.save()
             messages.success(request, "Review Added Successfully")
             return HttpResponseRedirect(reverse('shop:prod_detail', kwargs={'prod_slug': prod_slug}))

@@ -183,3 +183,7 @@ body {
 	background-image: none !important;
 	background: none !important;
 }
+
+#purchase-verifier {
+    color: lightslategray;
+}

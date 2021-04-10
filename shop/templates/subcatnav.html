@@ -3,7 +3,7 @@
   <ul class="navbar-nav mx-auto">
     {% for sub in subcategory %}
       <li class="nav-item px-3">
-        <a class="nav-link" href="{{sub.get_absolute_url}}"><button>{{ sub.name }}</button></a>
+        <a class="nav-link btn btn-plants" href="{{sub.get_absolute_url}}">{{ sub.name }}</a>
       </li>
     {% endfor %}
   </ul>

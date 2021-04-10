@@ -5,6 +5,7 @@ from imagekit.processors import ResizeToFill
 from django.utils.text import slugify
 from reviews.models import Review
 
+# Category model which is Connected to the Subcategories via a Many to Many relationship
 class Category(models.Model):
     name = models.CharField(max_length=250, unique=True)
     slug = models.SlugField(max_length=250, unique=True, null=True)
@@ -26,6 +27,7 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+# Subcategory model which acts as an intemediary between the Products and Category models
 class subCategory(models.Model):
     name = models.CharField(max_length=250, unique=True)
     category = models.ManyToManyField(Category, blank=False)
@@ -38,6 +40,7 @@ class subCategory(models.Model):
         verbose_name = 'subcategory'
         verbose_name_plural = 'subcategories'
 
+    # An Automatic save function which sets the slug to be a slugified version of the subcategory name
     def save(self, *args, **kwargs):
         self.slug = slugify(self.name)
         super(subCategory, self).save(*args, **kwargs)
@@ -48,6 +51,7 @@ class subCategory(models.Model):
     def __str__(self):
         return self.name
 
+# Product model which is connected to the Subcategory model via a One-Many relationship
 class Product(models.Model):
     name = models.CharField(max_length=250)
     name_alt = models.CharField(max_length=250, blank=True, null=True)
@@ -68,6 +72,7 @@ class Product(models.Model):
         verbose_name = 'product'
         verbose_name_plural = 'products'
 
+    # An Automatic save function which sets the slug to be a concatenation of the product name and Alt-name
     def save(self, *args, **kwargs):
         if Product.name_alt:
             self.slug = slugify(self.name) + slugify(self.name_alt)
@@ -79,6 +84,7 @@ class Product(models.Model):
     def __str__(self):
         return self.name
 
+    # A function to get the average of all reviews for the specified product
     def get_review_avg(self):
         reviews = Review.objects.filter(product=self)
         count = len(reviews)

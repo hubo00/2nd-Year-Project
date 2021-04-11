@@ -13,6 +13,7 @@ A part of it showed how to create a review model, I used it to create this model
 source = https://www.udemy.com/course/machine-learning-projects-recommendation-system-website/
 """
 
+# Review model which holds a users review on a specific product
 class Review(models.Model):
     RATING_OPTIONS = (
         (1, '1'),

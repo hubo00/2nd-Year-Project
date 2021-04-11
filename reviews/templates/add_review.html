@@ -4,10 +4,22 @@
 
 {% block content %}
 
-<form enctype="multipart/form-data" method="POST">
-    {% csrf_token %} 
-    <p>{{ form | crispy }}</p>
-    <input type="submit" value="Submit">
-</form>
+<div class="row">
+    <div class="col-4">
+    </div>
+    <div class="col-4">
+        <br>
+        <h1 class="text-center">New Review</h1>
+        <div class="border my-5">
+            <form class="p-4" enctype="multipart/form-data" method="POST">
+                {% csrf_token %} 
+                <p>{{ form | crispy }}</p>
+                <input class="btn btn-plants"type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <div class="col-4">
+    </div>
+</div>
 
 {% endblock %}

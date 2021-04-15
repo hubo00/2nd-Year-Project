@@ -1,0 +1,23 @@
+{% extends "base.html" %} 
+{% load static %}
+{% block content %}
+<br>
+<h4>Inactive Comments:</h4>
+        {% if comments.count == 0 %}
+          <p>There are no inactive comments</p>
+        {% endif %}
+        {% for comment in comments %}
+        <div class="card shadow mb-5 rounded">
+          <div class="comments" style="padding: 10px;">
+            <p class="font-weight-bold">
+              {{ comment.name }}
+              <span class=" text-muted font-weight-normal">
+                {{ comment.created_on }}
+              </span>
+            </p>
+            {{ comment.body | linebreaks }}
+            <a href="http://127.0.0.1:8000/admin/blog/comment/"><button type="submit" class="btn btn-plants btn">Activate</button></a>
+          </div>
+        </div>
+        {% endfor %}
+{%endblock%}

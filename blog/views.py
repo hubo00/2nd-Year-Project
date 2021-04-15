@@ -4,7 +4,7 @@ from .models import Post
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.shortcuts import render, redirect, get_object_or_404
 from django.urls import reverse_lazy, reverse
-from .forms import CommentForm
+from .forms import CommentForm, Comment
 from django.http import HttpResponseRedirect
 
 def LikeView(request, slug):
@@ -60,5 +60,9 @@ def post_detail(request, slug):
                                            'comments': comments,
                                            'new_comment': new_comment,
                                            'comment_form': comment_form})
+
+def CommentList(request):
+    comments = Comment.objects.all().filter(active=False)
+    return render(request, 'comment_list.html',{'comments':comments})
 
 

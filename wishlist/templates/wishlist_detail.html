@@ -41,15 +41,29 @@
                             <a href="{{product.product.get_absolute_url}}"><img id="cart-image" src="{{product.product.image_thumbnail.url}}"></a>
                         </td>
                         <td>
-                            <br>
-                            <h3>€{{product.product.price}}</h3>
+                            <div>
+                                <br><h3>€{{product.product.price}}</h3>
+                                {% if product.product.stock != 0 %}
+                                    <p><i class="far fa-check-circle stock-icon-good"></i> In Stock</p>
+                                {% else %}
+                                    <p><i class="far fa-times-circle stock-icon-bad"></i> Out of Stock</p>
+                                {% endif %}
+                            </div> 
                         </td>
                         <td>
+                            {% if product.product.stock != 0 %}
                             <div class="col">
-                                <a class="cart-button" href="{% url 'cart:add_cart' product.product.slug %}"><i class="fas fa-shopping-cart"></i></a>
+                                <a class="btn cart-button" href="{% url 'cart:add_cart' product.product.slug %}"><i class="fas fa-shopping-cart"></i></a>
                                 <br>
-                                <a class="cart-trash ml-1" href="{% url 'wishlist:remove_from_wishlist' product.product.slug %}"><i class="fas fa-times"></i></a>
+                                <a class="btn cart-trash ml-1" href="{% url 'wishlist:remove_from_wishlist' product.product.slug %}"><i class="fas fa-times"></i></a>
                             </div>
+                            {% else %}
+                            <div class="col">
+                                <a class="btn disabled cart-button" href="{% url 'cart:add_cart' product.product.slug %}"><i class="fas fa-shopping-cart"></i></a>
+                                <br>
+                                <a class="btn cart-trash ml-1" href="{% url 'wishlist:remove_from_wishlist' product.product.slug %}"><i class="fas fa-times"></i></a>
+                            </div>
+                            {% endif %}
                         </td>
                     </tr>
                     {% endfor %}
@@ -78,7 +92,7 @@
                         <td>
                             <button class="btn btn-plants" onclick="window.print();"><i class="fas fa-print"></i>Print Wishlist</button>
                             <br>
-                            <button class="btn btn-danger mt-3"><a href="{% url 'wishlist:remove_all' %}"><i class="far fa-trash-alt"></i>Clear Wishlist</a></button>
+                            <a href="{% url 'wishlist:remove_all' %}"><button onclick="return confirm('Are you sure you want to clear your wishlist?')" class="btn btn-danger mt-3"><i class="far fa-trash-alt"></i>Clear Wishlist</button></a>
                         </td>
                     </tr>
                 </tbody>

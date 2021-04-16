@@ -10,6 +10,7 @@ from order.models import Order, OrderItem
 from .models import Review
 import datetime
 from django.contrib import messages
+from django.http import HttpResponseForbidden
 
 """
 I used a course on Udemy to learn how to use machine learning in the django framework
@@ -57,38 +58,44 @@ def add_review(request, prod_slug):
 # A review update function which allows a user to update their existing reviews
 @login_required()
 def review_update(request, prod_slug, id):
-    product = get_object_or_404(Product, slug=prod_slug)
     review = get_object_or_404(Review, id=id)
-    email = str(request.user.email)
-    orders = Order.objects.all().filter(emailAddress=email)
-    # Dictionary containing initial field values for the form
-    init_dict = {
-        'rating':review.rating,
-        'title':review.title,
-        'content':review.content,
-        'image':review.image
-    }
-    form = ReviewForm(request.POST or None, instance=review, initial=init_dict)
-    # If all the form fields are entered successfully, save the form, send a success message and redirect to product page
-    if form.is_valid():
-        for order in orders:
-                # If the product HAS been purchased, set purchased (bool) field to true
-                if OrderItem.objects.filter(order=order, product=product).exists():
-                    review.purchased = True
-        form.save()
-        messages.info(request, "Review Updated Successfully")
-        return HttpResponseRedirect(reverse('shop:prod_detail', kwargs={'prod_slug': prod_slug}))
-    
+    if review.user == request.user:
+        product = get_object_or_404(Product, slug=prod_slug)
+        email = str(request.user.email)
+        orders = Order.objects.all().filter(emailAddress=email)
+        # Dictionary containing initial field values for the form
+        init_dict = {
+            'rating':review.rating,
+            'title':review.title,
+            'content':review.content,
+            'image':review.image
+        }
+        form = ReviewForm(request.POST or None, instance=review, initial=init_dict)
+        # If all the form fields are entered successfully, save the form, send a success message and redirect to product page
+        if form.is_valid():
+            for order in orders:
+                    # If the product HAS been purchased, set purchased (bool) field to true
+                    if OrderItem.objects.filter(order=order, product=product).exists():
+                        review.purchased = True
+            form.save()
+            messages.info(request, "Review Updated Successfully")
+            return HttpResponseRedirect(reverse('shop:prod_detail', kwargs={'prod_slug': prod_slug}))
+    else:
+        return HttpResponseForbidden("You must be the reviews owner to edit")
+
     return render(request, 'update_review.html',{'form':form, 'product':product, 'review':review})
 
 # A review delete function which allows a user to delete their existing reviews
 @login_required()
 def review_delete(request, prod_slug, id):
-    product = get_object_or_404(Product, slug=prod_slug)
     review = get_object_or_404(Review, id=id)
-    if request.method == "POST":
-        review.delete()
-        messages.error(request, "Review Deleted Successfully")
-        return redirect("shop:allProdCat")
-    
+    if review.user == request.user or request.user.is_authenticated:
+        product = get_object_or_404(Product, slug=prod_slug)
+        if request.method == "POST":
+            review.delete()
+            messages.error(request, "Review Deleted Successfully")
+            return redirect("shop:allProdCat")
+    else:
+        return HttpResponseForbidden("You must be the reviews owner to delete")
+
     return render(request, 'delete_review.html', {'product':product, 'review':review})

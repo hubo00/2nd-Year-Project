@@ -4,12 +4,23 @@
 
 {% block content %}
 
-<form method="POST"> 
-    {% csrf_token %} 
-    Are you sure want to delete this item ? 
-    <input type="submit" value="Yes"/>
-    <a href="{% url 'shop:allProdCat' %}">Cancel </a> 
-</form> 
-</div> 
+<div class="row">
+    <div class="col-4">
+    </div>
+    <div class="col-4">
+        <br>
+        <h1 class="text-center">Delete {{product.name}}</h1>
+        <div class="my-5">
+            <form method="POST"> 
+                {% csrf_token %} 
+                Are you sure want to delete {{product.name}}
+                <input class="btn py-2 btn-danger"type="submit" value="Yes"/>
+                <a class="btn py-2 btn-plants" href="{% url 'shop:prod_detail' product.slug %}">Cancel </a> 
+            </form> 
+        </div>
+    </div>
+    <div class="col-4">
+    </div>
+</div>
 
 {% endblock %}

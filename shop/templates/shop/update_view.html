@@ -65,7 +65,7 @@
         <form enctype="multipart/form-data" method="POST"> 
         {% csrf_token %} 
         <p>{{ form | crispy }}</p>
-        <input type="submit" value="Update"> 
+        <input class="btn btn-plants" type="submit" value="Update"> 
         </form>
     {% else %}
         <div class="text-center">

@@ -75,7 +75,7 @@ def prod_create(request):
         form = ProductCreateForm()
         # If the request method is post, save the product, display an appropriate message and redirect to the homepage
         if request.method=='POST':
-            form = ProductForm(request.POST or None, request.FILES)
+            form = ProductCreateForm(request.POST or None, request.FILES)
             if form.is_valid():
                 form.save()
                 messages.success(request, "Product added successfully")

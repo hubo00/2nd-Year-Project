@@ -23,13 +23,11 @@ class PostDetail(generic.DetailView):
     model = Post
     template_name = 'post_detail.html'
 
-
 class BlogCreateView(CreateView):
     model = Post
     template_name = 'post_new.html'
     fields = ['title', 'slug', 'author', 'content', 'status']
     success_url = reverse_lazy('home')
-
 
 class BlogUpdateView(UpdateView):
     model = Post
@@ -64,5 +62,3 @@ def post_detail(request, slug):
 def CommentList(request):
     comments = Comment.objects.all().filter(active=False)
     return render(request, 'comment_list.html',{'comments':comments})
-
-

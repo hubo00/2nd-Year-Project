@@ -17,6 +17,7 @@ Check out our plants and tools! | PlantOasis
 {% block content %}
 <!--Breadcrumb navigation-->
 {% if category %}
+{% include 'subcatnav.html' %}
 <div>
 	<div>
 		<p><a href="{% url 'shop:allProdCat' %}">Our Product Collection</a> | {{category.name}}</p>
@@ -30,7 +31,6 @@ Check out our plants and tools! | PlantOasis
 </div>
 {% endif %}
 {% if category %}
-{% include 'subcatnav.html' %}
 <br>
 <div>
 	<h1>{{category.name}}</h1>

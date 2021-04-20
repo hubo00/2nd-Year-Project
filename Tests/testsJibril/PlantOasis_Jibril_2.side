@@ -1,0 +1,452 @@
+{
+  "id": "dac2690d-3148-4e90-a460-5c42e9b116b4",
+  "version": "2.0",
+  "name": "PlantOasisJibril_2",
+  "url": "http://127.0.0.1:8000",
+  "tests": [{
+    "id": "b70c7ecf-0343-40f0-b195-7ea2f4502455",
+    "name": "searchProduct",
+    "commands": [{
+      "id": "b587bc31-9e82-4fc7-b9ff-72964b4b7ca1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47b0c68c-29b2-4fbc-8010-8c7cb9dbc6c8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f1b4c3f2-c873-4de9-856f-09c3749406d4",
+      "comment": "",
+      "command": "click",
+      "target": "id=nav-search",
+      "targets": [
+        ["id=nav-search", "id"],
+        ["name=q", "name"],
+        ["css=#nav-search", "css:finder"],
+        ["xpath=//input[@id='nav-search']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6db90f1f-75e1-4eec-a3a9-60cbdcd90401",
+      "comment": "",
+      "command": "type",
+      "target": "id=nav-search",
+      "targets": [
+        ["id=nav-search", "id"],
+        ["name=q", "name"],
+        ["css=#nav-search", "css:finder"],
+        ["xpath=//input[@id='nav-search']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Bonsai Arts"
+    }, {
+      "id": "74b6b937-07a5-4dea-86a4-2f4545defff6",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=nav-search",
+      "targets": [
+        ["id=nav-search", "id"],
+        ["name=q", "name"],
+        ["css=#nav-search", "css:finder"],
+        ["xpath=//input[@id='nav-search']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "3daae7ed-6b90-4f80-8765-6a2d24510cd2",
+    "name": "searchProducts",
+    "commands": [{
+      "id": "5bac8783-fa9c-4479-82ad-04d334f9b914",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "533eb885-75b9-40ad-94b8-2ffbc3110189",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d2128bd7-a752-4c19-bcd2-c4afc4e3287c",
+      "comment": "",
+      "command": "click",
+      "target": "id=nav-search",
+      "targets": [
+        ["id=nav-search", "id"],
+        ["name=q", "name"],
+        ["css=#nav-search", "css:finder"],
+        ["xpath=//input[@id='nav-search']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aadcc914-13b1-4193-9df1-e69da40830ab",
+      "comment": "",
+      "command": "type",
+      "target": "id=nav-search",
+      "targets": [
+        ["id=nav-search", "id"],
+        ["name=q", "name"],
+        ["css=#nav-search", "css:finder"],
+        ["xpath=//input[@id='nav-search']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "a"
+    }, {
+      "id": "963bb6d2-3673-425a-8707-8167f40d5ad8",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=nav-search",
+      "targets": [
+        ["id=nav-search", "id"],
+        ["name=q", "name"],
+        ["css=#nav-search", "css:finder"],
+        ["xpath=//input[@id='nav-search']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "f04ab5e7-e94d-4f93-ba3b-04231c93d48f",
+    "name": "cartProduct",
+    "commands": [{
+      "id": "0242bb1f-9100-494f-9487-ef985523b3fd",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7cd3ed37-5122-4dfe-95cd-7c2613ed0d77",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "18da7e07-7e26-4ca5-8881-1e94655fe3ea",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Indoor Plants",
+      "targets": [
+        ["linkText=Indoor Plants", "linkText"],
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Indoor Plants')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/indoor-plants/')]", "xpath:href"],
+        ["xpath=//div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Indoor Plants')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "972a3800-0299-4801-9f2b-bc660454225a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-3:nth-child(1) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(1) .home-images", "css:finder"],
+        ["xpath=//img[@alt=\"Adanson's Monstera\"]", "xpath:img"],
+        ["xpath=//div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40f8826f-f105-4bcd-9520-30928c465527",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add to Cart",
+      "targets": [
+        ["linkText=Add to Cart", "linkText"],
+        ["css=.btn-plants", "css:finder"],
+        ["xpath=//a[contains(text(),'Add to Cart')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/cart/add/adansons-monsteramonstera-adansonii/')]", "xpath:href"],
+        ["xpath=//div[4]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add to Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "84269696-22ee-4a93-8557-ea6b2c7c38a1",
+    "name": "increaseQuantity",
+    "commands": [{
+      "id": "2bf3002f-60e5-4d5f-9e77-237dafc67240",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d3583a5-314f-4976-a9c8-4204b9c28fd7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82585e6f-0efa-4a0f-9476-eee310d6b97c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Indoor Plants",
+      "targets": [
+        ["linkText=Indoor Plants", "linkText"],
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Indoor Plants')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/indoor-plants/')]", "xpath:href"],
+        ["xpath=//div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Indoor Plants')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef4ee991-83b4-4038-94e2-6c76c25fa74a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-3:nth-child(2) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(2) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Aloe Vera']", "xpath:img"],
+        ["xpath=//div[2]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f02d26df-ff39-4fe0-8ae3-3c1df18476fc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add to Cart",
+      "targets": [
+        ["linkText=Add to Cart", "linkText"],
+        ["css=.btn-plants", "css:finder"],
+        ["xpath=//a[contains(text(),'Add to Cart')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/cart/add/aloe-veraaloe-barbadensis/')]", "xpath:href"],
+        ["xpath=//div[4]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add to Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d85ddde-fe99-46bd-a36f-5f75393788a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) .fa-plus-circle",
+      "targets": [
+        ["css=tr:nth-child(2) .fa-plus-circle", "css:finder"],
+        ["xpath=//tr[2]/td[2]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "171cd02a-85ec-41ba-9fb2-1fd7f2bd1aba",
+    "name": "decreaseQuantity",
+    "commands": [{
+      "id": "48e6a1cc-816a-49e5-bb0a-4a9121e30880",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5c5cfce-af10-4e8f-b629-cba4c6712e7d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9c3f1cf-c262-46a8-8d43-e0dc15965648",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Indoor Plants",
+      "targets": [
+        ["linkText=Indoor Plants", "linkText"],
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Indoor Plants')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/indoor-plants/')]", "xpath:href"],
+        ["xpath=//div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Indoor Plants')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3da64738-31de-4ddd-b834-3044e689689f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-3:nth-child(3) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(3) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Citronella']", "xpath:img"],
+        ["xpath=//div[3]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4357bb7-dbc8-4052-81e2-9fc441cdfe58",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add to Cart",
+      "targets": [
+        ["linkText=Add to Cart", "linkText"],
+        ["css=.btn-plants", "css:finder"],
+        ["xpath=//a[contains(text(),'Add to Cart')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/cart/add/citronellageranium-cripsum/')]", "xpath:href"],
+        ["xpath=//div[4]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add to Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "36e1ff6b-deb8-433f-b276-124f3d4f5e0d",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) .fa-minus-circle",
+      "targets": [
+        ["css=tr:nth-child(3) .fa-minus-circle", "css:finder"],
+        ["xpath=//tr[3]/td[2]/a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23108a8b-ada3-4a09-813c-0908ce34c39f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=tr:nth-child(2) .fa-minus-circle",
+      "targets": [
+        ["css=tr:nth-child(2) .fa-minus-circle", "css:finder"],
+        ["xpath=//tr[2]/td[2]/a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "00092120-71b0-4d4b-a3cd-204a5f7215c7",
+    "name": "emptyCart",
+    "commands": [{
+      "id": "66d45a3d-f94c-4bba-a49a-be0b7a4c5fff",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ee1af2c-5dd9-45b1-be13-0c0d78aa1785",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "346dccac-a662-40b3-a707-bc48dea3319d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Indoor Plants",
+      "targets": [
+        ["linkText=Indoor Plants", "linkText"],
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Indoor Plants')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/indoor-plants/')]", "xpath:href"],
+        ["xpath=//div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Indoor Plants')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9292b2c1-ad5d-413e-9830-40a569cb1a8c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-3:nth-child(4) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(4) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Dragon Tree']", "xpath:img"],
+        ["xpath=//div[4]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f485dc6b-5d8d-4937-90ae-617e03d7fe88",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add to Cart",
+      "targets": [
+        ["linkText=Add to Cart", "linkText"],
+        ["css=.btn-plants", "css:finder"],
+        ["xpath=//a[contains(text(),'Add to Cart')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/cart/add/dragon-treedracaena-marginata/')]", "xpath:href"],
+        ["xpath=//div[4]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add to Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bfc6d53-865d-44f0-b7aa-49986bd26844",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-times",
+      "targets": [
+        ["css=.fa-times", "css:finder"],
+        ["xpath=//td[4]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "79080828-fefc-45b8-9fc9-0c79dd3aa30c",
+    "name": "checkStock",
+    "commands": [{
+      "id": "3319827d-d166-4d34-9fcf-64860adcc0cf",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d25516ee-fcae-4bb8-851c-da3d9f51f82a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "83300ede-18e2-4a52-8f13-335d3c958a34",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Plant pots",
+      "targets": [
+        ["linkText=Plant pots", "linkText"],
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Plant pots')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/plant-pots/')]", "xpath:href"],
+        ["xpath=//div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Plant pots')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1547816b-80b8-4b3c-80e6-c102788b4221",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-3:nth-child(2) .home-images",
+      "targets": [
+        ["css=.col-lg-3:nth-child(2) .home-images", "css:finder"],
+        ["xpath=//img[@alt='Red Planter Pot']", "xpath:img"],
+        ["xpath=//div[2]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cb20956-4d4f-4ecf-96e3-46d3491b33ef",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(5) > .col-6:nth-child(1)",
+      "targets": [
+        ["css=.row:nth-child(5) > .col-6:nth-child(1)", "css:finder"],
+        ["xpath=//div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f3bca9bb-8369-4120-9f96-eacb75c855c4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b70c7ecf-0343-40f0-b195-7ea2f4502455"]
+  }],
+  "urls": ["http://127.0.0.1:8000/"],
+  "plugins": []
+}

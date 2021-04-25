@@ -1,4 +1,6 @@
 # likes model from https://dev.to/radualexandrub/how-to-add-like-unlike-button-to-your-django-blog-5gkg
+# blogs from https://djangocentral.com/building-a-blog-application-with-django/
+#comments from https://djangocentral.com/creating-comments-system-with-django/
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 

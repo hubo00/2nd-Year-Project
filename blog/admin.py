@@ -1,3 +1,5 @@
+#blog from https://djangocentral.com/building-a-blog-application-with-django/
+#comments from https://djangocentral.com/creating-comments-system-with-django/
 from django.contrib import admin
 from .models import Post, Comment
 

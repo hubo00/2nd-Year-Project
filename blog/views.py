@@ -1,4 +1,6 @@
 #likes view from https://dev.to/radualexandrub/how-to-add-like-unlike-button-to-your-django-blog-5gkg
+#blog from https://djangocentral.com/building-a-blog-application-with-django/
+#comments from https://djangocentral.com/creating-comments-system-with-django/
 from django.views import generic
 from .models import Post
 from django.views.generic.edit import CreateView, UpdateView, DeleteView

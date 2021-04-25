@@ -1,5 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
+{% block title %}
+Delete {{product.name}} Review | PlantOasis
+{% endblock %}
 {% load crispy_forms_tags %}
 
 {% block content %}
@@ -15,7 +18,7 @@
                 {% csrf_token %} 
                 Are you sure want to delete your review?
                 <input class="btn py-2 btn-danger"type="submit" value="Yes"/>
-                <a class="btn py-2 btn-plants" href="{% url 'shop:allProdCat' %}">Cancel </a> 
+                <a class="btn py-2 btn-plants" href="{% url 'shop:prod_detail' product.slug %}">Cancel </a> 
             </form> 
         </div>
     </div>

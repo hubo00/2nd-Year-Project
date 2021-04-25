@@ -33,7 +33,7 @@ class WishlistItem(models.Model):
     # Wishlist field acts as a foreign key to link this item to the wishlist
     wishlist = models.ForeignKey(Wishlist, on_delete=models.CASCADE)
     # Product field acts as a foreign key to link this item with a product from the store
-    product = models.ForeignKey(Product, null=True, on_delete=models.SET_NULL)
+    product = models.ForeignKey(Product, null=True, on_delete=models.CASCADE)
     date_added = models.DateTimeField(auto_now_add=True)
 
     class Meta:

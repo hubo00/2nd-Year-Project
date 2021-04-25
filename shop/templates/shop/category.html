@@ -10,6 +10,8 @@ Welcome to the plant Oasis, your one stop shop for all things plants!
 {% block title %}
 {% if category %}
 {{ category.name }} | PlantOasis
+{% elif subcategory %}
+{{ subcategory.name }} | PlantOasis
 {% else %}
 Check out our plants and tools! | PlantOasis
 {% endif %}

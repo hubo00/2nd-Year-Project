@@ -4055,6 +4055,220 @@
       ],
       "value": "Dragon Tree"
     }]
+  }, {
+    "id": "49c23813-568e-4fb6-b7a8-711799316486",
+    "name": "test_clearWishlist",
+    "commands": [{
+      "id": "d8a618fc-35b2-41b6-9499-7ee1a0141bcc",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:8000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0613c1b2-3730-4ed7-b2aa-775648128388",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1096",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a201baa-a925-4dbc-a9da-b58c5c182e28",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=(3)",
+      "targets": [
+        ["linkText=(3)", "linkText"],
+        ["css=.ml-auto > .nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'(3)')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/wishlist/')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' (3)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8347938-6f23-41ae-8d4f-37f72bf1fcff",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-heart",
+      "targets": [
+        ["css=.fa-heart", "css:finder"],
+        ["xpath=//li[4]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5667f602-b474-46d0-aab2-85b2d94ce09f",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "hubo00's_wishlist - Plant Oasis",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "30a9313b-a972-4914-86ab-3f299050d1e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Your Wishlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "06873875-263a-4633-9032-cd63ec44e358",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Your Wishlist')]", "xpath:innerText"]
+      ],
+      "value": "Your Wishlist"
+    }, {
+      "id": "066ec3b8-6b54-4cf4-91ce-360224f6ff67",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=cart-image",
+      "targets": [
+        ["id=cart-image", "id"],
+        ["css=tr:nth-child(1) #cart-image", "css:finder"],
+        ["xpath=//img[@id='cart-image']", "xpath:attributes"],
+        ["xpath=//td[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39fe72c9-9c17-4ad5-9620-8fc93ffd1a67",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=tr:nth-child(2) #cart-image",
+      "targets": [
+        ["css=tr:nth-child(2) #cart-image", "css:finder"],
+        ["xpath=(//img[@id='cart-image'])[2]", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42767064-5944-48bf-a150-c05ac85b990e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//button[@onclick=\"return confirm('Are you sure you want to clear your wishlist?')\"]", "xpath:attributes"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Clear Wishlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd88f88a-92f6-4821-ac2d-bc6e79286aa0",
+      "comment": "",
+      "command": "chooseCancelOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "975a1005-6850-46b3-9d0f-16006b16ff71",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//button[@onclick=\"return confirm('Are you sure you want to clear your wishlist?')\"]", "xpath:attributes"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Clear Wishlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eddd0038-4bfd-40b2-aa6c-5ff86ba5efcc",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Are you sure you want to clear your wishlist?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f28ad54-69bf-4e6b-83c4-6f8ec6af7a65",
+      "comment": "",
+      "command": "webdriverChooseCancelOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da29102c-9058-4d4f-b58e-c9902c4c66fc",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20db09bb-50ab-4012-98e9-abe182ee9e00",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//button[@onclick=\"return confirm('Are you sure you want to clear your wishlist?')\"]", "xpath:attributes"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Clear Wishlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ced0de4f-95fe-450f-86e2-51f1a6e3ef67",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Are you sure you want to clear your wishlist?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78107bb1-d548-4b51-92e9-0d7cf3ec42d0",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "659b9375-d1a9-4155-b7f8-8c95ec299be4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//ul/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e0d8143-aa27-453f-bd3e-fd3df921f862",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//ul/div/div", "xpath:position"]
+      ],
+      "value": "×\\nWishlist has been Cleared"
+    }, {
+      "id": "6acec49c-7595-4ff2-b6b7-32becf57c2aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row > p",
+      "targets": [
+        ["css=.row > p", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'You have no items in your wishlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "04074f5d-2fc2-4845-9b28-7bb31244d4d7",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.row > p",
+      "targets": [
+        ["css=.row > p", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'You have no items in your wishlist')]", "xpath:innerText"]
+      ],
+      "value": "You have no items in your wishlist"
+    }]
   }],
   "suites": [{
     "id": "68c70e47-4742-42dc-90a3-9ec5481fbd7b",
